@@ -1,0 +1,77 @@
+// Text, icon, ... color
+$primary: #8ad400;
+$text-super-light: #bac2cb;
+$text-light: #6b7787;
+$text-normal: #485566;
+$text-bold: #1e2731;
+$text-gray: #b1b8c2;
+$text-white: #ffffff;
+
+// Background Color
+$bg-black: #1e2731;
+$bg-light: #f6f6f6;
+$bg-primary-light: #e5ebd8;
+$bg-primary-super-light: #f7faf3;
+
+$border: #979797;
+
+@mixin montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+@mixin montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+@mixin montserrat-light {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+@mixin montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+@mixin montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+@mixin flex($direction: row, $content: null, $items: null, $wrap: null) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+  flex-wrap: $wrap;
+}
+@mixin button($background, $color, $fontSize, $padding, $radius) {
+  background: $background;
+  color: $color;
+  font-size: $fontSize;
+  padding: $padding;
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+
+@mixin position($position, $top, $left, $right, $bottom) {
+  position: $position;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+}
+
+@mixin text($color, $size) {
+  color: $color;
+  font-size: $size;
+  text-decoration: none;
+}
+
+@mixin transition($property, $time) {
+  transition: $property $time;
+  -webkit-transition: $property $time;
+  -moz-transition: $property $time;
+  -ms-transition: $property $time;
+  -o-transition: $property $time;
+}
