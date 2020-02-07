@@ -75,3 +75,11 @@ $border: #979797;
   -ms-transition: $property $time;
   -o-transition: $property $time;
 }
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}

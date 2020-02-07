@@ -1,0 +1,150 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+@media screen and (max-width: 1536px) {
+  .product {
+    background-image: url("/static/images/home_bg_03.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    .product_container {
+      margin: auto;
+
+      text-align: center;
+      .product_container_top {
+        padding: 7% 0 3% 0;
+        width: 53%;
+        margin: auto;
+        .product_container_top_introduction {
+          @include text($primary, 17.6px);
+          @include montserrat;
+          text-transform: uppercase;
+          letter-spacing: 1.76px;
+        }
+        .product_container_top_title {
+          @include text($text-bold, 44px);
+          @include montserrat-bold;
+          margin: 15px 0;
+        }
+        .product_container_top_content {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
+      }
+      .product_container_bottom {
+        width: 75%;
+        margin: auto;
+        .product_container_bottom_box {
+          @include flex(row, space-between, center, wrap);
+          .product_container_bottom_box_item {
+            text-align: left;
+            flex: 23%;
+            max-width: 23%;
+            padding: 5px 10px;
+
+            @include transition(all, 0.5s);
+            &:hover {
+              box-shadow: 0 10px 20px rgba(1, 14, 40, 0.1);
+              @include border-radius(10px);
+              @include transition(all, 0.5s);
+              margin-top: 5px;
+            }
+            .product_container_bottom_box_item_circle {
+              height: 64px;
+              width: 64px;
+              background-color: $primary;
+              @include border-radius(50%);
+              @include flex(row, center, center, null);
+              .product_container_bottom_box_item_icon {
+                width: 32px;
+                height: 32px;
+              }
+            }
+            .product_container_bottom_box_item_title {
+              margin: 15px 0;
+              a {
+                text-decoration: none;
+                @include text($text-bold, 19px);
+                @include montserrat-semibold;
+                @include transition(all, 0.5s);
+
+                &:hover {
+                  @include text($primary, 19px);
+                  @include transition(all, 0.5s);
+                }
+              }
+            }
+            .product_container_bottom_box_item_content {
+              @include text($text-light, 12.8px);
+              @include montserrat;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .product {
+    .product_container {
+      .product_container_top {
+        width: 70%;
+      }
+      .product_container_bottom {
+        .product_container_bottom_box {
+          .product_container_bottom_box_item {
+            flex: 48%;
+            max-width: 48%;
+            .product_container_bottom_box_item_content {
+              @include text(black, 12.8px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product {
+    .product_container {
+      .product_container_top {
+        .product_container_top_title {
+          @include text($text-bold, 35px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product {
+    height: 850px;
+    .product_container {
+      .product_container_top {
+        width: 75%;
+        .product_container_top_title {
+          @include text($text-bold, 30px);
+        }
+      }
+      .product_container_bottom {
+        .product_container_bottom_box {
+          .product_container_bottom_box_item {
+            .product_container_bottom_box_item_circle {
+              height: 32px;
+              width: 32px;
+              .product_container_bottom_box_item_icon {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

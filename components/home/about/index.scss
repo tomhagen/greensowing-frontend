@@ -1,0 +1,194 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+@media screen and (min-width: 1537px) {
+  .about {
+    background-image: url("/static/images/home_bg_02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 960px;
+  }
+}
+@media screen and (max-width: 1536px) {
+  .about {
+    background-image: url("/static/images/home_bg_02.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    .about_container {
+      width: 75%;
+      //   height: 74%;
+      margin: auto;
+      padding: 7% 0;
+      .about_box {
+        @include flex(row, space-between, center, null);
+        .about_box_left {
+          flex: 38%;
+          max-width: 38%;
+          position: relative;
+          .about_box_left_image_top {
+            width: 78%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+          }
+          .about_box_left_image_bottom {
+            width: 72%;
+            height: auto;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 9;
+            margin-bottom: -15%;
+          }
+          .about_box_left_image_frame {
+            width: 77%;
+            height: 427px;
+            border: 9.6px solid $primary;
+            margin: auto;
+            margin-top: 15%;
+            margin-left: 16%;
+          }
+        }
+        .about_box_right {
+          flex: 53%;
+          max-width: 53%;
+          position: relative;
+          z-index: 10;
+          margin-top: 8%;
+          .about_box_right_introduction {
+            @include text($primary, 17.6px);
+            @include montserrat;
+            text-transform: uppercase;
+            letter-spacing: 1.76px;
+          }
+          .about_box_right_title {
+            @include text($text-bold, 44px);
+            @include montserrat-bold;
+            padding: 20px 0;
+            span {
+              white-space: nowrap;
+            }
+          }
+          .about_box_right_text_behind {
+            @include text($primary, 76px);
+            @include montserrat-bold;
+            text-transform: uppercase;
+            opacity: 0.1;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            z-index: 9;
+            top: 28%;
+          }
+          .about_box_right_content {
+            @include text($text-bold, 14.4px);
+            @include montserrat-bold;
+            padding: 10% 0 20px 0;
+            line-height: 150%;
+          }
+          .about_box_right_sub_content {
+            @include text($text-light, 14.4px);
+            @include montserrat;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1467px) {
+  .about {
+    .about_container {
+      .about_box {
+        .about_box_right {
+          .about_box_right_text_behind {
+            @include text($primary, 66px);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    height: 1060px;
+    .about_container {
+      .about_box {
+        @include flex(column, space-between, center, null);
+        .about_box_left {
+          flex: 100%;
+          max-width: 100%;
+          .about_box_left_image_top {
+          }
+          .about_box_left_image_bottom {
+            width: 78%;
+            bottom: 15%;
+            margin-bottom: 0;
+          }
+          .about_box_left_image_frame {
+            width: 280px;
+          }
+        }
+        .about_box_right {
+          flex: 100%;
+          max-width: 100%;
+          .about_box_right_text_behind {
+            @include text($primary, 76px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    .about_container {
+      .about_box {
+        .about_box_right {
+          .about_box_right_title {
+            @include text($text-bold, 38px);
+          }
+          .about_box_right_text_behind {
+            @include text($primary, 46px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    .about_container {
+      .about_box {
+        .about_box_left {
+          .about_box_left_image_top {
+            width: 80%;
+          }
+          .about_box_left_image_bottom {
+            width: 80%;
+          }
+          .about_box_left_image_frame {
+            width: 200px;
+            height: 300px;
+          }
+        }
+        .about_box_right {
+          .about_box_right_title {
+            @include text($text-bold, 30px);
+          }
+          .about_box_right_text_behind {
+            @include text($primary, 30px);
+            top: 18%;
+          }
+        }
+      }
+    }
+  }
+}

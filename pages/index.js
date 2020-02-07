@@ -1,13 +1,26 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Carousel from "../components/home/carousel";
+import HomeCarousel from "../components/home/carousel";
+import Header from "../components/home/header";
+import About from "../components/home/about";
+import Product from "../components/home/product";
+import Blog from "../components/home/blog";
+import Footer from "../components/home/footer";
+import Copyright from "../components/home/copyright";
+import RegisterButton from "../components/home/register";
 
 const Home = () => {
   return (
     <React.Fragment>
-      <div style={{ fontSize: "30px" }}>ABCDEFGG GREENHOUSE</div>
-      <Carousel />
+      <Header />
+      <HomeCarousel />
+      <About />
+      <Product />
+      <Blog />
+      <Footer />
+      <Copyright />
+      <RegisterButton />
     </React.Fragment>
   );
 };

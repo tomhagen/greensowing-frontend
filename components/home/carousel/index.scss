@@ -1,25 +1,349 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.carousel {
-  @include montserrat;
-  font-size: 18px;
-  background: #f6f6f6;
-  color: #6b7787;
+/* ##Device = Large Desktops
+   ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1537px) {
+  .home_carousel {
+    .home_carousel_container {
+      width: auto;
+      height: 960px;
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            img {
+              max-width: 100%;
+              height: 768px;
+            }
+            // .slick-list-item-container{
+            //     .slick-list-item-container-title{
+            //         @include text($text-light, 82px);
+
+            //     }
+            // }
+          }
+        }
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-dots {
+          bottom: 40px;
+          li button::before {
+            font-size: 18px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }
-.carousel-2 {
-  @include montserrat-bold;
-  font-size: 18px;
+
+/* ##Device = Laptops, Desktops
+   ##Screen = Between 1281px to 1536px
+*/
+
+@media screen and (max-width: 1536px) {
+  .home_carousel {
+    .home_carousel_container {
+      width: 100%;
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            position: relative;
+
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+
+              background: linear-gradient(
+                0deg,
+                rgba(31, 43, 32, 0.0001) 52.78%,
+                #1f2b20 100%
+              );
+              mix-blend-mode: normal;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              opacity: 0.8;
+              z-index: 9;
+            }
+            .overlay2 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+
+              background: linear-gradient(
+                180deg,
+                #fafafa 2.61%,
+                rgba(255, 255, 255, 0.0001) 68.06%
+              );
+
+              z-index: 9;
+            }
+            .slick-list-item-container {
+              position: absolute;
+              top: 69.8%;
+              z-index: 10;
+              .slick-list-item-container-center {
+                margin: auto;
+                width: 65.6%;
+                text-align: center;
+                .slick-list-item-title {
+                  @include text($text-white, 65.6px);
+                  @include montserrat-bold;
+                  letter-spacing: 3px;
+                }
+                .slick-list-item-subtitle-container {
+                  width: 90%;
+                  margin: auto;
+                  padding: 20px 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 17px);
+                    line-height: 20.8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-dots {
+          bottom: 40px;
+
+          li button::before {
+            font-size: 18px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
 }
-.carousel-3 {
-  @include montserrat-light;
-  font-size: 18px;
+
+@media screen and (max-width: 1454px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              .slick-list-item-container-center {
+                width: 78%;
+                .slick-list-item-title {
+                  line-height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-.carousel-4 {
-  @include montserrat-medium;
-  font-size: 18px;
+/* ##Device = Small Laptops 
+   ##Screen = Between 1025px to 1281px
+*/
+@media (min-width: 1025px) and (max-width: 1281px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              top: 60%;
+
+              .slick-list-item-container-center {
+                width: 80%;
+
+                .slick-list-item-title {
+                  @include text($text-white, 55px);
+                }
+                .slick-list-item-subtitle-container {
+                  width: 80%;
+                  padding: 20px 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 18px);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+          bottom: 20px;
+
+          li button::before {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
 }
-.carousel-5 {
-  @include montserrat-semibold;
-  font-size: 18px;
+/* ##Device = Tablets, Ipads (portrait )
+   ##Screen = Between 768px to 1024px
+*/
+
+@media (min-width: 776px) and (max-width: 1024px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              top: 60%;
+
+              .slick-list-item-container-center {
+                width: 95%;
+
+                .slick-list-item-title {
+                  @include text($text-white, 50px);
+                }
+                .slick-list-item-subtitle-container {
+                  width: 90%;
+                  padding: 10px 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 18px);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+          bottom: 10px;
+
+          li button::before {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ##Device = Low Resolution Tablets, Mobiles ( Landscape )
+   ##Screen = Between 481px to 767px
+*/
+
+@media screen and (max-width: 775px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              top: 58%;
+
+              .slick-list-item-container-center {
+                width: 95%;
+
+                .slick-list-item-title {
+                  @include text($text-white, 40px);
+                  letter-spacing: 0;
+                }
+                .slick-list-item-subtitle-container {
+                  width: 90%;
+                  padding: 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 13px);
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+          bottom: 10px;
+          display: none !important;
+
+          li button::before {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              top: 60%;
+
+              .slick-list-item-container-center {
+                width: 95%;
+
+                .slick-list-item-title {
+                  @include text($text-white, 25px);
+                  line-height: 40px;
+                }
+                .slick-list-item-subtitle-container {
+                  padding: 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 13px);
+                    line-height: 15px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+          bottom: 10px;
+          display: none !important;
+
+          li button::before {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ##Device = Most of the smartphones mobiles (portrait )
+   ##Screen = Between 320px to 479px
+*/
+
+@media screen and (max-width: 480px) {
+  .home_carousel {
+    .home_carousel_container {
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            .slick-list-item-container {
+              top: 70%;
+              .slick-list-item-container-center {
+                .slick-list-item-title {
+                  @include text($text-white, 20px);
+                }
+                .slick-list-item-subtitle-container {
+                  visibility: hidden;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

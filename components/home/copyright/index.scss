@@ -1,0 +1,30 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+@media screen and (max-width: 1536px) {
+  .copyright {
+    background-color: $bg-black;
+    border-top: 1px solid #323a43;
+    .copyright_container {
+      margin: auto;
+      text-align: center;
+      padding: 3% 0;
+      .copyright_container_content {
+        @include text($text-gray, 12px);
+        @include montserrat;
+        span {
+          @include text($primary, 12px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .copyright {
+    .copyright_container {
+      padding: 7% 0;
+      width: 80%;
+    }
+  }
+}
