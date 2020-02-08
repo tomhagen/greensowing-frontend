@@ -1,0 +1,104 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.monitoring {
+  .monitoring_container {
+    @include flex(row, null, null, null);
+
+    .monitoring_left {
+      flex: 50%;
+      max-width: 50%;
+      background-color: $primary-sub;
+
+      .monitoring_left_box {
+        padding: 20% 12% 20% 23%;
+        .monitoring_left_box_title {
+          @include text($text-white, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+          line-height: 130%;
+        }
+        .monitoring_left_box_content {
+          @include text($text-white, 14.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .monitoring_left_box_subcontent {
+          @include text($text-white, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
+        .monitoring_left_box_subtitle {
+          @include text($text-white, 14.4px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+        }
+      }
+    }
+    .monitoring_right {
+      background-image: url("/static/images/commercial_page5_01.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 768px;
+      flex: 50%;
+      max-width: 50%;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .monitoring {
+    .monitoring_container {
+      .monitoring_left {
+        .monitoring_left_box {
+          padding: 15% 12% 15% 12%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 993px) {
+  .monitoring {
+    .monitoring_container {
+      @include flex(column, null, null, wrap);
+      .monitoring_left {
+        flex: 100%;
+        max-width: 100%;
+        .monitoring_left_box {
+          padding: 5% 10%;
+        }
+      }
+      .monitoring_right {
+        flex: 100%;
+        max-width: 100%;
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .monitoring {
+    .monitoring_container {
+      .monitoring_left {
+        .monitoring_left_box {
+          .monitoring_left_box_title {
+            @include text($text-white, 28px);
+          }
+        }
+      }
+    }
+  }
+}

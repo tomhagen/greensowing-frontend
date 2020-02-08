@@ -1,0 +1,137 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.structure {
+  background-image: url("/static/images/commercial_bg_02.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 768px;
+  position: relative;
+  .structure_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 16%;
+    right: 12%;
+    .structure_box {
+      width: 36%;
+      background-color: $primary-sub;
+      padding: 2% 5%;
+      .structure_box_title {
+        @include text($text-white, 38.4px);
+        @include montserrat-bold;
+        padding: 20px 0;
+      }
+      .structure_box_content {
+        @include text($text-white, 14.4px);
+        @include montserrat-bold;
+        padding: 0 0 20px 0;
+        line-height: 150%;
+      }
+      .structure_box_subcontent {
+        @include text($text-white, 14.4px);
+        @include montserrat;
+        line-height: 150%;
+        opacity: 0.8;
+      }
+      .structure_box_subtitle {
+        @include text($text-white, 14.4px);
+        @include montserrat-medium;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+      }
+      .structure_box_btn {
+        @include flex(row, null, null, null);
+        margin-top: 3%;
+        padding: 10px 0;
+        .structure_box_btn_box {
+          background-color: white;
+          padding: 15px 39px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 10px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+
+            @include transition(all, 0.5s);
+          }
+          &:hover a {
+            @include text($text-light, 14.4px);
+            @include transition(all, 0.5s);
+          }
+          a {
+            @include text($primary, 14.4px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($text-light, 14.4px);
+              @include transition(all, 0.5s);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1229px) {
+  .structure {
+    .structure_container {
+      .structure_box {
+        width: 45%;
+        padding: 2% 3%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .structure {
+    .structure_container {
+      top: 16%;
+      right: 5%;
+      .structure_box {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .structure {
+    .structure_container {
+      top: 5%;
+      right: 5%;
+      .structure_box {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 481px) {
+  .structure {
+    .structure_container {
+      top: 70%;
+      .structure_box {
+        width: 90%;
+        .structure_box_title {
+          @include text($text-white, 28px);
+        }
+        .structure_box_subtitle {
+          margin: 10px 0 10px 0;
+        }
+        .structure_box_btn {
+          margin-top: 1%;
+          padding: 10px 0;
+          .structure_box_btn_box {
+            padding: 15px 15px;
+          }
+        }
+      }
+    }
+  }
+}
