@@ -1,0 +1,86 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.tomato_01 {
+  .tomato_01_container {
+    margin: auto;
+    width: 100%;
+    .tomato_01_box {
+      @include flex(row, space-between, null, null);
+      .tomato_01_box_left {
+        flex: 55%;
+        max-width: 55%;
+
+        .tomato_01_box_left_img {
+          width: 100%;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .tomato_01_box_right {
+        flex: 45%;
+        max-width: 45%;
+        padding: 10% 9% 0 0;
+
+        .tomato_01_box_right_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .tomato_01_box_right_content {
+          @include text($text-bold, 14.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .tomato_01_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .tomato_01 {
+    .tomato_01_container {
+      .tomato_01_box {
+        @include flex(column, center, null, null);
+        .tomato_01_box_left {
+          flex: 100%;
+          max-width: 100%;
+          .tomato_01_box_left_img {
+            img {
+              max-width: 90%;
+            }
+          }
+        }
+        .tomato_01_box_right {
+          flex: 100%;
+          max-width: 100%;
+          padding: 0 5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tomato_01 {
+    .tomato_01_container {
+      .tomato_01_box {
+        .tomato_01_box_right {
+          .tomato_01_box_right_title {
+            @include text($text-bold, 28px);
+          }
+        }
+      }
+    }
+  }
+}

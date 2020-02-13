@@ -1,0 +1,179 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.preparation {
+  .preparation_container {
+    margin: auto;
+    width: 75%;
+    padding: 8% 0;
+    .preparation_box {
+      @include flex(row, space-between, null, null);
+      .preparation_box_left {
+        flex: 45%;
+        max-width: 45%;
+        position: relative;
+
+        .preparation_box_left_frame {
+          position: absolute;
+          top: 5%;
+          left: 8%;
+          width: 95%;
+          height: 90%;
+          border: 9.6px solid $primary;
+        }
+        .preparation_box_left_img {
+          width: 95%;
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .preparation_box_right {
+        flex: 48%;
+        max-width: 48%;
+        text-align: justify;
+        .preparation_box_right_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+
+        .preparation_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
+        .preparation_box_right_subtitle {
+          @include text($text-bold, 14.4px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+        }
+        .preparation_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
+
+        .preparation_box_right_table {
+          table {
+            width: 100%;
+            tr:nth-child(even) {
+              background-color: $bg-primary-light;
+            }
+            tr:nth-child(odd) {
+              background-color: $bg-light-weight;
+            }
+            td {
+              text-align: left;
+              padding: 12px 8px;
+            }
+            td:nth-child(even) {
+              @include text($text-bold, 14.4px);
+              @include montserrat-medium;
+            }
+            td:nth-child(odd) {
+              @include text($text-bold, 12px);
+              @include montserrat-bold;
+            }
+          }
+        }
+        .preparation_box_right_btn {
+          @include flex(row, null, null, null);
+          margin-top: 3%;
+          .preparation_box_right_btn_box {
+            background-color: $primary;
+            padding: 15px 39px;
+            @include border-radius(7px);
+            @include transition(all, 0.5s);
+            &:hover {
+              box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+                0 10px 20px 0 rgba(90, 122, 190, 0.2);
+              background-color: white;
+              @include transition(all, 0.5s);
+            }
+            &:hover a {
+              @include text($primary, 14.4px);
+              @include transition(all, 0.5s);
+            }
+            a {
+              @include text($text-white, 14.4px);
+              @include montserrat-medium;
+              text-transform: uppercase;
+              @include transition(all, 0.5s);
+              &:hover {
+                @include text($primary, 14.4px);
+                @include transition(all, 0.5s);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .preparation {
+    .preparation_container {
+      .preparation_box {
+        @include flex(row, space-between, null, null);
+        .preparation_box_left {
+          .preparation_box_left_frame {
+            width: 95%;
+            height: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 993px) {
+  .preparation {
+    .preparation_container {
+      .preparation_box {
+        @include flex(column, center, null, null);
+        .preparation_box_left {
+          flex: 100%;
+          max-width: 100%;
+          .preparation_box_left_img {
+            width: 100%;
+            position: static;
+          }
+          .preparation_box_left_frame {
+            height: 97%;
+            left: 12%;
+          }
+        }
+        .preparation_box_right {
+          flex: 100%;
+          max-width: 100%;
+          margin-top: 5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .preparation {
+    .preparation_container {
+      .preparation_box {
+        .preparation_box_left {
+          .preparation_box_left_frame {
+            border: 6px solid $primary;
+          }
+        }
+        .preparation_box_right {
+          .preparation_box_right_title {
+            @include text($text-bold, 28px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,21 +1,24 @@
 // Text, icon, ... color
 $primary: #8ad400;
 $primary-sub: #8ec42a;
+$primary-sub-text: #8dd507;
 $text-super-light: #bac2cb;
 $text-light: #6b7787;
 $text-normal: #485566;
 $text-bold: #1e2731;
 $text-gray: #b1b8c2;
 $text-white: #ffffff;
+$text-news: #546474;
 
 // Background Color
 $bg-black: #1e2731;
 $bg-light: #f6f6f6;
+$bg-light-weight: #f7faf3;
 $bg-primary-light: #e5ebd8;
 $bg-primary-super-light: #f7faf3;
 
 $border: #979797;
-
+$border2: #c9c9c9;
 @mixin montserrat {
   font-family: "Montserrat", sans-serif;
 }

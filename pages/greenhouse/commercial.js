@@ -1,27 +1,29 @@
 import React from "react";
-import CommercialIntro from "../../components/commercial/commercial-intro";
-import Header from "../../components/home/header";
+import { intro } from "../../data/intro";
+import { touch } from "../../data/touch";
+import Header from "../../components/sharing-components/header";
+import Intro from "../../components/sharing-components/intro";
 import CoveringMaterial from "../../components/commercial/covering";
 import Structure from "../../components/commercial/structure";
-import Footer from "../../components/home/footer";
 import IrrigationSystem from "../../components/commercial/irrigation";
 import MonitoringSystem from "../../components/commercial/monitoring";
 import Cultivation from "../../components/commercial/cultivation";
-import GetInTouch from "../../components/commercial/get-in-touch";
-import Copyright from "../../components/home/copyright";
-import RegisterButton from "../../components/home/register";
+import GetInTouch from "../../components/sharing-components/get-in-touch";
+import Footer from "../../components/sharing-components/footer";
+import Copyright from "../../components/sharing-components/copyright";
+import RegisterButton from "../../components/sharing-components/register";
 
 const Commercial = () => {
   return (
     <React.Fragment>
       <Header />
-      <CommercialIntro />
+      <Intro props={intro.greenhouse.commercial} />
       <CoveringMaterial />
       <Structure />
       <IrrigationSystem />
       <MonitoringSystem />
       <Cultivation />
-      <GetInTouch />
+      <GetInTouch props={touch.greenhouse.commercial} />
       <Footer />
       <Copyright />
       <RegisterButton />

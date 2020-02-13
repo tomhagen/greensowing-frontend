@@ -1,0 +1,126 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.growing {
+  background-image: url("/static/images/crop_bg_03.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 768px;
+  position: relative;
+  .growing_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 16%;
+    right: 12%;
+    .growing_box {
+      width: 30%;
+
+      padding: 2% 0;
+      .growing_box_title {
+        @include text($text-bold, 38.4px);
+        @include montserrat-bold;
+        padding: 20px 0;
+      }
+
+      .growing_box_subcontent {
+        @include text($text-normal, 14.4px);
+        @include montserrat;
+        line-height: 150%;
+        opacity: 0.8;
+        text-align: justify;
+      }
+      .growing_box_subtitle {
+        @include text($text-bold, 14.4px);
+        @include montserrat-medium;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+      }
+      .growing_box_btn {
+        @include flex(row, null, null, null);
+        margin-top: 3%;
+        padding: 10px 0;
+        .growing_box_btn_box {
+          background-color: $primary;
+          padding: 15px 39px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include transition(all, 0.5s);
+          }
+          &:hover a {
+            @include text($primary, 14.4px);
+            @include transition(all, 0.5s);
+          }
+          a {
+            @include text($text-white, 14.4px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 14.4px);
+              @include transition(all, 0.5s);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .growing {
+    .growing_container {
+      top: 16%;
+      right: 5%;
+      .growing_box {
+        width: 50%;
+        .growing_box_subcontent {
+          @include text($text-bold, 14.4px);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .growing {
+    .growing_container {
+      top: 5%;
+      right: 5%;
+      .growing_box {
+        width: 80%;
+        background-color: white;
+        opacity: 0.8;
+        padding: 2% 2%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .growing {
+    .growing_container {
+      .growing_box {
+        .growing_box_title {
+          @include text($text-bold, 28px);
+        }
+        .growing_box_subtitle {
+          margin: 10px 0 10px 0;
+        }
+        .growing_box_btn {
+          margin-top: 1%;
+          padding: 10px 0;
+          .growing_box_btn_box {
+            padding: 15px 15px;
+          }
+        }
+      }
+    }
+  }
+}

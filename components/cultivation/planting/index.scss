@@ -1,0 +1,94 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.planting {
+  background-image: url("/static/images/crop_bg_04.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 768px;
+  position: relative;
+  .planting_container {
+    width: 100%;
+    @include flex(row, center, null, null);
+    position: absolute;
+    top: 25%;
+    left: -17%;
+    .planting_box {
+      width: 42%;
+      background-color: $primary-sub;
+      padding: 3% 5%;
+
+      .planting_box_title {
+        @include text($text-white, 38.4px);
+        @include montserrat-bold;
+        padding: 0 0 20px 0;
+        line-height: 115%;
+      }
+      .planting_box_subtitle {
+        @include text($text-white, 14.4px);
+        @include montserrat-medium;
+        text-transform: uppercase;
+        margin: 20px 0 10px 0;
+      }
+      .planting_box_subcontent {
+        @include text($text-white, 14.4px);
+        @include montserrat;
+        line-height: 150%;
+        opacity: 0.8;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .planting {
+    .planting_container {
+      top: 30%;
+      right: 3%;
+      .planting_box {
+        width: 50%;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .planting {
+    .planting_container {
+      top: 50%;
+      .planting_box {
+        width: 75%;
+        padding: 2% 7%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .planting {
+    margin-bottom: 100px;
+    .planting_container {
+      top: 50%;
+      left: 0;
+      opacity: 0.8;
+
+      .planting_box {
+        width: 90%;
+        padding: 2% 5%;
+        .planting_box_title {
+          @include text($text-bold, 28px);
+        }
+        .planting_box_subtitle {
+          @include text($text-bold, 14.4px);
+        }
+        .planting_box_subcontent {
+          text-align: left;
+          @include text($text-normal, 14.4px);
+        }
+      }
+    }
+  }
+}

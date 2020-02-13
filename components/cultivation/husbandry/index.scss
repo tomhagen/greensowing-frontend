@@ -1,0 +1,168 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.husbandry {
+  margin: 5% 0;
+
+  .husbandry_container {
+    width: 66.67%;
+    margin: auto;
+    text-align: justify;
+    .husbandry_title {
+      @include text($text-bold, 38.4px);
+      @include montserrat-bold;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .husbandry_subtitle {
+      @include text($text-bold, 14.4px);
+      @include montserrat-bold;
+      text-transform: uppercase;
+      margin: 20px 0 10px 0;
+    }
+
+    .husbandry_table {
+      table {
+        width: 100%;
+
+        tr:nth-child(even) {
+          background-color: $bg-light-weight;
+        }
+        tr:nth-child(1),
+        tr:nth-child(2) {
+          background-color: $bg-primary-light;
+          @include text($text-bold, 14.4px);
+          @include montserrat;
+          text-transform: uppercase;
+        }
+        td,
+        th {
+          text-align: center;
+          padding: 15px 8px;
+        }
+
+        tr:nth-child(even) {
+          @include text($text-bold, 14.4px);
+          @include montserrat;
+        }
+        tr:nth-child(odd) {
+          @include text($text-bold, 14.4px);
+          @include montserrat;
+        }
+      }
+    }
+    .husbandry_subcontent {
+      @include text($text-light, 14.4px);
+      @include montserrat;
+      line-height: 150%;
+    }
+    .husbandry_btn {
+      @include flex(row, center, null, null);
+      margin-top: 3%;
+      .husbandry_btn_box {
+        background-color: $primary;
+        padding: 15px 39px;
+        @include border-radius(7px);
+        @include transition(all, 0.5s);
+        &:hover {
+          box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+            0 10px 20px 0 rgba(90, 122, 190, 0.2);
+          background-color: white;
+          @include transition(all, 0.5s);
+        }
+        &:hover a {
+          @include text($primary, 14.4px);
+          @include transition(all, 0.5s);
+        }
+        a {
+          @include text($text-white, 14.4px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          @include transition(all, 0.5s);
+          &:hover {
+            @include text($primary, 14.4px);
+            @include transition(all, 0.5s);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .husbandry {
+    .husbandry_container {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .husbandry {
+    .husbandry_container {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .husbandry {
+    .husbandry_container {
+      width: 90%;
+      .husbandry_table {
+        table {
+          tr:nth-child(1),
+          tr:nth-child(2) {
+            @include text($text-bold, 12px);
+          }
+          td,
+          th {
+            text-align: center;
+            padding: 8px 8px;
+          }
+
+          tr:nth-child(even) {
+            @include text($text-bold, 13px);
+          }
+          tr:nth-child(odd) {
+            @include text($text-bold, 13px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .husbandry {
+    .husbandry_container {
+      width: 90%;
+      .husbandry_table {
+        .husbandry_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+          text-align: center;
+        }
+        table {
+          tr:nth-child(1),
+          tr:nth-child(2) {
+            @include text($text-bold, 12px);
+          }
+          td,
+          th {
+            text-align: center;
+            padding: 8px 8px;
+          }
+
+          tr:nth-child(even) {
+            @include text($text-bold, 13px);
+          }
+          tr:nth-child(odd) {
+            @include text($text-bold, 13px);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+@media screen and (max-width: 1536px) {
+  .functions {
+    margin-bottom: 2%;
+    .functions_container {
+      width: 75%;
+      margin: auto;
+      padding: 5% 0 10% 0;
+      .functions_box {
+        @include flex(row, space-between, null, null);
+        .functions_box_left {
+          flex: 53%;
+          max-width: 53%;
+          position: relative;
+          .functions_box_left_image_top {
+            width: 68%;
+            height: auto;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            z-index: 11;
+          }
+          .functions_box_left_image_bottom {
+            width: 68%;
+            height: auto;
+            position: absolute;
+            top: 24%;
+            left: 19%;
+            z-index: 9;
+          }
+          .functions_box_left_image_frame {
+            width: 68%;
+            height: 540px;
+            top: 10%;
+            left: 10%;
+            border: 9.6px solid #8ad400;
+            margin: auto;
+            position: absolute;
+            z-index: 10;
+          }
+        }
+        .functions_box_right {
+          flex: 46%;
+          max-width: 46%;
+          position: relative;
+          z-index: 10;
+          padding-top: 10%;
+
+          .functions_box_right_title {
+            @include text($text-bold, 38.4px);
+            @include montserrat-bold;
+          }
+
+          .functions_box_right_content {
+            @include text($text-bold, 14.4px);
+            @include montserrat-bold;
+            padding: 5% 0 20px 0;
+            line-height: 150%;
+            text-align: justify;
+          }
+          .functions_box_right_subcontent {
+            @include text($text-light, 14.4px);
+            @include montserrat;
+            line-height: 150%;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .functions {
+    .functions_container {
+      .functions_box {
+        @include flex(column, null, null, null);
+        .functions_box_left {
+          flex: 100%;
+          max-width: 100%;
+
+          .functions_box_left_image_top {
+            width: 50%;
+          }
+          .functions_box_left_image_bottom {
+            width: 50%;
+            margin-top: 10%;
+          }
+          .functions_box_left_image_frame {
+            width: 50%;
+            height: 400px;
+          }
+        }
+        .functions_box_right {
+          flex: 100%;
+          max-width: 100%;
+          margin-top: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .functions {
+    .functions_container {
+      .functions_box {
+        .functions_box_left {
+          .functions_box_left_image_top {
+            width: 70%;
+          }
+          .functions_box_left_image_bottom {
+            width: 70%;
+          }
+          .functions_box_left_image_frame {
+            width: 90%;
+            height: 400px;
+          }
+        }
+        .functions_box_right {
+          margin-top: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .functions {
+    .functions_container {
+      .functions_box {
+        .functions_box_left {
+          .functions_box_left_image_top {
+            width: 80%;
+          }
+          .functions_box_left_image_bottom {
+            width: 80%;
+          }
+          .functions_box_left_image_frame {
+            border: 6px solid #8ad400;
+            width: 80%;
+          }
+        }
+        .functions_box_right {
+          margin-top: 100%;
+          .functions_box_right_title {
+            @include text($text-bold, 28px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .functions {
+    .functions_container {
+      .functions_box {
+        .functions_box_left {
+          .functions_box_left_image_frame {
+            height: 200px;
+          }
+        }
+        .functions_box_right {
+        }
+      }
+    }
+  }
+}

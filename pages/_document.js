@@ -31,8 +31,9 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
             rel="stylesheet"
-          ></link>
+          />
 
+          {/* ---- Slick Carousel -------- */}
           <link
             rel="stylesheet"
             type="text/css"
@@ -43,6 +44,11 @@ class MyDocument extends Document {
             rel="stylesheet"
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
+          {/* ---- Wow js -------- */}
+          <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
           />
         </Head>
 

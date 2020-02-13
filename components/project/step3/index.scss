@@ -1,0 +1,127 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.step3 {
+  .step3_container {
+    margin: auto;
+    width: 75%;
+    padding: 8% 0;
+    .step3_box {
+      @include flex(row-reverse, space-between, null, null);
+      .step3_box_left {
+        flex: 50%;
+        max-width: 50%;
+        position: relative;
+
+        .step3_box_left_frame {
+          position: absolute;
+          top: 81px;
+          right: 85px;
+          width: 92%;
+          height: 336px;
+          border: 6px solid #8ad400;
+        }
+        .step3_box_left_img {
+          width: 100%;
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          img {
+            max-width: 90%;
+          }
+        }
+      }
+      .step3_box_right {
+        flex: 42%;
+        max-width: 42%;
+        padding: 2% 0;
+
+        .step3_box_right_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .step3_box_right_content {
+          @include text($text-bold, 14.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .step3_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .step3 {
+    .step3_container {
+      width: 85%;
+      .step3_box {
+        @include flex(row-reverse, space-between, null, null);
+        .step3_box_left {
+          .step3_box_left_frame {
+            height: 245px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 993px) {
+  .step3 {
+    margin-top: 10%;
+    .step3_container {
+      .step3_box {
+        @include flex(column, center, null, null);
+        .step3_box_left {
+          flex: 100%;
+          max-width: 100%;
+          .step3_box_left_img {
+            width: 100%;
+            position: static;
+          }
+          .step3_box_left_frame {
+            height: 97%;
+            left: 12%;
+          }
+        }
+        .step3_box_right {
+          flex: 100%;
+          max-width: 100%;
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .step3 {
+    .step3_container {
+      .step3_box {
+        .step3_box_left {
+          .step3_box_left_frame {
+            border: 6px solid $primary;
+            height: 90%;
+            left: 5%;
+            top: 50px;
+          }
+        }
+        .step3_box_right {
+          .step3_box_right_title {
+            @include text($text-bold, 28px);
+          }
+        }
+      }
+    }
+  }
+}

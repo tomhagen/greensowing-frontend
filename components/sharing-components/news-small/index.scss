@@ -1,0 +1,42 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.small_news {
+  border-bottom: 0.5px solid rgba($color: $border, $alpha: 0.4);
+  margin-top: 20px;
+  .small_news_date {
+    @include text($text-super-light, 11.2px);
+    @include montserrat;
+    text-transform: uppercase;
+    @include flex(row, flex-start, null, null);
+    span {
+      margin-left: 10px;
+    }
+  }
+  .small_news_title {
+    margin: 8px 0 15px 0;
+    a {
+      @include text($text-bold, 12.8px);
+      @include montserrat-semibold;
+      @include transition(all, 0.3s);
+      &:hover {
+        @include text($primary, 12.8px);
+        @include transition(all, 0.3s);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .small_news {
+    .small_news_title {
+      a {
+        @include text($text-bold, 15px);
+
+        &:hover {
+          @include text($primary, 15px);
+        }
+      }
+    }
+  }
+}

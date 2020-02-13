@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./index.scss";
 import Slider from "react-slick";
+import ReactWOW from "react-wow";
 
 const HomeCarousel = () => {
   const settings = {
@@ -19,17 +20,22 @@ const HomeCarousel = () => {
             <div className="slick-list-item">
               <div className="slick-list-item-container">
                 <div className="slick-list-item-container-center">
-                  <div className="slick-list-item-title">
-                    MRS Agriculture Solutions
-                  </div>
-                  <div className="slick-list-item-subtitle-container">
-                    <div className="slick-list-item-subtitle">
-                      Many commercial glass greenhouses or hothouses are high
-                      tech production facilities for vegetables or flowers. The
-                      glass greenhouses are filled with equipment including
-                      screening installations, heating, cooling, lighting
+                  <ReactWOW animation="fadeInUp" duration="1s">
+                    <div className="slick-list-item-title">
+                      MRS Agriculture Solutions
                     </div>
-                  </div>
+                  </ReactWOW>
+                  <ReactWOW animation="fadeInUp" duration="1s" delay="1s">
+                    <div className="slick-list-item-subtitle-container">
+                      <div className="slick-list-item-subtitle">
+                        Many commercial glass greenhouses or hothouses are high
+                        tech production facilities for vegetables or flowers.
+                        The glass greenhouses are filled with equipment
+                        including screening installations, heating, cooling,
+                        lighting
+                      </div>
+                    </div>
+                  </ReactWOW>
                 </div>
               </div>
               <img src="/static/images/home_bg_01.jpg" alt="" />
@@ -39,17 +45,23 @@ const HomeCarousel = () => {
             <div className="slick-list-item">
               <div className="slick-list-item-container">
                 <div className="slick-list-item-container-center">
-                  <div className="slick-list-item-title">
-                    MRS Agriculture Solutions
-                  </div>
-                  <div className="slick-list-item-subtitle-container">
-                    <div className="slick-list-item-subtitle">
-                      Many commercial glass greenhouses or hothouses are high
-                      tech production facilities for vegetables or flowers. The
-                      glass greenhouses are filled with equipment including
-                      screening installations, heating, cooling, lighting
+                  <ReactWOW animation="fadeInUp" duration="1.5s" delay="4s">
+                    <div className="slick-list-item-title">
+                      MRS Agriculture Solutions
                     </div>
-                  </div>
+                  </ReactWOW>
+
+                  <ReactWOW animation="fadeInUp" duration="1.5s" delay="5s">
+                    <div className="slick-list-item-subtitle-container">
+                      <div className="slick-list-item-subtitle">
+                        Many commercial glass greenhouses or hothouses are high
+                        tech production facilities for vegetables or flowers.
+                        The glass greenhouses are filled with equipment
+                        including screening installations, heating, cooling,
+                        lighting
+                      </div>
+                    </div>
+                  </ReactWOW>
                 </div>
               </div>
               <img src="/static/images/project_bg_05.png" alt="" />

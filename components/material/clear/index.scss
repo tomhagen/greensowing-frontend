@@ -1,0 +1,82 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.clear {
+  .clear_container {
+    margin: auto;
+    width: 100%;
+    padding: 8% 0;
+    .clear_box {
+      @include flex(row, space-between, null, null);
+      .clear_box_left {
+        flex: 50%;
+        max-width: 50%;
+        .clear_box_left_img {
+          width: 100%;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .clear_box_right {
+        flex: 45%;
+        max-width: 45%;
+        padding: 2% 10% 2% 0;
+        text-align: justify;
+        .clear_box_right_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .clear_box_right_content {
+          @include text($text-bold, 14.4px);
+          @include montserrat-bold;
+
+          line-height: 150%;
+        }
+        .clear_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 993px) {
+  .clear {
+    .clear_container {
+      .clear_box {
+        @include flex(column, center, null, null);
+        .clear_box_left {
+          flex: 100%;
+          max-width: 100%;
+        }
+        .clear_box_right {
+          flex: 100%;
+          max-width: 100%;
+          padding: 0 5%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .clear {
+    .clear_container {
+      .clear_box {
+        .clear_box_left {
+        }
+        .clear_box_right {
+          .clear_box_right_title {
+            @include text($text-bold, 28px);
+          }
+        }
+      }
+    }
+  }
+}
