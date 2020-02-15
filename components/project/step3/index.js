@@ -17,17 +17,17 @@ const Step3 = () => {
               <div className="step3_box_left_frame"></div>
             </div>
             <div className="step3_box_right">
-              <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
+              <ReactWOW animation="fadeInUp" duration="1.5s">
                 <div className="step3_box_right_title">
                   Step 3: Contract signing
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeInUp" duration="1.5s" delay="1s">
+              <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="step3_box_right_content">
                   Contract will be signed by two sides to process the project
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="step3_box_right_subcontent">
                   All the Lorem Ipsum generators on the Internet tend to repeat
                   predefined chunks as necessary, making this the first true

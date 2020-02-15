@@ -21,7 +21,7 @@ const IrrigationSystem = () => {
             </ReactWOW>
           </div>
           <div className="irrigation_bottom">
-            <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
+            <ReactWOW animation="fadeIn" duration="1.5s">
               <div className="irrigation_bottom_item item_one">
                 <div className="irrigation_bottom_item_container">
                   <div className="irrigation_bottom_item_box">
@@ -37,9 +37,10 @@ const IrrigationSystem = () => {
                     </div>
                   </div>
                 </div>
+                <div className="overlay"></div>
               </div>
             </ReactWOW>
-            <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
+            <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
               <div className="irrigation_bottom_item item_two">
                 <div className="irrigation_bottom_item_container">
                   <div className="irrigation_bottom_item_box">
@@ -57,7 +58,7 @@ const IrrigationSystem = () => {
                 </div>
               </div>
             </ReactWOW>
-            <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
+            <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
               <div className="irrigation_bottom_item item_three">
                 <div className="irrigation_bottom_item_container">
                   <div className="irrigation_bottom_item_box">
@@ -75,7 +76,7 @@ const IrrigationSystem = () => {
                 </div>
               </div>
             </ReactWOW>
-            <ReactWOW animation="fadeIn" duration="1.5s" delay="2s">
+            <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
               <div className="irrigation_bottom_item item_four">
                 <div className="irrigation_bottom_item_container">
                   <div className="irrigation_bottom_item_box">
@@ -93,7 +94,7 @@ const IrrigationSystem = () => {
                 </div>
               </div>
             </ReactWOW>
-            <ReactWOW animation="fadeIn" duration="1.5s" delay="2.5s">
+            <ReactWOW animation="fadeIn" duration="1.5s" delay="2s">
               <div className="irrigation_bottom_item item_five">
                 <div className="irrigation_bottom_item_container">
                   <div className="irrigation_bottom_item_box">

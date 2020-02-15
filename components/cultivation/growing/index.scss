@@ -2,7 +2,7 @@
 @import "../../../public/static/scss/style.scss";
 
 .growing {
-  background-image: url("/static/images/crop_bg_03.png");
+  background-image: url("/static/images/crop_bg_03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -105,13 +105,19 @@
 
 @media screen and (max-width: 500px) {
   .growing {
+    height: 900px;
     .growing_container {
       .growing_box {
         .growing_box_title {
-          @include text($text-bold, 28px);
+          @include text($text-bold, 26px);
         }
         .growing_box_subtitle {
           margin: 10px 0 10px 0;
+          @include text($text-bold, 16px);
+        }
+        .growing_box_subcontent {
+          @include text($text-normal, 16px);
+          text-align: left;
         }
         .growing_box_btn {
           margin-top: 1%;

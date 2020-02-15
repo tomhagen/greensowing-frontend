@@ -116,7 +116,7 @@
               @include text($text-bold, 20px);
             }
             .news-detail_box_left_content_description {
-              @include text($text-news, 15px);
+              @include text($text-news, 16px);
               text-align: left;
             }
           }

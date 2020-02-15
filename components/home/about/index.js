@@ -9,14 +9,14 @@ const About = () => {
         <div className="about_container">
           <div className="about_box">
             <div className="about_box_left">
-              <ReactWOW animation="slideInLeft" duration="2s">
+              <ReactWOW animation="slideInLeft" duration="1.5s">
                 <img
                   className="about_box_left_image_top"
                   src="/static/images/home_page2_01.png"
                 />
               </ReactWOW>
 
-              <ReactWOW animation="fadeIn" duration="2s">
+              <ReactWOW animation="fadeIn" duration="1.5s">
                 <img
                   className="about_box_left_image_bottom"
                   src="/static/images/home_page2_02.png"
@@ -38,13 +38,13 @@ const About = () => {
               </ReactWOW>
 
               <div className="about_box_right_text_behind">green house</div>
-              <ReactWOW animation="fadeInUp" duration="2s">
+              <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="about_box_right_content">
                   Smells racy free announcing than durable zesty smart exotic
                   far feel. Screamin' affordable secret way absolutely.
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeInUp" duration="2.5">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="about_box_right_sub_content">
                   Stimulates vast a real proven works discount secure care.
                   Market invigorate a awesome handcrafted bigger comes newer

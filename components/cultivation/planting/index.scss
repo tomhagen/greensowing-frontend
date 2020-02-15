@@ -2,7 +2,7 @@
 @import "../../../public/static/scss/style.scss";
 
 .planting {
-  background-image: url("/static/images/crop_bg_04.png");
+  background-image: url("/static/images/crop_bg_04.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,14 +79,14 @@
         width: 90%;
         padding: 2% 5%;
         .planting_box_title {
-          @include text($text-bold, 28px);
+          @include text($text-bold, 26px);
         }
         .planting_box_subtitle {
-          @include text($text-bold, 14.4px);
+          @include text($text-bold, 16px);
         }
         .planting_box_subcontent {
           text-align: left;
-          @include text($text-normal, 14.4px);
+          @include text($text-normal, 16px);
         }
       }
     }

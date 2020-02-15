@@ -31,27 +31,36 @@
         max-width: 20%;
         position: relative;
 
+        &:hover .irrigation_bottom_item_container {
+          height: 45%;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 20.77%,
+            #242424 100%
+          );
+          opacity: 0.9;
+          @include transition(all, 1s);
+        }
+        &:hover
+          .irrigation_bottom_item_container
+          .irrigation_bottom_item_box
+          .irrigation_bottom_item_icon {
+          @include rotate(360deg);
+          @include transition(all, 1s);
+        }
         .irrigation_bottom_item_container {
           height: 40%;
           position: absolute;
           bottom: 0;
           left: 0;
+          z-index: 10;
           background: linear-gradient(
             180deg,
             rgba(31, 43, 32, 0.0001) 20.77%,
             #1f2b20 100%
           );
           @include transition(all, 1s);
-          &:hover {
-            height: 45%;
-            background: linear-gradient(
-              180deg,
-              rgba(255, 255, 255, 0) 20.77%,
-              #242424 100%
-            );
-            opacity: 0.9;
-            @include transition(all, 1s);
-          }
+
           .irrigation_bottom_item_box {
             width: 76%;
             margin: auto;
@@ -127,12 +136,15 @@
 
 @media screen and (max-width: 481px) {
   .irrigation {
-    margin-top: 80%;
+    margin-top: 90%;
     .irrigation_container {
       .irrigation_top {
-        width: 75%;
+        width: 85%;
         .irrigation_top_title {
-          @include text($text-bold, 28px);
+          @include text($text-bold, 26px);
+        }
+        .irrigation_top_subcontent {
+          @include text($text-light, 16px);
         }
       }
       .irrigation_bottom {
@@ -141,15 +153,19 @@
           max-width: 100%;
           .irrigation_bottom_item_container {
             .irrigation_bottom_item_box {
-              width: 80%;
+              width: 90%;
+              background-color: #090909;
+              opacity: 0.5;
+              @include border-radius(20px);
+              padding: 10px;
               .irrigation_bottom_item_icon {
                 width: 30px;
               }
               .irrigation_bottom_item_title {
-                @include text($text-white, 22px);
+                @include text($text-white, 26px);
               }
               .irrigation_bottom_item_subcontent {
-                @include text($text-white, 15px);
+                @include text($text-white, 16px);
               }
             }
           }
@@ -161,6 +177,6 @@
 
 @media screen and (max-width: 320px) {
   .irrigation {
-    margin-top: 110%;
+    margin-top: 130%;
   }
 }

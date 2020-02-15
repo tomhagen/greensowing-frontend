@@ -11,7 +11,7 @@ const Preparation = () => {
           <div className="preparation_box">
             <div className="preparation_box_left">
               <div className="preparation_box_left_img">
-                <ReactWOW animation="fadeInDown" duration="1.5s">
+                <ReactWOW animation="fadeIn" duration="1.5s">
                   <img src="/static/images/crop_bg_02.png" alt="" />
                 </ReactWOW>
               </div>

@@ -25,7 +25,7 @@ const HomeCarousel = () => {
                       MRS Agriculture Solutions
                     </div>
                   </ReactWOW>
-                  <ReactWOW animation="fadeInUp" duration="1s" delay="1s">
+                  <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-subtitle-container">
                       <div className="slick-list-item-subtitle">
                         Many commercial glass greenhouses or hothouses are high
@@ -45,13 +45,13 @@ const HomeCarousel = () => {
             <div className="slick-list-item">
               <div className="slick-list-item-container">
                 <div className="slick-list-item-container-center">
-                  <ReactWOW animation="fadeInUp" duration="1.5s" delay="4s">
+                  <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-title">
                       MRS Agriculture Solutions
                     </div>
                   </ReactWOW>
 
-                  <ReactWOW animation="fadeInUp" duration="1.5s" delay="5s">
+                  <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-subtitle-container">
                       <div className="slick-list-item-subtitle">
                         Many commercial glass greenhouses or hothouses are high
@@ -64,7 +64,7 @@ const HomeCarousel = () => {
                   </ReactWOW>
                 </div>
               </div>
-              <img src="/static/images/project_bg_05.png" alt="" />
+              <img src="/static/images/project_bg_05.jpg" alt="" />
               <div className="overlay"></div>
               <div className="overlay2"></div>
             </div>
@@ -84,7 +84,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
               </div>
-              <img src="/static/images/tourist_bg_01.png" alt="" />
+              <img src="/static/images/tourist_bg_01.jpg" alt="" />
               <div className="overlay"></div>
               <div className="overlay2"></div>
             </div>
@@ -104,7 +104,7 @@ const HomeCarousel = () => {
                   </div>
                 </div>
               </div>
-              <img src="/static/images/tourist_bg_02.png" alt="" />
+              <img src="/static/images/tourist_bg_02.jpg" alt="" />
               <div className="overlay"></div>
               <div className="overlay2"></div>
             </div>

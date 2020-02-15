@@ -15,9 +15,15 @@
   &:hover .large_news_content .large_news_content_title a {
     @include text($primary, 16px);
   }
+  &:hover .large_news_img img {
+    @include scale(1.1);
+    @include transition(all, 0.5s);
+  }
   .large_news_img {
+    overflow: hidden;
     img {
       max-width: 100%;
+      @include transition(all, 0.5s);
     }
   }
   .large_news_content {
@@ -59,7 +65,7 @@
   .large_news {
     .large_news_content {
       .large_news_content_description {
-        @include text($text-light, 14px);
+        @include text($text-light, 16px);
       }
     }
   }

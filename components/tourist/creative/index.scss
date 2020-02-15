@@ -2,7 +2,7 @@
 @import "../../../public/static/scss/style.scss";
 
 .creative {
-  background-image: url("/static/images/tourist_bg_02.png");
+  background-image: url("/static/images/tourist_bg_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,22 +78,35 @@
 
 @media screen and (max-width: 481px) {
   .creative {
+    height: 900px;
     .creative_container {
-      top: 50%;
+      top: 60%;
+      left: 0;
       .creative_box {
         width: 80%;
         right: 10%;
+        height: 130%;
 
         .creative_box_title {
-          @include text($text-white, 28px);
+          @include text($text-white, 26px);
         }
         .creative_box_content {
+          @include text($text-white, 16px);
           text-align: left;
         }
         .creative_box_subcontent {
+          @include text($text-white, 16px);
           text-align: left;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .creative {
+    .creative_container {
+      top: 50%;
     }
   }
 }

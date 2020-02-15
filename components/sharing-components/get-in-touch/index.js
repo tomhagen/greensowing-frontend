@@ -17,7 +17,7 @@ const GetInTouch = ({ props }) => {
           <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
             <div className="touch_content">{props.content}</div>
           </ReactWOW>
-          <ReactWOW animation="fadeInUp" duration="1.5s" delay="1s">
+          <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
             <div className="touch_btn">
               <div className="touch_btn_box">
                 <Link href="#">

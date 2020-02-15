@@ -79,12 +79,14 @@
         width: 100%;
         padding: 2% 5%;
         .tomato_03_box_title {
-          @include text($text-white, 28px);
+          @include text($text-white, 26px);
         }
         .tomato_03_box_content {
+          @include text($text-white, 16px);
           text-align: left;
         }
         .tomato_03_box_subcontent {
+          @include text($text-white, 16px);
           text-align: left;
         }
       }

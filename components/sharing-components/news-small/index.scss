@@ -31,10 +31,10 @@
   .small_news {
     .small_news_title {
       a {
-        @include text($text-bold, 15px);
+        @include text($text-bold, 16px);
 
         &:hover {
-          @include text($primary, 15px);
+          @include text($primary, 16px);
         }
       }
     }

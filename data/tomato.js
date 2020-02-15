@@ -1,6 +1,6 @@
 export const tomato = {
   heirloom: {
-    img: "/static/images/variety_bg_02.png",
+    img: "/static/images/variety_bg_02.jpg",
     title: "Tomato Heirloom",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species.",
@@ -17,7 +17,7 @@ export const tomato = {
     Other varieties: Santorini,…`
   },
   salad: {
-    img: "/static/images/variety_bg_04.png",
+    img: "/static/images/variety_bg_04.jpg",
     title: "Tomato Salad",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species. ",
@@ -29,7 +29,7 @@ export const tomato = {
     <br/>Other varieties: Santorini,…`
   },
   roma: {
-    img: "/static/images/variety_bg_06.png",
+    img: "/static/images/variety_bg_06.jpg",
     title: "Tomato Roma",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species. ",

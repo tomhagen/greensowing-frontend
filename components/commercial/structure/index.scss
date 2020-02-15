@@ -2,7 +2,7 @@
 @import "../../../public/static/scss/style.scss";
 
 .structure {
-  background-image: url("/static/images/commercial_bg_02.png");
+  background-image: url("/static/images/commercial_bg_02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -123,6 +123,13 @@
         }
         .structure_box_subtitle {
           margin: 10px 0 10px 0;
+          @include text($text-white, 16px);
+        }
+        .structure_box_content {
+          @include text($text-white, 16px);
+        }
+        .structure_box_subcontent {
+          @include text($text-white, 16px);
         }
         .structure_box_btn {
           margin-top: 1%;

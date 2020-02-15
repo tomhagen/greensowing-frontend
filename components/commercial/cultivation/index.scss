@@ -1,76 +1,74 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-@media screen and (max-width: 1536px) {
-  .cultivation {
-    .cultivation_container {
-      width: 75%;
-      margin: auto;
-      padding-bottom: 7%;
-      .cultivation_box {
-        @include flex(row, space-between, center, null);
-        .cultivation_box_left {
-          flex: 53%;
-          max-width: 53%;
-          position: relative;
-          .cultivation_box_left_image_top {
-            width: 75%;
-            height: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 10;
-          }
-          .cultivation_box_left_image_bottom {
-            width: 55%;
-            height: auto;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            z-index: 9;
-            margin-bottom: -15%;
-          }
-          .cultivation_box_left_image_frame {
-            width: 52%;
-            height: 336px;
-            border: 9.6px solid $primary;
-            margin: auto;
-            margin-top: 18%;
-            margin-left: 34%;
-          }
-        }
-        .cultivation_box_right {
-          flex: 41%;
-          max-width: 41%;
-          position: relative;
+.cultivation {
+  .cultivation_container {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 7%;
+    .cultivation_box {
+      @include flex(row, space-between, center, null);
+      .cultivation_box_left {
+        flex: 53%;
+        max-width: 53%;
+        position: relative;
+        .cultivation_box_left_image_top {
+          width: 75%;
+          height: auto;
+          position: absolute;
+          top: 0;
+          left: 0;
           z-index: 10;
-          padding-top: 14%;
+        }
+        .cultivation_box_left_image_bottom {
+          width: 55%;
+          height: auto;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: 9;
+          margin-bottom: -15%;
+        }
+        .cultivation_box_left_image_frame {
+          width: 52%;
+          height: 336px;
+          border: 9.6px solid $primary;
+          margin: auto;
+          margin-top: 18%;
+          margin-left: 34%;
+        }
+      }
+      .cultivation_box_right {
+        flex: 41%;
+        max-width: 41%;
+        position: relative;
+        z-index: 10;
+        padding-top: 14%;
 
-          .cultivation_box_right_title {
-            @include text($text-bold, 38.4px);
-            @include montserrat-bold;
-          }
+        .cultivation_box_right_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+        }
 
-          .cultivation_box_right_content {
-            @include text($text-bold, 14.4px);
-            @include montserrat-bold;
-            padding: 5% 0 20px 0;
-            line-height: 150%;
-            text-align: justify;
-          }
-          .cultivation_box_right_subcontent {
-            @include text($text-light, 14.4px);
-            @include montserrat;
-            line-height: 150%;
-            text-align: justify;
-          }
-          .cultivation_box_right_subtitle {
-            @include text($text-bold, 14.4px);
-            @include montserrat-medium;
-            text-transform: uppercase;
-            margin: 20px 0 10px 0;
-            text-align: justify;
-          }
+        .cultivation_box_right_content {
+          @include text($text-bold, 14.4px);
+          @include montserrat-bold;
+          padding: 5% 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .cultivation_box_right_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .cultivation_box_right_subtitle {
+          @include text($text-bold, 14.4px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+          text-align: justify;
         }
       }
     }
@@ -112,6 +110,7 @@
 @media screen and (max-width: 500px) {
   .cultivation {
     .cultivation_container {
+      width: 85%;
       .cultivation_box {
         .cultivation_box_left {
           .cultivation_box_left_image_top {
@@ -128,8 +127,22 @@
           }
         }
         .cultivation_box_right {
+          margin-top: 20px;
           .cultivation_box_right_title {
-            @include text($text-bold, 28px);
+            @include text($text-bold, 26px);
+          }
+          .cultivation_box_right_content {
+            @include text($text-bold, 16px);
+            text-align: left;
+          }
+          .cultivation_box_right_subcontent {
+            @include text($text-light, 16px);
+            text-align: left;
+          }
+          .cultivation_box_right_subtitle {
+            @include text($text-bold, 16px);
+            text-align: left;
+            font-weight: bold;
           }
         }
       }

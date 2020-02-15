@@ -23,7 +23,7 @@ const CoveringMaterial = () => {
                   Covering materials
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.6s">
+              <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="covering_box_right_content">
                   Glass offers greater light transmission than any other of the
                   most commonly used glazings. Insulated glass offers about the
@@ -48,7 +48,7 @@ const CoveringMaterial = () => {
                   Thickness: 4mm, 5mm,… <br />- Diffusion ability
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeInUp" duration="1.5s" delay="1.2s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
                 <div className="covering_box_right_btn">
                   <div className="covering_box_right_btn_box">
                     <Link href="#">

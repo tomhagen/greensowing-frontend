@@ -10,6 +10,10 @@
       0 10px 20px 0 rgba(90, 122, 190, 0.2);
     @include transition(all, 0.5s);
   }
+  &:hover .medium_news_img img {
+    @include scale(1.1);
+    @include transition(all, 0.5s);
+  }
   .medium_news_img {
     overflow: hidden;
     @include border-radius(15px);
@@ -17,6 +21,7 @@
     width: 100%;
     img {
       max-width: 100%;
+      @include transition(all, 0.5s);
     }
   }
   .medium_news_date {
@@ -47,10 +52,10 @@
   .medium_news {
     .medium_news_title {
       a {
-        @include text($text-bold, 15px);
+        @include text($text-bold, 16px);
 
         &:hover {
-          @include text($primary, 15px);
+          @include text($primary, 16px);
         }
       }
     }

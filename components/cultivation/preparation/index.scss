@@ -162,15 +162,26 @@
 @media screen and (max-width: 500px) {
   .preparation {
     .preparation_container {
+      width: 85%;
       .preparation_box {
         .preparation_box_left {
           .preparation_box_left_frame {
-            border: 6px solid $primary;
+            border: 5px solid $primary;
+            left: 8%;
           }
         }
         .preparation_box_right {
           .preparation_box_right_title {
-            @include text($text-bold, 28px);
+            @include text($text-bold, 26px);
+          }
+          .preparation_box_right_subcontent {
+            @include text($text-light, 16px);
+          }
+          .preparation_box_right_subtitle {
+            @include text($text-bold, 16px);
+          }
+          .preparation_box_right_subcontent {
+            @include text($text-light, 16px);
           }
         }
       }

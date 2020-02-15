@@ -38,7 +38,7 @@ const Cultivation = () => {
                   flexible greenhouse option on the market today.
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeInUp" duration="1.5s" delay="1s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="cultivation_box_right_subcontent">
                   This structure is designed for rigid coverings or corrugated
                   metal coverings, and it accommodates single or double-roof

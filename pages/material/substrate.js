@@ -1,18 +1,16 @@
 import React from "react";
 import Header from "../../components/sharing-components/header";
+import Footer from "../../components/sharing-components/footer";
+import Copyright from "../../components/sharing-components/copyright";
+import SubstrateComponent from "../../components/material/substrate";
 
 const Substrate = () => {
-  let styles = {
-    backgroundImage: `url("/static/images/construction.png")`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    height: "768px"
-  };
   return (
     <React.Fragment>
       <Header />
-      <div className="substrate" style={styles}></div>
+      <SubstrateComponent />
+      <Footer />
+      <Copyright />
     </React.Fragment>
   );
 };

@@ -9,6 +9,7 @@ import Blog from "../components/home/blog";
 import Footer from "../components/sharing-components/footer";
 import Copyright from "../components/sharing-components/copyright";
 import RegisterButton from "../components/sharing-components/register";
+import { useEffect } from "react";
 
 const Home = () => {
   const head = () => {

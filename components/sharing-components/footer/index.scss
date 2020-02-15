@@ -1,76 +1,74 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-@media screen and (max-width: 1536px) {
-  .footer {
-    background-color: $bg-black;
-    .footer_container {
-      width: 66.67%;
-      margin: auto;
-      padding: 6% 0;
-      .footer_box {
-        @include flex(row, space-between, null, null);
-        .footer_box_item {
-          flex: 28%;
-          max-width: 28%;
+.footer {
+  background-color: $bg-black;
+  .footer_container {
+    width: 66.67%;
+    margin: auto;
+    padding: 6% 0;
+    .footer_box {
+      @include flex(row, space-between, null, null);
+      .footer_box_item {
+        flex: 28%;
+        max-width: 28%;
+      }
+      .item_about {
+        .item_about_title {
+          @include text($text-white, 16px);
+          @include montserrat-medium;
+          text-transform: uppercase;
         }
-        .item_about {
-          .item_about_title {
-            @include text($text-white, 16px);
-            @include montserrat-medium;
-            text-transform: uppercase;
-          }
-          .item_about_description {
-            @include text($text-gray, 12px);
-            @include montserrat;
-            line-height: 150%;
-            margin-top: 30px;
-          }
+        .item_about_description {
+          @include text($text-gray, 12px);
+          @include montserrat;
+          line-height: 150%;
+          margin-top: 30px;
         }
-        .item_service {
-          .item_service_title {
-            @include text($text-white, 16px);
-            @include montserrat-medium;
-            text-transform: uppercase;
-          }
-          .item_service_menu {
-            margin-top: 30px;
-            @include flex(row, space-between, null, null);
-            .item_service_menu_left,
-            .item_service_menu_right {
-              .item_service_menu_left_item,
-              .item_service_menu_right_item {
-                a {
-                  @include text($text-gray, 12px);
-                  @include montserrat;
-                  line-height: 150%;
-                  &:hover {
-                    @include text($primary, 12px);
-                  }
+      }
+      .item_service {
+        .item_service_title {
+          @include text($text-white, 16px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+        }
+        .item_service_menu {
+          margin-top: 30px;
+          @include flex(row, space-between, null, null);
+          .item_service_menu_left,
+          .item_service_menu_right {
+            .item_service_menu_left_item,
+            .item_service_menu_right_item {
+              a {
+                @include text($text-gray, 12px);
+                @include montserrat;
+                line-height: 150%;
+                &:hover {
+                  @include text($primary, 12px);
                 }
               }
             }
           }
         }
-        .item_contact {
-          .item_contact_title {
-            @include text($text-white, 16px);
-            @include montserrat-medium;
-            text-transform: uppercase;
-          }
-          .item_contact_box {
-            margin-top: 30px;
-            .item_contact_item {
-              margin-top: 5px;
-              i {
-                color: $primary;
-                font-size: 23px;
-              }
-              span {
-                @include text($text-gray, 12px);
-                @include montserrat;
-                margin-left: 20px;
-              }
+      }
+      .item_contact {
+        .item_contact_title {
+          @include text($text-white, 16px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+        }
+        .item_contact_box {
+          margin-top: 30px;
+          .item_contact_item {
+            margin-top: 5px;
+            i {
+              color: $primary;
+              font-size: 23px;
+            }
+            span {
+              @include text($text-gray, 12px);
+              @include montserrat;
+              margin-left: 20px;
             }
           }
         }
@@ -117,6 +115,48 @@
         .footer_box_item {
           flex: 100%;
           max-width: 100%;
+        }
+        .item_about {
+          .item_about_title {
+            @include text($text-white, 18px);
+          }
+          .item_about_description {
+            @include text($text-gray, 16px);
+          }
+        }
+        .item_service {
+          .item_service_title {
+            @include text($text-white, 18px);
+          }
+          .item_service_menu {
+            @include flex(row, space-between, null, null);
+            .item_service_menu_left,
+            .item_service_menu_right {
+              .item_service_menu_left_item,
+              .item_service_menu_right_item {
+                a {
+                  @include text($text-gray, 16px);
+
+                  &:hover {
+                    @include text($primary, 16px);
+                  }
+                }
+              }
+            }
+          }
+        }
+        .item_contact {
+          .item_contact_title {
+            @include text($text-white, 18px);
+          }
+          .item_contact_box {
+            .item_contact_item {
+              margin-top: 15px;
+              span {
+                @include text($text-gray, 16px);
+              }
+            }
+          }
         }
       }
     }

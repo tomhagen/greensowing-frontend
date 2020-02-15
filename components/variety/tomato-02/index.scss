@@ -79,10 +79,15 @@
       .monitoring_left {
         .monitoring_left_box {
           .monitoring_left_box_title {
-            @include text($text-white, 28px);
+            @include text($text-white, 26px);
+          }
+          .monitoring_left_box_content {
+            @include text($text-white, 16px);
+            text-align: left;
           }
           .monitoring_left_box_subcontent {
             text-align: left;
+            @include text($text-white, 16px);
           }
         }
       }

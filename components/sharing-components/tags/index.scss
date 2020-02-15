@@ -12,3 +12,11 @@
     @include montserrat-bold;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .tags_box {
+    .tags_content {
+      @include text($text-bold, 15px);
+    }
+  }
+}

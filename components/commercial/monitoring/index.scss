@@ -94,8 +94,25 @@
     .monitoring_container {
       .monitoring_left {
         .monitoring_left_box {
+          padding: 5% 0%;
+          width: 85%;
+          margin: auto;
           .monitoring_left_box_title {
-            @include text($text-white, 28px);
+            @include text($text-white, 26px);
+            text-align: left;
+          }
+          .monitoring_left_box_content {
+            @include text($text-white, 16px);
+            text-align: left;
+          }
+          .monitoring_left_box_subcontent {
+            @include text($text-white, 16px);
+            text-align: left;
+          }
+          .monitoring_left_box_subtitle {
+            @include text($text-white, 16px);
+            text-align: left;
+            font-weight: bold;
           }
         }
       }

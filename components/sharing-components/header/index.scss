@@ -15,7 +15,7 @@
 
     .header_box {
       @include flex(row, space-between, center, wrap);
-      
+
       .header_logo {
         img {
           width: auto;
@@ -28,13 +28,16 @@
     }
 
     .header_main_menu_container {
-      // Desktop Menu
+      // DESKTOP MENU
       .header_main_menu {
         @include flex(row, flex-start, center, null);
         position: relative;
         .header_main_menu_item {
           margin: 0 17px;
           padding: 20px 0;
+          .active {
+            color: $primary !important;
+          }
           .header_main_menu_item_a {
             @include text($text-normal, 14.4px);
             @include montserrat-medium;
@@ -62,6 +65,7 @@
             opacity: 1;
             @include transition(all, 0.5s);
           }
+
           &:hover .header_sub_menu_material {
             visibility: visible;
             opacity: 1;
@@ -74,16 +78,23 @@
             visibility: hidden;
             opacity: 0;
             @include transition(all, 0.5s);
+
             .header_sub_menu_item {
-              .header_sub_menu_item_a {
-                @include text($text-normal, 12.8px);
-                @include montserrat-medium;
+              margin: 0 10px;
+              .sub_active {
                 padding: 10px 20px;
                 background-color: $primary;
                 @include border-radius(8px);
+                color: white !important;
+              }
+              .header_sub_menu_item_a {
+                @include text($text-normal, 12.8px);
+                @include montserrat-medium;
               }
             }
           }
+
+          // STYLE & POSITION FOR MATERIAL MENU
           .header_sub_menu_material {
             position: absolute;
             top: 60px;
@@ -93,32 +104,38 @@
             opacity: 0;
             @include transition(all, 0.5s);
             .header_sub_menu_item {
-              .header_sub_menu_item_a {
-                @include text($text-normal, 12.8px);
-                @include montserrat-medium;
+              margin: 0 10px;
+              .sub_active {
                 padding: 10px 20px;
                 background-color: $primary;
                 @include border-radius(8px);
+                color: white !important;
+              }
+              .header_sub_menu_item_a {
+                @include text($text-normal, 12.8px);
+                @include montserrat-medium;
               }
             }
           }
         }
       }
-      // Mobile Menu
+      // MOBILE MENU HAMBURGER
       .btn__collapse {
         display: none;
         color: $primary;
-        font-size: 25px;
+        font-size: 35px;
       }
     }
   }
 }
 
+// CHANGE HEADER STYLE WHEN SCROLL
 .header_change {
   background: linear-gradient(white, rgb(247, 237, 237));
   opacity: 0.9;
   @include transition(all, 0.2s);
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+  padding: 15px 0 28px 0;
 }
 
 @media screen and (max-width: 1229px) {
@@ -168,7 +185,7 @@
   }
 
   /* 
-        Mobile Menu Decorator
+        MOBILE MENU DECORATOR
         
     */
   .MuiDrawer-root {
@@ -178,9 +195,12 @@
         .header_mobile_menu {
           padding: 15px;
           .header_mobile_menu_item {
-            margin-top: 20px;
+            margin-top: 30px;
+            .mobile_active {
+              color: $primary !important;
+            }
             .header_mobile_menu_item_a {
-              @include text($text-normal, 14.4px);
+              @include text($text-normal, 16px);
               @include montserrat-medium;
               text-transform: uppercase;
             }
@@ -188,7 +208,7 @@
               &::after {
                 font-family: "FontAwesome";
                 content: "\f107";
-                font-size: 14.4px;
+                font-size: 16px;
                 color: $text-normal;
                 margin-left: 11.2px;
               }
@@ -197,13 +217,13 @@
               padding: 0px 0 0 10px;
               border-left: 1px dotted gray;
               .header_mobile_sub_menu_item {
+                .mobile_sub_active {
+                  color: $primary !important;
+                }
                 margin-top: 20px;
                 .header_mobile_sub_menu_item_a {
-                  @include text($text-normal, 12.8px);
+                  @include text($text-normal, 16px);
                   @include montserrat-medium;
-                  // padding: 6px 0px;
-                  // background-color: $primary;
-                  // @include border-radius(8px);
                 }
               }
             }

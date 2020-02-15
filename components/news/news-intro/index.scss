@@ -19,6 +19,14 @@
           img {
             max-width: 100%;
           }
+          &:hover
+            .news-intro_box_left_top_content
+            .news-intro_box_left_top_content_container
+            .news-intro_box_left_top_content_title
+            a {
+            @include text($primary, 17.6px);
+            @include transition(all, 0.5s);
+          }
           .news-intro_box_left_top_content {
             position: absolute;
             bottom: 6%;
@@ -110,15 +118,21 @@
       .news-intro_box {
         .news-intro_box_left {
           .news-intro_box_left_top {
+            &:hover
+              .news-intro_box_left_top_content
+              .news-intro_box_left_top_content_container
+              .news-intro_box_left_top_content_title
+              a {
+              @include text($primary, 16px);
+            }
             .news-intro_box_left_top_content {
               bottom: 0;
               .news-intro_box_left_top_content_container {
                 .news-intro_box_left_top_content_title {
                   a {
-                    @include text($text-white, 15px);
-
+                    @include text($text-white, 16px);
                     &:hover {
-                      @include text($primary, 15px);
+                      @include text($primary, 16px);
                     }
                   }
                 }

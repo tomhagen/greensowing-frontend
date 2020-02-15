@@ -103,14 +103,27 @@
 @media screen and (max-width: 500px) {
   .step1 {
     .step1_container {
+      width: 85%;
+      margin: auto;
       .step1_box {
         .step1_box_left {
+          flex: 100%;
+          max-width: 100%;
         }
         .step1_box_right {
-          flex: 90%;
-          max-width: 90%;
+          flex: 100%;
+          max-width: 100%;
+          padding: 10% 0 0 0;
           .step1_box_right_title {
-            @include text($text-bold, 28px);
+            @include text($text-bold, 26px);
+          }
+          .step1_box_right_content {
+            @include text($text-bold, 16px);
+            text-align: left;
+          }
+          .step1_box_right_subcontent {
+            @include text($text-light, 16px);
+            text-align: left;
           }
           .step1_box_right_icon {
             .step1_box_right_icon_container {

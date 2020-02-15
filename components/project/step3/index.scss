@@ -107,10 +107,11 @@
 @media screen and (max-width: 500px) {
   .step3 {
     .step3_container {
+      width: 85%;
       .step3_box {
         .step3_box_left {
           .step3_box_left_frame {
-            border: 6px solid $primary;
+            border: 5px solid $primary;
             height: 90%;
             left: 5%;
             top: 50px;
@@ -118,7 +119,15 @@
         }
         .step3_box_right {
           .step3_box_right_title {
-            @include text($text-bold, 28px);
+            @include text($text-bold, 26px);
+          }
+          .step3_box_right_content {
+            @include text($text-bold, 16px);
+            text-align: left;
+          }
+          .step3_box_right_subcontent {
+            @include text($text-light, 16px);
+            text-align: left;
           }
         }
       }

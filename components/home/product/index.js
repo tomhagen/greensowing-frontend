@@ -8,7 +8,7 @@ const Product = () => {
     <React.Fragment>
       <div className="product">
         <div className="product_container">
-          <ReactWOW animation="fadeInUp" duration="2s">
+          <ReactWOW animation="fadeInUp" duration="1.5s">
             <div className="product_container_top">
               <div className="product_container_top_introduction">
                 supportive product
@@ -24,7 +24,7 @@ const Product = () => {
           </ReactWOW>
           <div className="product_container_bottom">
             <div className="product_container_bottom_box">
-              <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
+              <ReactWOW animation="fadeIn" duration="1.5s">
                 <div className="product_container_bottom_box_item">
                   <div className="product_container_bottom_box_item_circle">
                     <img
@@ -44,7 +44,7 @@ const Product = () => {
                   </div>
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
                 <div className="product_container_bottom_box_item">
                   <div className="product_container_bottom_box_item_circle">
                     <img
@@ -64,7 +64,7 @@ const Product = () => {
                   </div>
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="product_container_bottom_box_item">
                   <div className="product_container_bottom_box_item_circle">
                     <img
@@ -84,7 +84,7 @@ const Product = () => {
                   </div>
                 </div>
               </ReactWOW>
-              <ReactWOW animation="fadeIn" duration="1.5s" delay="2s">
+              <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
                 <div className="product_container_bottom_box_item">
                   <div className="product_container_bottom_box_item_circle">
                     <img

@@ -107,18 +107,25 @@
 @media screen and (max-width: 500px) {
   .diffuse {
     .diffuse_container {
+      width: 85%;
       .diffuse_box {
         .diffuse_box_left {
           .diffuse_box_left_frame {
-            border: 6px solid $primary;
+            border: 5px solid $primary;
+            left: 8%;
           }
         }
         .diffuse_box_right {
           .diffuse_box_right_title {
-            @include text($text-bold, 28px);
+            @include text($text-bold, 26px);
+          }
+          .diffuse_box_right_content {
+            @include text($text-bold, 16px);
+            text-align: left;
           }
           .diffuse_box_right_subcontent {
             text-align: left;
+            @include text($text-light, 16px);
           }
         }
       }
