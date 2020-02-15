@@ -1,95 +1,194 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.product {
-  background-image: url("/static/images/home_bg_03.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 768px;
-  .product_container {
-    margin: auto;
-
-    text-align: center;
-    .product_container_top {
-      padding: 7% 0 3% 0;
-      width: 53%;
+@media screen and (min-width: 1537px) {
+  .product {
+    background-image: url("/static/images/home_bg_03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 960px;
+    .product_container {
       margin: auto;
-      .product_container_top_introduction {
-        @include text($primary, 17.6px);
-        @include montserrat;
-        text-transform: uppercase;
-        letter-spacing: 1.76px;
-      }
-      .product_container_top_title {
-        @include text($text-bold, 44px);
-        @include montserrat-bold;
-        margin: 15px 0;
-      }
-      .product_container_top_content {
-        @include text($text-light, 14.4px);
-        @include montserrat;
-        line-height: 150%;
-      }
-    }
-    .product_container_bottom {
-      width: 75%;
-      margin: auto;
-      .product_container_bottom_box {
-        @include flex(row, space-between, center, wrap);
-        .product_container_bottom_box_item {
-          text-align: left;
-          flex: 23%;
-          max-width: 23%;
-          padding: 5px 10px;
 
-          @include transition(all, 0.5s);
-          &:hover {
-            box-shadow: 0 10px 20px rgba(1, 14, 40, 0.1);
-            @include border-radius(10px);
+      text-align: center;
+      .product_container_top {
+        padding: 7% 0 3% 0;
+        width: 53%;
+        margin: auto;
+        .product_container_top_introduction {
+          @include text($primary, 17.6px);
+          @include montserrat;
+          text-transform: uppercase;
+          letter-spacing: 1.76px;
+        }
+        .product_container_top_title {
+          @include text($text-bold, 44px);
+          @include montserrat-bold;
+          margin: 15px 0;
+        }
+        .product_container_top_content {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
+      }
+      .product_container_bottom {
+        width: 75%;
+        margin: auto;
+        .product_container_bottom_box {
+          @include flex(row, space-between, center, wrap);
+          .product_container_bottom_box_item {
+            text-align: left;
+            flex: 23%;
+            max-width: 23%;
+            padding: 5px 10px;
+
             @include transition(all, 0.5s);
-            margin-top: 5px;
-          }
-          &:hover
-            .product_container_bottom_box_item_circle
-            .product_container_bottom_box_item_icon {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            @include transition(all, 1s);
-          }
-          .product_container_bottom_box_item_circle {
-            height: 64px;
-            width: 64px;
-            background-color: $primary;
-            @include border-radius(50%);
-            @include flex(row, center, center, null);
-            .product_container_bottom_box_item_icon {
-              width: 32px;
-              height: 32px;
+            &:hover {
+              box-shadow: 0 10px 20px rgba(1, 14, 40, 0.1);
+              @include border-radius(10px);
+              @include transition(all, 0.5s);
+              margin-top: 5px;
+            }
+            &:hover
+              .product_container_bottom_box_item_circle
+              .product_container_bottom_box_item_icon {
+              transform: scale(1.2);
+              -webkit-transform: scale(1.2);
+              -moz-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              -o-transform: scale(1.2);
               @include transition(all, 1s);
             }
-          }
-          .product_container_bottom_box_item_title {
-            margin: 15px 0;
-            a {
-              text-decoration: none;
-              @include text($text-bold, 19px);
-              @include montserrat-semibold;
-              @include transition(all, 0.5s);
-
-              &:hover {
-                @include text($primary, 19px);
-                @include transition(all, 0.5s);
+            .product_container_bottom_box_item_circle {
+              height: 64px;
+              width: 64px;
+              background-color: $primary;
+              @include border-radius(50%);
+              @include flex(row, center, center, null);
+              .product_container_bottom_box_item_icon {
+                width: 32px;
+                height: 32px;
+                @include transition(all, 1s);
               }
             }
+            .product_container_bottom_box_item_title {
+              margin: 15px 0;
+              a {
+                text-decoration: none;
+                @include text($text-bold, 19px);
+                @include montserrat-semibold;
+                @include transition(all, 0.5s);
+
+                &:hover {
+                  @include text($primary, 19px);
+                  @include transition(all, 0.5s);
+                }
+              }
+            }
+            .product_container_bottom_box_item_content {
+              @include text($text-light, 12.8px);
+              @include montserrat;
+              line-height: 150%;
+            }
           }
-          .product_container_bottom_box_item_content {
-            @include text($text-light, 12.8px);
-            @include montserrat;
-            line-height: 150%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1536px) {
+  .product {
+    background-image: url("/static/images/home_bg_03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    .product_container {
+      margin: auto;
+
+      text-align: center;
+      .product_container_top {
+        padding: 7% 0 3% 0;
+        width: 53%;
+        margin: auto;
+        .product_container_top_introduction {
+          @include text($primary, 17.6px);
+          @include montserrat;
+          text-transform: uppercase;
+          letter-spacing: 1.76px;
+        }
+        .product_container_top_title {
+          @include text($text-bold, 44px);
+          @include montserrat-bold;
+          margin: 15px 0;
+        }
+        .product_container_top_content {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
+      }
+      .product_container_bottom {
+        width: 75%;
+        margin: auto;
+        .product_container_bottom_box {
+          @include flex(row, space-between, center, wrap);
+          .product_container_bottom_box_item {
+            text-align: left;
+            flex: 23%;
+            max-width: 23%;
+            padding: 5px 10px;
+
+            @include transition(all, 0.5s);
+            &:hover {
+              box-shadow: 0 10px 20px rgba(1, 14, 40, 0.1);
+              @include border-radius(10px);
+              @include transition(all, 0.5s);
+              margin-top: 5px;
+            }
+            &:hover
+              .product_container_bottom_box_item_circle
+              .product_container_bottom_box_item_icon {
+              transform: scale(1.2);
+              -webkit-transform: scale(1.2);
+              -moz-transform: scale(1.2);
+              -ms-transform: scale(1.2);
+              -o-transform: scale(1.2);
+              @include transition(all, 1s);
+            }
+            .product_container_bottom_box_item_circle {
+              height: 64px;
+              width: 64px;
+              background-color: $primary;
+              @include border-radius(50%);
+              @include flex(row, center, center, null);
+              .product_container_bottom_box_item_icon {
+                width: 32px;
+                height: 32px;
+                @include transition(all, 1s);
+              }
+            }
+            .product_container_bottom_box_item_title {
+              margin: 15px 0;
+              a {
+                text-decoration: none;
+                @include text($text-bold, 19px);
+                @include montserrat-semibold;
+                @include transition(all, 0.5s);
+
+                &:hover {
+                  @include text($primary, 19px);
+                  @include transition(all, 0.5s);
+                }
+              }
+            }
+            .product_container_bottom_box_item_content {
+              @include text($text-light, 12.8px);
+              @include montserrat;
+              line-height: 150%;
+            }
           }
         }
       }

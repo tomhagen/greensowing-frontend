@@ -5,89 +5,177 @@
    ##Screen = 1281px to higher resolution desktops
 */
 
-/* ##Device = Laptops, Desktops
-   ##Screen = Between 1281px to 1536px
-*/
+@media screen and (min-width: 1537px) {
+  .home_carousel {
+    .home_carousel_container {
+      width: 100%;
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            position: relative;
 
-.home_carousel {
-  .home_carousel_container {
-    width: 100%;
-    .slick-slider {
-      .slick-list {
-        .slick-list-item {
-          position: relative;
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
 
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-          .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
+              background: linear-gradient(
+                0deg,
+                rgba(31, 43, 32, 0.0001) 52.78%,
+                #1f2b20 100%
+              );
+              mix-blend-mode: normal;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              opacity: 0.8;
+              z-index: 9;
+            }
+            .overlay2 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 50%;
+              width: 100%;
 
-            background: linear-gradient(
-              0deg,
-              rgba(31, 43, 32, 0.0001) 52.78%,
-              #1f2b20 100%
-            );
-            mix-blend-mode: normal;
-            transform: matrix(1, 0, 0, -1, 0, 0);
-            opacity: 0.8;
-            z-index: 9;
-          }
-          .overlay2 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 50%;
-            width: 100%;
+              background: linear-gradient(
+                180deg,
+                #fafafa 2.61%,
+                rgba(255, 255, 255, 0.0001) 68.06%
+              );
 
-            background: linear-gradient(
-              180deg,
-              #fafafa 2.61%,
-              rgba(255, 255, 255, 0.0001) 68.06%
-            );
-
-            z-index: 9;
-          }
-          .slick-list-item-container {
-            position: absolute;
-            top: 69.8%;
-            z-index: 10;
-            .slick-list-item-container-center {
-              margin: auto;
-              width: 65.6%;
-              text-align: center;
-              .slick-list-item-title {
-                @include text($text-white, 65.6px);
-                @include montserrat-bold;
-                letter-spacing: 3px;
-              }
-              .slick-list-item-subtitle-container {
-                width: 90%;
+              z-index: 9;
+            }
+            .slick-list-item-container {
+              position: absolute;
+              top: 69.8%;
+              z-index: 10;
+              width: 100%;
+              .slick-list-item-container-center {
                 margin: auto;
-                padding: 20px 0;
-                .slick-list-item-subtitle {
-                  @include text($text-white, 17px);
-                  line-height: 20.8px;
+                width: 65.6%;
+                text-align: center;
+                .slick-list-item-title {
+                  @include text($text-white, 65.6px);
+                  @include montserrat-bold;
+                  letter-spacing: 3px;
+                }
+                .slick-list-item-subtitle-container {
+                  width: 90%;
+                  margin: auto;
+                  padding: 20px 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 17px);
+                    line-height: 20.8px;
+                  }
                 }
               }
             }
           }
         }
-      }
-      .slick-arrow {
-        display: none !important;
-      }
-      .slick-dots {
-        bottom: 40px;
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-dots {
+          bottom: 40px;
 
-        li button::before {
-          font-size: 18px;
-          color: white;
+          li button::before {
+            font-size: 18px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+/* ##Device = Laptops, Desktops
+   ##Screen = Between 1281px to 1536px
+*/
+@media screen and (max-width: 1536px) {
+  .home_carousel {
+    .home_carousel_container {
+      width: 100%;
+      .slick-slider {
+        .slick-list {
+          .slick-list-item {
+            position: relative;
+
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+            .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 100%;
+              width: 100%;
+
+              background: linear-gradient(
+                0deg,
+                rgba(31, 43, 32, 0.0001) 52.78%,
+                #1f2b20 100%
+              );
+              mix-blend-mode: normal;
+              transform: matrix(1, 0, 0, -1, 0, 0);
+              opacity: 0.8;
+              z-index: 9;
+            }
+            .overlay2 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 50%;
+              width: 100%;
+
+              background: linear-gradient(
+                180deg,
+                #fafafa 2.61%,
+                rgba(255, 255, 255, 0.0001) 68.06%
+              );
+
+              z-index: 9;
+            }
+            .slick-list-item-container {
+              position: absolute;
+              top: 69.8%;
+              z-index: 10;
+              .slick-list-item-container-center {
+                margin: auto;
+                width: 65.6%;
+                text-align: center;
+                .slick-list-item-title {
+                  @include text($text-white, 65.6px);
+                  @include montserrat-bold;
+                  letter-spacing: 3px;
+                }
+                .slick-list-item-subtitle-container {
+                  width: 90%;
+                  margin: auto;
+                  padding: 20px 0;
+                  .slick-list-item-subtitle {
+                    @include text($text-white, 17px);
+                    line-height: 20.8px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .slick-arrow {
+          display: none !important;
+        }
+        .slick-dots {
+          bottom: 40px;
+
+          li button::before {
+            font-size: 18px;
+            color: white;
+          }
         }
       }
     }

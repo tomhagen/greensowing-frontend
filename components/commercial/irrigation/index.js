@@ -37,7 +37,6 @@ const IrrigationSystem = () => {
                     </div>
                   </div>
                 </div>
-                <div className="overlay"></div>
               </div>
             </ReactWOW>
             <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
