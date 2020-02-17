@@ -1,44 +1,91 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.creative {
-  background-image: url("/static/images/tourist_bg_02.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 768px;
-  position: relative;
-  .creative_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    right: 19%;
-    .creative_box {
-      width: 38%;
-      background-color: $primary-sub;
-      padding: 2% 4%;
+@media screen and (min-width: 1537px) {
+  .creative {
+    background-image: url("/static/images/tourist_bg_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 960px;
+    position: relative;
+    .creative_container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      right: 19%;
+      .creative_box {
+        width: 38%;
+        background-color: $primary-sub;
+        padding: 2% 4%;
 
-      .creative_box_title {
-        @include text($text-white, 38.4px);
-        @include montserrat-bold;
-        padding: 0 0 20px 0;
-        line-height: 115%;
+        .creative_box_title {
+          @include text($text-white, 48px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .creative_box_content {
+          @include text($text-white, 18px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .creative_box_subcontent {
+          @include text($text-white, 18px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
-      .creative_box_content {
-        @include text($text-white, 14.4px);
-        @include montserrat-bold;
-        padding: 0 0 20px 0;
-        line-height: 150%;
-        text-align: justify;
-      }
-      .creative_box_subcontent {
-        @include text($text-white, 14.4px);
-        @include montserrat;
-        line-height: 150%;
-        opacity: 0.8;
-        text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .creative {
+    background-image: url("/static/images/tourist_bg_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    position: relative;
+    .creative_container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      right: 19%;
+      .creative_box {
+        width: 38%;
+        background-color: $primary-sub;
+        padding: 2% 4%;
+
+        .creative_box_title {
+          @include text($text-white, 38.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .creative_box_content {
+          @include text($text-white, 14.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .creative_box_subcontent {
+          @include text($text-white, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
     }
   }

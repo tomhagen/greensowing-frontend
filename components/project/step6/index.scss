@@ -1,31 +1,65 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.step6 {
-  background-image: url("/static/images/project_bg_04.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 768px;
-  position: relative;
-  .step6_container {
-    @include flex(row, flex-end, center, null);
+@media screen and (min-width: 1537px) {
+  .step6 {
+    background-image: url("/static/images/project_bg_04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 962px;
+    position: relative;
+    .step6_container {
+      @include flex(row, flex-end, center, null);
 
-    .step6_box {
-      margin-top: 16%;
-      margin-right: 10%;
-      width: 33%;
-      .step6_title {
-        @include text($text-bold, 38.4px);
-        @include montserrat-bold;
-        padding: 20px 0;
+      .step6_box {
+        margin-top: 16%;
+        margin-right: 10%;
+        width: 33%;
+        .step6_title {
+          @include text($text-bold, 48px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .step6_subcontent {
+          @include text($text-light, 18px);
+          @include montserrat;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
       }
-      .step6_subcontent {
-        @include text($text-light, 14.4px);
-        @include montserrat;
-        padding: 0 0 20px 0;
-        line-height: 150%;
-        text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .step6 {
+    background-image: url("/static/images/project_bg_04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    position: relative;
+    .step6_container {
+      @include flex(row, flex-end, center, null);
+
+      .step6_box {
+        margin-top: 16%;
+        margin-right: 10%;
+        width: 33%;
+        .step6_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .step6_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
       }
     }
   }

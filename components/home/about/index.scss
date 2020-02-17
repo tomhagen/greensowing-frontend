@@ -39,7 +39,7 @@
           .about_box_left_image_frame {
             width: 77%;
             height: 534px;
-            border: 9.6px solid $primary;
+            border: 12px solid $primary;
             margin: auto;
             margin-top: 15%;
             margin-left: 16%;
@@ -52,13 +52,13 @@
           z-index: 10;
           margin-top: 8%;
           .about_box_right_introduction {
-            @include text($primary, 17.6px);
+            @include text($primary, 22px);
             @include montserrat;
             text-transform: uppercase;
             letter-spacing: 1.76px;
           }
           .about_box_right_title {
-            @include text($text-bold, 44px);
+            @include text($text-bold, 56px);
             @include montserrat-bold;
             padding: 20px 0;
             span {
@@ -66,7 +66,7 @@
             }
           }
           .about_box_right_text_behind {
-            @include text($primary, 76px);
+            @include text($primary, 100px);
             @include montserrat-bold;
             text-transform: uppercase;
             opacity: 0.1;
@@ -76,13 +76,13 @@
             top: 28%;
           }
           .about_box_right_content {
-            @include text($text-bold, 14.4px);
+            @include text($text-bold, 18px);
             @include montserrat-bold;
             padding: 10% 0 20px 0;
             line-height: 150%;
           }
           .about_box_right_sub_content {
-            @include text($text-light, 14.4px);
+            @include text($text-light, 18px);
             @include montserrat;
             line-height: 150%;
           }

@@ -1,121 +1,247 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.blog {
-  .blog_container {
-    width: 75%;
-    margin: auto;
-    text-align: center;
-    padding: 5% 0;
-    .blog_container_top {
-      .blog_container_top_introduction {
-        @include text($primary, 17.6px);
-        @include montserrat;
-        text-transform: uppercase;
-        letter-spacing: 1.76px;
+@media screen and (min-width: 1537px) {
+  .blog {
+    .blog_container {
+      width: 75%;
+      margin: auto;
+      text-align: center;
+      padding: 5% 0;
+      .blog_container_top {
+        .blog_container_top_introduction {
+          @include text($primary, 22px);
+          @include montserrat;
+          text-transform: uppercase;
+          letter-spacing: 1.76px;
+        }
+        .blog_container_top_title {
+          @include text($text-bold, 56px);
+          @include montserrat-bold;
+          margin: 15px 0;
+        }
       }
-      .blog_container_top_title {
-        @include text($text-bold, 44px);
-        @include montserrat-bold;
-        margin: 15px 0;
-      }
-    }
-    .blog_container_bottom {
-      margin-top: 5%;
-      @include flex(row, space-between, center, wrap);
-      .blog_container_bottom_item {
-        flex: 32%;
-        max-width: 32%;
-        overflow: hidden;
-        @include border-radius(7px);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
-        @include transition(all, 0.5s);
-
-        &:hover {
-          box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
-            0 10px 20px 0 rgba(90, 122, 190, 0.2);
-          @include transition(all, 0.5s);
-        }
-        &:hover
-          .blog_container_bottom_item_content_box
-          .item_content_box_title
-          a {
-          @include text($primary, 16px);
-        }
-        &:hover .blog_container_bottom_item_img_box img {
-          @include scale(1.1);
-          @include transition(all, 1s);
-        }
-        .blog_container_bottom_item_img_box {
+      .blog_container_bottom {
+        margin-top: 5%;
+        @include flex(row, space-between, center, wrap);
+        .blog_container_bottom_item {
+          flex: 32%;
+          max-width: 32%;
           overflow: hidden;
+          @include border-radius(7px);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+          @include transition(all, 0.5s);
 
-          img {
-            max-width: 100%;
-            @include transition(all, 1s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            @include transition(all, 0.5s);
           }
-        }
-        .blog_container_bottom_item_content_box {
-          &:hover .item_content_box_title a {
+          &:hover
+            .blog_container_bottom_item_content_box
+            .item_content_box_title
+            a {
             @include text($primary, 16px);
           }
-          text-align: left;
-          padding: 5%;
-          .item_content_box_date {
-            @include text($text-super-light, 12.6px);
-            @include montserrat;
-            text-transform: uppercase;
-            @include flex(row, flex-start, null, null);
-            span {
-              margin-left: 10px;
+          &:hover .blog_container_bottom_item_img_box img {
+            @include scale(1.1);
+            @include transition(all, 1s);
+          }
+          .blog_container_bottom_item_img_box {
+            overflow: hidden;
+
+            img {
+              max-width: 100%;
+              @include transition(all, 1s);
             }
           }
-          .item_content_box_title {
-            margin: 10px 0;
-            a {
-              @include text($text-bold, 16px);
-              @include montserrat-semibold;
-              @include transition(all, 0.5s);
-              &:hover {
-                @include text($primary, 16px);
-                @include transition(all, 0.5s);
+          .blog_container_bottom_item_content_box {
+            &:hover .item_content_box_title a {
+              @include text($primary, 16px);
+            }
+            text-align: left;
+            padding: 5%;
+            .item_content_box_date {
+              @include text($text-super-light, 14px);
+              @include montserrat;
+              text-transform: uppercase;
+              @include flex(row, flex-start, null, null);
+              span {
+                margin-left: 10px;
               }
             }
+            .item_content_box_title {
+              margin: 10px 0;
+              a {
+                @include text($text-bold, 20px);
+                @include montserrat-semibold;
+                @include transition(all, 0.5s);
+                &:hover {
+                  @include text($primary, 20px);
+                  @include transition(all, 0.5s);
+                }
+              }
+            }
+            .item_content_box_description {
+              @include text($text-light, 16px);
+              @include montserrat;
+              line-height: 150%;
+            }
           }
-          .item_content_box_description {
-            @include text($text-light, 12.8px);
-            @include montserrat;
-            line-height: 150%;
+        }
+      }
+
+      .blog_container_view_more {
+        @include flex(row, center, null, null);
+        margin-top: 3%;
+        .blog_container_view_more_box {
+          background-color: $primary;
+          padding: 15px 50px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include transition(all, 0.5s);
+          }
+          &:hover a {
+            @include text($primary, 18px);
+            @include transition(all, 0.5s);
+          }
+          a {
+            @include text($text-white, 18px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 18px);
+              @include transition(all, 0.5s);
+            }
           }
         }
       }
     }
+  }
+}
 
-    .blog_container_view_more {
-      @include flex(row, center, null, null);
-      margin-top: 3%;
-      .blog_container_view_more_box {
-        background-color: $primary;
-        padding: 15px 50px;
-        @include border-radius(7px);
-        @include transition(all, 0.5s);
-        &:hover {
-          box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
-            0 10px 20px 0 rgba(90, 122, 190, 0.2);
-          background-color: white;
-          @include transition(all, 0.5s);
-        }
-        &:hover a {
-          @include text($primary, 14.4px);
-          @include transition(all, 0.5s);
-        }
-        a {
-          @include text($text-white, 14.4px);
-          @include montserrat-medium;
+@media screen and (max-width: 1536px) {
+  .blog {
+    .blog_container {
+      width: 75%;
+      margin: auto;
+      text-align: center;
+      padding: 5% 0;
+      .blog_container_top {
+        .blog_container_top_introduction {
+          @include text($primary, 17.6px);
+          @include montserrat;
           text-transform: uppercase;
+          letter-spacing: 1.76px;
+        }
+        .blog_container_top_title {
+          @include text($text-bold, 44px);
+          @include montserrat-bold;
+          margin: 15px 0;
+        }
+      }
+      .blog_container_bottom {
+        margin-top: 5%;
+        @include flex(row, space-between, center, wrap);
+        .blog_container_bottom_item {
+          flex: 32%;
+          max-width: 32%;
+          overflow: hidden;
+          @include border-radius(7px);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+          @include transition(all, 0.5s);
+
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            @include transition(all, 0.5s);
+          }
+          &:hover
+            .blog_container_bottom_item_content_box
+            .item_content_box_title
+            a {
+            @include text($primary, 16px);
+          }
+          &:hover .blog_container_bottom_item_img_box img {
+            @include scale(1.1);
+            @include transition(all, 1s);
+          }
+          .blog_container_bottom_item_img_box {
+            overflow: hidden;
+
+            img {
+              max-width: 100%;
+              @include transition(all, 1s);
+            }
+          }
+          .blog_container_bottom_item_content_box {
+            &:hover .item_content_box_title a {
+              @include text($primary, 16px);
+            }
+            text-align: left;
+            padding: 5%;
+            .item_content_box_date {
+              @include text($text-super-light, 12.6px);
+              @include montserrat;
+              text-transform: uppercase;
+              @include flex(row, flex-start, null, null);
+              span {
+                margin-left: 10px;
+              }
+            }
+            .item_content_box_title {
+              margin: 10px 0;
+              a {
+                @include text($text-bold, 16px);
+                @include montserrat-semibold;
+                @include transition(all, 0.5s);
+                &:hover {
+                  @include text($primary, 16px);
+                  @include transition(all, 0.5s);
+                }
+              }
+            }
+            .item_content_box_description {
+              @include text($text-light, 12.8px);
+              @include montserrat;
+              line-height: 150%;
+            }
+          }
+        }
+      }
+
+      .blog_container_view_more {
+        @include flex(row, center, null, null);
+        margin-top: 3%;
+        .blog_container_view_more_box {
+          background-color: $primary;
+          padding: 15px 50px;
+          @include border-radius(7px);
           @include transition(all, 0.5s);
           &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include transition(all, 0.5s);
+          }
+          &:hover a {
             @include text($primary, 14.4px);
             @include transition(all, 0.5s);
+          }
+          a {
+            @include text($text-white, 14.4px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 14.4px);
+              @include transition(all, 0.5s);
+            }
           }
         }
       }

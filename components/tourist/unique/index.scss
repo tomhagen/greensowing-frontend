@@ -1,60 +1,124 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.unique {
-  .unique_container {
-    margin: auto;
-    width: 75%;
-    padding: 8% 0;
-    .unique_box {
-      @include flex(row-reverse, space-between, null, null);
-      .unique_box_left {
-        flex: 45%;
-        max-width: 45%;
-        position: relative;
+@media screen and (min-width: 1537px) {
+  .unique {
+    .unique_container {
+      margin: auto;
+      width: 75%;
+      padding: 8% 0;
+      .unique_box {
+        @include flex(row-reverse, space-between, null, null);
+        .unique_box_left {
+          flex: 45%;
+          max-width: 45%;
+          position: relative;
 
-        .unique_box_left_frame {
-          position: absolute;
-          top: 8%;
-          left: 4%;
-          width: 95%;
-          height: 93%;
-          border: 9.6px solid $primary;
+          .unique_box_left_frame {
+            position: absolute;
+            top: 8%;
+            left: 4%;
+            width: 95%;
+            height: 93%;
+            border: 12px solid $primary;
+          }
+          .unique_box_left_img {
+            width: 95%;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 12%;
+            img {
+              max-width: 100%;
+            }
+          }
         }
-        .unique_box_left_img {
-          width: 95%;
-          position: absolute;
-          z-index: 10;
-          top: 0;
-          left: 12%;
-          img {
-            max-width: 100%;
+        .unique_box_right {
+          flex: 48%;
+          max-width: 48%;
+          padding: 2% 0;
+
+          .unique_box_right_title {
+            @include text($text-bold, 48px);
+            @include montserrat-bold;
+            padding: 20px 0;
+          }
+          .unique_box_right_content {
+            @include text($text-bold, 18px);
+            @include montserrat-bold;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+            text-align: justify;
+          }
+          .unique_box_right_subcontent {
+            @include text($text-light, 18px);
+            @include montserrat;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+            text-align: justify;
           }
         }
       }
-      .unique_box_right {
-        flex: 48%;
-        max-width: 48%;
-        padding: 2% 0;
+    }
+  }
+}
 
-        .unique_box_right_title {
-          @include text($text-bold, 38.4px);
-          @include montserrat-bold;
-          padding: 20px 0;
+@media screen and (max-width: 1536px) {
+  .unique {
+    .unique_container {
+      margin: auto;
+      width: 75%;
+      padding: 8% 0;
+      .unique_box {
+        @include flex(row-reverse, space-between, null, null);
+        .unique_box_left {
+          flex: 45%;
+          max-width: 45%;
+          position: relative;
+
+          .unique_box_left_frame {
+            position: absolute;
+            top: 8%;
+            left: 4%;
+            width: 95%;
+            height: 93%;
+            border: 9.6px solid $primary;
+          }
+          .unique_box_left_img {
+            width: 95%;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 12%;
+            img {
+              max-width: 100%;
+            }
+          }
         }
-        .unique_box_right_content {
-          @include text($text-bold, 14.4px);
-          @include montserrat-bold;
-          padding: 0 0 20px 0;
-          line-height: 150%;
-          text-align: justify;
-        }
-        .unique_box_right_subcontent {
-          @include text($text-light, 14.4px);
-          @include montserrat;
-          padding: 0 0 20px 0;
-          line-height: 150%;
-          text-align: justify;
+        .unique_box_right {
+          flex: 48%;
+          max-width: 48%;
+          padding: 2% 0;
+
+          .unique_box_right_title {
+            @include text($text-bold, 38.4px);
+            @include montserrat-bold;
+            padding: 20px 0;
+          }
+          .unique_box_right_content {
+            @include text($text-bold, 14.4px);
+            @include montserrat-bold;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+            text-align: justify;
+          }
+          .unique_box_right_subcontent {
+            @include text($text-light, 14.4px);
+            @include montserrat;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+            text-align: justify;
+          }
         }
       }
     }

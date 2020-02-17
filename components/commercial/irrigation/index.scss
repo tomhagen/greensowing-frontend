@@ -1,107 +1,216 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.irrigation {
-  .irrigation_container {
-    padding: 30px 0;
-    .irrigation_top {
-      width: 57.5%;
-      margin: auto;
-      text-align: center;
-      .irrigation_top_title {
-        @include text($text-bold, 38.4px);
-        @include montserrat-bold;
-        padding: 20px 0;
-      }
-      .irrigation_top_subcontent {
-        @include text($text-light, 14.4px);
-        @include montserrat;
-        line-height: 150%;
-      }
-    }
-    .irrigation_bottom {
-      @include flex(row, null, null, null);
-      margin: 5% 0;
-      .irrigation_bottom_item {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 456px;
-        flex: 20%;
-        max-width: 20%;
-        position: relative;
-
-        &:hover .irrigation_bottom_item_container {
-          height: 45%;
-          background: linear-gradient(
-            180deg,
-            rgba(255, 255, 255, 0) 20.77%,
-            #242424 100%
-          );
-          opacity: 0.9;
-          @include transition(all, 1s);
+@media screen and (min-width: 1537px) {
+  .irrigation {
+    .irrigation_container {
+      padding: 30px 0;
+      .irrigation_top {
+        width: 57.5%;
+        margin: auto;
+        text-align: center;
+        .irrigation_top_title {
+          @include text($text-bold, 48px);
+          @include montserrat-bold;
+          padding: 20px 0;
         }
-        &:hover
-          .irrigation_bottom_item_container
-          .irrigation_bottom_item_box
-          .irrigation_bottom_item_icon {
-          @include rotate(360deg);
-          @include transition(all, 1s);
+        .irrigation_top_subcontent {
+          @include text($text-light, 18px);
+          @include montserrat;
+          line-height: 150%;
         }
-        .irrigation_bottom_item_container {
-          height: 40%;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          z-index: 10;
-          background: linear-gradient(
-            180deg,
-            rgba(31, 43, 32, 0.0001) 20.77%,
-            #1f2b20 100%
-          );
-          @include transition(all, 1s);
+      }
+      .irrigation_bottom {
+        @include flex(row, null, null, null);
+        margin: 5% 0;
+        .irrigation_bottom_item {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 570px;
+          flex: 20%;
+          max-width: 20%;
+          position: relative;
 
-          .irrigation_bottom_item_box {
-            width: 76%;
-            margin: auto;
-            text-align: center;
+          &:hover .irrigation_bottom_item_container {
+            height: 45%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 20.77%,
+              #242424 100%
+            );
+            opacity: 0.9;
+            @include transition(all, 1s);
+          }
+          &:hover
+            .irrigation_bottom_item_container
+            .irrigation_bottom_item_box
             .irrigation_bottom_item_icon {
-              width: 57px;
-              margin: auto;
-              img {
-                max-width: 100%;
-              }
-              height: auto;
-            }
-            .irrigation_bottom_item_title {
-              @include text($text-white, 19.2px);
-              @include montserrat-semibold;
-              margin: 10px 0;
-            }
+            @include rotate(360deg);
+            @include transition(all, 1s);
+          }
+          .irrigation_bottom_item_container {
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            background: linear-gradient(
+              180deg,
+              rgba(31, 43, 32, 0.0001) 20.77%,
+              #1f2b20 100%
+            );
+            @include transition(all, 1s);
 
-            .irrigation_bottom_item_subcontent {
-              @include text($text-white, 13px);
-              @include montserrat;
-              line-height: 120%;
-              opacity: 0.8;
+            .irrigation_bottom_item_box {
+              width: 76%;
+              margin: auto;
+              text-align: center;
+              .irrigation_bottom_item_icon {
+                width: 72px;
+                margin: auto;
+                img {
+                  max-width: 100%;
+                }
+                height: auto;
+              }
+              .irrigation_bottom_item_title {
+                @include text($text-white, 24px);
+                @include montserrat-semibold;
+                margin: 10px 0;
+              }
+
+              .irrigation_bottom_item_subcontent {
+                @include text($text-white, 16px);
+                @include montserrat;
+                line-height: 120%;
+                opacity: 0.8;
+              }
             }
           }
         }
+        .item_one {
+          background-image: url("/static/images/commercial_page4_01.png");
+        }
+        .item_two {
+          background-image: url("/static/images/commercial_page4_02.png");
+        }
+        .item_three {
+          background-image: url("/static/images/commercial_page4_03.png");
+        }
+        .item_four {
+          background-image: url("/static/images/commercial_page4_04.png");
+        }
+        .item_five {
+          background-image: url("/static/images/commercial_page4_05.png");
+        }
       }
-      .item_one {
-        background-image: url("/static/images/commercial_page4_01.png");
+    }
+  }
+}
+@media screen and (max-width: 1536px) {
+  .irrigation {
+    .irrigation_container {
+      padding: 30px 0;
+      .irrigation_top {
+        width: 57.5%;
+        margin: auto;
+        text-align: center;
+        .irrigation_top_title {
+          @include text($text-bold, 38.4px);
+          @include montserrat-bold;
+          padding: 20px 0;
+        }
+        .irrigation_top_subcontent {
+          @include text($text-light, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+        }
       }
-      .item_two {
-        background-image: url("/static/images/commercial_page4_02.png");
-      }
-      .item_three {
-        background-image: url("/static/images/commercial_page4_03.png");
-      }
-      .item_four {
-        background-image: url("/static/images/commercial_page4_04.png");
-      }
-      .item_five {
-        background-image: url("/static/images/commercial_page4_05.png");
+      .irrigation_bottom {
+        @include flex(row, null, null, null);
+        margin: 5% 0;
+        .irrigation_bottom_item {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          height: 456px;
+          flex: 20%;
+          max-width: 20%;
+          position: relative;
+
+          &:hover .irrigation_bottom_item_container {
+            height: 45%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 0) 20.77%,
+              #242424 100%
+            );
+            opacity: 0.9;
+            @include transition(all, 1s);
+          }
+          &:hover
+            .irrigation_bottom_item_container
+            .irrigation_bottom_item_box
+            .irrigation_bottom_item_icon {
+            @include rotate(360deg);
+            @include transition(all, 1s);
+          }
+          .irrigation_bottom_item_container {
+            height: 40%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            background: linear-gradient(
+              180deg,
+              rgba(31, 43, 32, 0.0001) 20.77%,
+              #1f2b20 100%
+            );
+            @include transition(all, 1s);
+
+            .irrigation_bottom_item_box {
+              width: 76%;
+              margin: auto;
+              text-align: center;
+              .irrigation_bottom_item_icon {
+                width: 57px;
+                margin: auto;
+                img {
+                  max-width: 100%;
+                }
+                height: auto;
+              }
+              .irrigation_bottom_item_title {
+                @include text($text-white, 19.2px);
+                @include montserrat-semibold;
+                margin: 10px 0;
+              }
+
+              .irrigation_bottom_item_subcontent {
+                @include text($text-white, 13px);
+                @include montserrat;
+                line-height: 120%;
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+        .item_one {
+          background-image: url("/static/images/commercial_page4_01.png");
+        }
+        .item_two {
+          background-image: url("/static/images/commercial_page4_02.png");
+        }
+        .item_three {
+          background-image: url("/static/images/commercial_page4_03.png");
+        }
+        .item_four {
+          background-image: url("/static/images/commercial_page4_04.png");
+        }
+        .item_five {
+          background-image: url("/static/images/commercial_page4_05.png");
+        }
       }
     }
   }

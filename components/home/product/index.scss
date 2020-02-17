@@ -10,25 +10,24 @@
     height: 960px;
     .product_container {
       margin: auto;
-
       text-align: center;
       .product_container_top {
         padding: 7% 0 3% 0;
         width: 53%;
         margin: auto;
         .product_container_top_introduction {
-          @include text($primary, 17.6px);
+          @include text($primary, 22px);
           @include montserrat;
           text-transform: uppercase;
           letter-spacing: 1.76px;
         }
         .product_container_top_title {
-          @include text($text-bold, 44px);
+          @include text($text-bold, 54px);
           @include montserrat-bold;
           margin: 15px 0;
         }
         .product_container_top_content {
-          @include text($text-light, 14.4px);
+          @include text($text-light, 18px);
           @include montserrat;
           line-height: 150%;
         }
@@ -62,14 +61,14 @@
               @include transition(all, 1s);
             }
             .product_container_bottom_box_item_circle {
-              height: 64px;
-              width: 64px;
+              height: 80px;
+              width: 80px;
               background-color: $primary;
               @include border-radius(50%);
               @include flex(row, center, center, null);
               .product_container_bottom_box_item_icon {
-                width: 32px;
-                height: 32px;
+                width: 41px;
+                height: 41px;
                 @include transition(all, 1s);
               }
             }
@@ -77,18 +76,18 @@
               margin: 15px 0;
               a {
                 text-decoration: none;
-                @include text($text-bold, 19px);
+                @include text($text-bold, 24px);
                 @include montserrat-semibold;
                 @include transition(all, 0.5s);
 
                 &:hover {
-                  @include text($primary, 19px);
+                  @include text($primary, 24px);
                   @include transition(all, 0.5s);
                 }
               }
             }
             .product_container_bottom_box_item_content {
-              @include text($text-light, 12.8px);
+              @include text($text-light, 16px);
               @include montserrat;
               line-height: 150%;
             }

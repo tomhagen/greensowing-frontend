@@ -38,6 +38,7 @@
           .active {
             color: $primary !important;
           }
+
           .header_main_menu_item_a {
             @include text($text-normal, 14.4px);
             @include montserrat-medium;
@@ -94,6 +95,10 @@
             }
           }
 
+          .show_sub {
+            visibility: visible;
+            opacity: 1;
+          }
           // STYLE & POSITION FOR MATERIAL MENU
           .header_sub_menu_material {
             position: absolute;
