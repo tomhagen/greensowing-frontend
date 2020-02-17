@@ -57,7 +57,7 @@
           }
           .blog_container_bottom_item_content_box {
             &:hover .item_content_box_title a {
-              @include text($primary, 16px);
+              @include text($primary, 20px);
             }
             text-align: left;
             padding: 5%;

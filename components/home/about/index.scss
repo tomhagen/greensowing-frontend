@@ -66,7 +66,7 @@
             }
           }
           .about_box_right_text_behind {
-            @include text($primary, 100px);
+            @include text($primary, 94px);
             @include montserrat-bold;
             text-transform: uppercase;
             opacity: 0.1;

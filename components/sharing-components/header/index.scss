@@ -1,146 +1,291 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  padding: 15.2px 0 15px 0;
-  @include transition(all, 0.2s);
-  .header_container {
-    margin: auto;
-    width: 75%;
+@media screen and (min-width: 1537px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15.2px 0 15px 0;
+    @include transition(all, 0.2s);
+    .header_container {
+      margin: auto;
+      width: 75%;
 
-    .header_box {
-      @include flex(row, space-between, center, wrap);
-
-      .header_logo {
-        img {
-          width: auto;
-          height: 78px;
-        }
-        .logo_change {
-          height: 60px;
+      .header_box {
+        @include flex(row, space-between, center, wrap);
+        .header_logo {
+          img {
+            width: auto;
+            height: 93px;
+          }
+          .logo_change {
+            height: 75px;
+          }
         }
       }
-    }
 
-    .header_main_menu_container {
-      // DESKTOP MENU
-      .header_main_menu {
-        @include flex(row, flex-start, center, null);
-        position: relative;
-        .header_main_menu_item {
-          margin: 0 17px;
-          padding: 20px 0;
-          .active {
-            color: $primary !important;
-          }
+      .header_main_menu_container {
+        // DESKTOP MENU
+        .header_main_menu {
+          @include flex(row, flex-start, center, null);
+          position: relative;
+          .header_main_menu_item {
+            margin: 0 20px;
+            padding: 20px 0;
+            .active {
+              color: $primary !important;
+            }
 
-          .header_main_menu_item_a {
-            @include text($text-normal, 14.4px);
-            @include montserrat-medium;
-            text-transform: uppercase;
-            @include transition(all, 0.2s);
-            &:hover {
-              @include text($primary, 14.4px);
+            .header_main_menu_item_a {
+              @include text($text-normal, 18px);
+              @include montserrat-medium;
+              text-transform: uppercase;
               @include transition(all, 0.2s);
-            }
-          }
-          .arrow-down {
-            &::after {
-              font-family: "FontAwesome";
-              content: "\f107";
-              font-size: 14.4px;
-              color: $text-normal;
-              margin-left: 11.2px;
-            }
-            &:hover::after {
-              color: $primary;
-            }
-          }
-          &:hover .header_sub_menu {
-            visibility: visible;
-            opacity: 1;
-            @include transition(all, 0.5s);
-          }
-
-          &:hover .header_sub_menu_material {
-            visibility: visible;
-            opacity: 1;
-            @include transition(all, 0.5s);
-          }
-          .header_sub_menu {
-            position: absolute;
-            top: 60px;
-            @include flex(row, space-between, null, null);
-            visibility: hidden;
-            opacity: 0;
-            @include transition(all, 0.5s);
-
-            .header_sub_menu_item {
-              margin: 0 10px;
-              .sub_active {
-                padding: 10px 20px;
-                background-color: $primary;
-                @include border-radius(8px);
-                color: white !important;
-              }
-              .header_sub_menu_item_a {
-                @include text($text-normal, 12.8px);
-                @include montserrat-medium;
+              &:hover {
+                @include text($primary, 18px);
+                @include transition(all, 0.2s);
               }
             }
-          }
-
-          .show_sub {
-            visibility: visible;
-            opacity: 1;
-          }
-          // STYLE & POSITION FOR MATERIAL MENU
-          .header_sub_menu_material {
-            position: absolute;
-            top: 60px;
-            right: 15%;
-            @include flex(row, space-between, null, null);
-            visibility: hidden;
-            opacity: 0;
-            @include transition(all, 0.5s);
-            .header_sub_menu_item {
-              margin: 0 10px;
-              .sub_active {
-                padding: 10px 20px;
-                background-color: $primary;
-                @include border-radius(8px);
-                color: white !important;
+            .arrow-down {
+              &::after {
+                font-family: "FontAwesome";
+                content: "\f107";
+                font-size: 18px;
+                color: $text-normal;
+                margin-left: 11.2px;
               }
-              .header_sub_menu_item_a {
-                @include text($text-normal, 12.8px);
-                @include montserrat-medium;
+              &:hover::after {
+                color: $primary;
+              }
+            }
+            &:hover .header_sub_menu {
+              visibility: visible;
+              opacity: 1;
+              @include transition(all, 0.5s);
+            }
+
+            &:hover .header_sub_menu_material {
+              visibility: visible;
+              opacity: 1;
+              @include transition(all, 0.5s);
+            }
+            .header_sub_menu {
+              position: absolute;
+              top: 60px;
+              @include flex(row, space-between, null, null);
+              visibility: hidden;
+              opacity: 0;
+              @include transition(all, 0.5s);
+
+              .header_sub_menu_item {
+                margin: 0 10px;
+                .sub_active {
+                  padding: 10px 20px;
+                  background-color: $primary;
+                  @include border-radius(8px);
+                  color: white !important;
+                }
+                .header_sub_menu_item_a {
+                  @include text($text-normal, 16px);
+                  @include montserrat-medium;
+                }
+              }
+            }
+
+            .show_sub {
+              visibility: visible;
+              opacity: 1;
+            }
+            // STYLE & POSITION FOR MATERIAL MENU
+            .header_sub_menu_material {
+              position: absolute;
+              top: 60px;
+              right: 15%;
+              @include flex(row, space-between, null, null);
+              visibility: hidden;
+              opacity: 0;
+              @include transition(all, 0.5s);
+              .header_sub_menu_item {
+                margin: 0 10px;
+                .sub_active {
+                  padding: 10px 20px;
+                  background-color: $primary;
+                  @include border-radius(8px);
+                  color: white !important;
+                }
+                .header_sub_menu_item_a {
+                  @include text($text-normal, 16px);
+                  @include montserrat-medium;
+                }
               }
             }
           }
         }
-      }
-      // MOBILE MENU HAMBURGER
-      .btn__collapse {
-        display: none;
-        color: $primary;
-        font-size: 35px;
+        // MOBILE MENU HAMBURGER
+        .btn__collapse {
+          display: none;
+          color: $primary;
+          font-size: 35px;
+        }
       }
     }
   }
+
+  // CHANGE HEADER STYLE WHEN SCROLL
+  .header_change {
+    background: linear-gradient(white, rgb(247, 237, 237));
+    opacity: 0.9;
+    @include transition(all, 0.2s);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 15px 0 28px 0;
+  }
 }
 
-// CHANGE HEADER STYLE WHEN SCROLL
-.header_change {
-  background: linear-gradient(white, rgb(247, 237, 237));
-  opacity: 0.9;
-  @include transition(all, 0.2s);
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
-  padding: 15px 0 28px 0;
+@media screen and (max-width: 1536px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15.2px 0 15px 0;
+    @include transition(all, 0.2s);
+    .header_container {
+      margin: auto;
+      width: 75%;
+
+      .header_box {
+        @include flex(row, space-between, center, wrap);
+
+        .header_logo {
+          img {
+            width: auto;
+            height: 78px;
+          }
+          .logo_change {
+            height: 60px;
+          }
+        }
+      }
+
+      .header_main_menu_container {
+        // DESKTOP MENU
+        .header_main_menu {
+          @include flex(row, flex-start, center, null);
+          position: relative;
+          .header_main_menu_item {
+            margin: 0 17px;
+            padding: 20px 0;
+            .active {
+              color: $primary !important;
+            }
+
+            .header_main_menu_item_a {
+              @include text($text-normal, 14.4px);
+              @include montserrat-medium;
+              text-transform: uppercase;
+              @include transition(all, 0.2s);
+              &:hover {
+                @include text($primary, 14.4px);
+                @include transition(all, 0.2s);
+              }
+            }
+            .arrow-down {
+              &::after {
+                font-family: "FontAwesome";
+                content: "\f107";
+                font-size: 14.4px;
+                color: $text-normal;
+                margin-left: 11.2px;
+              }
+              &:hover::after {
+                color: $primary;
+              }
+            }
+            &:hover .header_sub_menu {
+              visibility: visible;
+              opacity: 1;
+              @include transition(all, 0.5s);
+            }
+
+            &:hover .header_sub_menu_material {
+              visibility: visible;
+              opacity: 1;
+              @include transition(all, 0.5s);
+            }
+            .header_sub_menu {
+              position: absolute;
+              top: 60px;
+              @include flex(row, space-between, null, null);
+              visibility: hidden;
+              opacity: 0;
+              @include transition(all, 0.5s);
+
+              .header_sub_menu_item {
+                margin: 0 10px;
+                .sub_active {
+                  padding: 10px 20px;
+                  background-color: $primary;
+                  @include border-radius(8px);
+                  color: white !important;
+                }
+                .header_sub_menu_item_a {
+                  @include text($text-normal, 12.8px);
+                  @include montserrat-medium;
+                }
+              }
+            }
+
+            .show_sub {
+              visibility: visible;
+              opacity: 1;
+            }
+            // STYLE & POSITION FOR MATERIAL MENU
+            .header_sub_menu_material {
+              position: absolute;
+              top: 60px;
+              right: 15%;
+              @include flex(row, space-between, null, null);
+              visibility: hidden;
+              opacity: 0;
+              @include transition(all, 0.5s);
+              .header_sub_menu_item {
+                margin: 0 10px;
+                .sub_active {
+                  padding: 10px 20px;
+                  background-color: $primary;
+                  @include border-radius(8px);
+                  color: white !important;
+                }
+                .header_sub_menu_item_a {
+                  @include text($text-normal, 12.8px);
+                  @include montserrat-medium;
+                }
+              }
+            }
+          }
+        }
+        // MOBILE MENU HAMBURGER
+        .btn__collapse {
+          display: none;
+          color: $primary;
+          font-size: 35px;
+        }
+      }
+    }
+  }
+
+  // CHANGE HEADER STYLE WHEN SCROLL
+  .header_change {
+    background: linear-gradient(white, rgb(247, 237, 237));
+    opacity: 0.9;
+    @include transition(all, 0.2s);
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.4);
+    padding: 15px 0 28px 0;
+  }
 }
 
 @media screen and (max-width: 1229px) {
