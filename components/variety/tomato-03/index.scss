@@ -1,43 +1,89 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.tomato_03 {
-  background-image: url("/static/images/variety_bg_05.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 768px;
-  position: relative;
-  .tomato_03_container {
-    width: 100%;
-    @include flex(row, center, null, null);
-    position: absolute;
-    top: 26%;
-    left: -16%;
-    .tomato_03_box {
-      width: 42%;
-      background-color: $primary-sub;
-      padding: 2% 4%;
+@media screen and (min-width: 1537px) {
+  .tomato_03 {
+    background-image: url("/static/images/variety_bg_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 960px;
+    position: relative;
+    .tomato_03_container {
+      width: 100%;
+      @include flex(row, center, null, null);
+      position: absolute;
+      top: 26%;
+      left: -16%;
+      .tomato_03_box {
+        width: 42%;
+        background-color: $primary-sub;
+        padding: 2% 4%;
 
-      .tomato_03_box_title {
-        @include text($text-white, 38.4px);
-        @include montserrat-bold;
-        padding: 0 0 20px 0;
-        line-height: 115%;
+        .tomato_03_box_title {
+          @include text($text-white, 48px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .tomato_03_box_content {
+          @include text($text-white, 18px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .tomato_03_box_subcontent {
+          @include text($text-white, 18px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
-      .tomato_03_box_content {
-        @include text($text-white, 14.4px);
-        @include montserrat-bold;
-        padding: 0 0 20px 0;
-        line-height: 150%;
-        text-align: justify;
-      }
-      .tomato_03_box_subcontent {
-        @include text($text-white, 14.4px);
-        @include montserrat;
-        line-height: 150%;
-        opacity: 0.8;
-        text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .tomato_03 {
+    background-image: url("/static/images/variety_bg_05.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    position: relative;
+    .tomato_03_container {
+      width: 100%;
+      @include flex(row, center, null, null);
+      position: absolute;
+      top: 26%;
+      left: -16%;
+      .tomato_03_box {
+        width: 42%;
+        background-color: $primary-sub;
+        padding: 2% 4%;
+
+        .tomato_03_box_title {
+          @include text($text-white, 38.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .tomato_03_box_content {
+          @include text($text-white, 14.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 150%;
+          text-align: justify;
+        }
+        .tomato_03_box_subcontent {
+          @include text($text-white, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
     }
   }

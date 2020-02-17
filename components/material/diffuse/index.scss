@@ -1,58 +1,120 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.diffuse {
-  background-color: $bg-light;
-  .diffuse_container {
-    margin: auto;
-    width: 75%;
-    padding: 8% 0;
-    .diffuse_box {
-      @include flex(row-reverse, space-between, null, null);
-      .diffuse_box_left {
-        flex: 45%;
-        max-width: 45%;
-        position: relative;
+@media screen and (min-width: 1537px) {
+  .diffuse {
+    background-color: $bg-light;
+    .diffuse_container {
+      margin: auto;
+      width: 75%;
+      padding: 8% 0;
+      .diffuse_box {
+        @include flex(row-reverse, space-between, null, null);
+        .diffuse_box_left {
+          flex: 45%;
+          max-width: 45%;
+          position: relative;
 
-        .diffuse_box_left_frame {
-          position: absolute;
-          top: 11%;
-          left: -8%;
-          width: 92%;
-          height: 90%;
-          border: 9.6px solid $primary;
+          .diffuse_box_left_frame {
+            position: absolute;
+            top: 11%;
+            left: -8%;
+            width: 92%;
+            height: 90%;
+            border: 12px solid $primary;
+          }
+          .diffuse_box_left_img {
+            width: 90%;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            img {
+              max-width: 100%;
+            }
+          }
         }
-        .diffuse_box_left_img {
-          width: 90%;
-          position: absolute;
-          z-index: 10;
-          top: 0;
-          left: 0;
-          img {
-            max-width: 100%;
+        .diffuse_box_right {
+          flex: 46%;
+          max-width: 46%;
+          padding: 8% 0;
+          text-align: justify;
+          .diffuse_box_right_title {
+            @include text($text-bold, 48px);
+            @include montserrat-bold;
+            padding: 20px 0;
+          }
+          .diffuse_box_right_content {
+            @include text($text-bold, 18px);
+            @include montserrat-bold;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+          }
+          .diffuse_box_right_subcontent {
+            @include text($text-light, 18px);
+            @include montserrat;
+            line-height: 150%;
           }
         }
       }
-      .diffuse_box_right {
-        flex: 46%;
-        max-width: 46%;
-        padding: 8% 0;
-        text-align: justify;
-        .diffuse_box_right_title {
-          @include text($text-bold, 38.4px);
-          @include montserrat-bold;
-          padding: 20px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .diffuse {
+    background-color: $bg-light;
+    .diffuse_container {
+      margin: auto;
+      width: 75%;
+      padding: 8% 0;
+      .diffuse_box {
+        @include flex(row-reverse, space-between, null, null);
+        .diffuse_box_left {
+          flex: 45%;
+          max-width: 45%;
+          position: relative;
+
+          .diffuse_box_left_frame {
+            position: absolute;
+            top: 11%;
+            left: -8%;
+            width: 92%;
+            height: 90%;
+            border: 9.6px solid $primary;
+          }
+          .diffuse_box_left_img {
+            width: 90%;
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            img {
+              max-width: 100%;
+            }
+          }
         }
-        .diffuse_box_right_content {
-          @include text($text-bold, 14.4px);
-          @include montserrat-bold;
-          padding: 0 0 20px 0;
-          line-height: 150%;
-        }
-        .diffuse_box_right_subcontent {
-          @include text($text-light, 14.4px);
-          @include montserrat;
-          line-height: 150%;
+        .diffuse_box_right {
+          flex: 46%;
+          max-width: 46%;
+          padding: 8% 0;
+          text-align: justify;
+          .diffuse_box_right_title {
+            @include text($text-bold, 38.4px);
+            @include montserrat-bold;
+            padding: 20px 0;
+          }
+          .diffuse_box_right_content {
+            @include text($text-bold, 14.4px);
+            @include montserrat-bold;
+            padding: 0 0 20px 0;
+            line-height: 150%;
+          }
+          .diffuse_box_right_subcontent {
+            @include text($text-light, 14.4px);
+            @include montserrat;
+            line-height: 150%;
+          }
         }
       }
     }

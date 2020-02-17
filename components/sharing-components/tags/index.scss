@@ -1,15 +1,31 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.tags_box {
-  border: 1px solid $primary;
-  padding: 10px;
-  @include border-radius(5px);
-  margin-right: 10px;
-  margin-top: 10px;
-  .tags_content {
-    @include text($text-bold, 12px);
-    @include montserrat-bold;
+@media screen and (min-width: 1537px) {
+  .tags_box {
+    border: 1px solid $primary;
+    padding: 10px;
+    @include border-radius(5px);
+    margin-right: 10px;
+    margin-top: 10px;
+    .tags_content {
+      @include text($text-bold, 15px);
+      @include montserrat-bold;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .tags_box {
+    border: 1px solid $primary;
+    padding: 10px;
+    @include border-radius(5px);
+    margin-right: 10px;
+    margin-top: 10px;
+    .tags_content {
+      @include text($text-bold, 12px);
+      @include montserrat-bold;
+    }
   }
 }
 

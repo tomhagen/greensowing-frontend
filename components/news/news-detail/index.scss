@@ -1,69 +1,139 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.news-detail {
-  margin-top: 111px;
-  border-top: 0.5px solid rgba($color: $border, $alpha: 0.5);
-  .news-detail_container {
-    width: 75%;
-    margin: auto;
-    padding: 26px 0;
-    .news-detail_box {
-      @include flex(row, space-between, null, null);
-      .news-detail_box_left {
-        flex: 65%;
-        max-width: 65%;
-        .news-detail_box_left_img {
-          position: relative;
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
-          img {
-            max-width: 100%;
-          }
-        }
-        .news-detail_box_left_content {
-          margin-top: 20px;
-          .news-detail_box_left_content_date {
-            @include text($text-super-light, 12px);
-            @include montserrat;
-            text-transform: uppercase;
-            @include flex(row, flex-start, null, null);
-            span {
-              margin-left: 10px;
-            }
-          }
-          .news-detail_box_left_content_title {
-            margin: 10px 0 15px 0;
-            @include text($text-bold, 24px);
-            @include montserrat-semibold;
-          }
-          .news-detail_box_left_content_description {
-            @include text($text-news, 14px);
-            @include montserrat;
-            line-height: 200%;
-            text-align: justify;
+@media screen and (min-width: 1537px) {
+  .news-detail {
+    margin-top: 111px;
+    border-top: 0.5px solid rgba($color: $border, $alpha: 0.5);
+    .news-detail_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .news-detail_box {
+        @include flex(row, space-between, null, null);
+        .news-detail_box_left {
+          flex: 65%;
+          max-width: 65%;
+          .news-detail_box_left_img {
+            position: relative;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
             img {
               max-width: 100%;
             }
           }
-        }
-      }
-      .news-detail_box_right {
-        flex: 33%;
-        max-width: 33%;
-        .news-detail_box_right_title {
-          border-left: 4px solid $primary;
-          p {
-            @include text($text-bold, 19.2px);
-            @include montserrat-semibold;
-            margin-left: 15px;
+          .news-detail_box_left_content {
+            margin-top: 20px;
+            .news-detail_box_left_content_date {
+              @include text($text-super-light, 14px);
+              @include montserrat;
+              text-transform: uppercase;
+              @include flex(row, flex-start, null, null);
+              span {
+                margin-left: 10px;
+              }
+            }
+            .news-detail_box_left_content_title {
+              margin: 10px 0 15px 0;
+              @include text($text-bold, 30px);
+              @include montserrat-semibold;
+            }
+            .news-detail_box_left_content_description {
+              @include text($text-news, 16px);
+              @include montserrat;
+              line-height: 200%;
+              text-align: justify;
+              img {
+                max-width: 100%;
+              }
+            }
           }
         }
-        .news-detail_box_right_container {
-          margin-top: 20px;
+        .news-detail_box_right {
+          flex: 33%;
+          max-width: 33%;
+          .news-detail_box_right_title {
+            border-left: 4px solid $primary;
+            p {
+              @include text($text-bold, 24px);
+              @include montserrat-semibold;
+              margin-left: 15px;
+            }
+          }
+          .news-detail_box_right_container {
+            margin-top: 20px;
+          }
+          .news-detail_box_right_tags {
+            margin-top: 40px;
+            .news-detail_box_right_tags_title {
+              border-left: 4px solid $primary;
+              p {
+                @include text($text-bold, 24px);
+                @include montserrat-semibold;
+                margin-left: 15px;
+              }
+            }
+            .news-detail_box_right_tags_container {
+              padding-top: 10px;
+              @include flex(row, null, null, wrap);
+            }
+          }
         }
-        .news-detail_box_right_tags {
-          margin-top: 40px;
-          .news-detail_box_right_tags_title {
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .news-detail {
+    margin-top: 111px;
+    border-top: 0.5px solid rgba($color: $border, $alpha: 0.5);
+    .news-detail_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .news-detail_box {
+        @include flex(row, space-between, null, null);
+        .news-detail_box_left {
+          flex: 65%;
+          max-width: 65%;
+          .news-detail_box_left_img {
+            position: relative;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+            img {
+              max-width: 100%;
+            }
+          }
+          .news-detail_box_left_content {
+            margin-top: 20px;
+            .news-detail_box_left_content_date {
+              @include text($text-super-light, 12px);
+              @include montserrat;
+              text-transform: uppercase;
+              @include flex(row, flex-start, null, null);
+              span {
+                margin-left: 10px;
+              }
+            }
+            .news-detail_box_left_content_title {
+              margin: 10px 0 15px 0;
+              @include text($text-bold, 24px);
+              @include montserrat-semibold;
+            }
+            .news-detail_box_left_content_description {
+              @include text($text-news, 14px);
+              @include montserrat;
+              line-height: 200%;
+              text-align: justify;
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+        .news-detail_box_right {
+          flex: 33%;
+          max-width: 33%;
+          .news-detail_box_right_title {
             border-left: 4px solid $primary;
             p {
               @include text($text-bold, 19.2px);
@@ -71,9 +141,23 @@
               margin-left: 15px;
             }
           }
-          .news-detail_box_right_tags_container {
-            padding-top: 10px;
-            @include flex(row, null, null, wrap);
+          .news-detail_box_right_container {
+            margin-top: 20px;
+          }
+          .news-detail_box_right_tags {
+            margin-top: 40px;
+            .news-detail_box_right_tags_title {
+              border-left: 4px solid $primary;
+              p {
+                @include text($text-bold, 19.2px);
+                @include montserrat-semibold;
+                margin-left: 15px;
+              }
+            }
+            .news-detail_box_right_tags_container {
+              padding-top: 10px;
+              @include flex(row, null, null, wrap);
+            }
           }
         }
       }

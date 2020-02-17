@@ -1,62 +1,126 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.large_news {
-  overflow: hidden;
-  @include border-radius(7px);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
-  @include transition(all, 0.5s);
-
-  &:hover {
-    box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
-      0 10px 20px 0 rgba(90, 122, 190, 0.2);
-    @include transition(all, 0.5s);
-  }
-  &:hover .large_news_content .large_news_content_title a {
-    @include text($primary, 16px);
-  }
-  &:hover .large_news_img img {
-    @include scale(1.1);
-    @include transition(all, 0.5s);
-  }
-  .large_news_img {
+@media screen and (min-width: 1537px) {
+  .large_news {
     overflow: hidden;
-    img {
-      max-width: 100%;
+    @include border-radius(7px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    @include transition(all, 0.5s);
+
+    &:hover {
+      box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+        0 10px 20px 0 rgba(90, 122, 190, 0.2);
       @include transition(all, 0.5s);
     }
-  }
-  .large_news_content {
-    &:hover .large_news_content_title a {
-      @include text($primary, 16px);
+    &:hover .large_news_content .large_news_content_title a {
+      @include text($primary, 20px);
     }
-    text-align: left;
-    padding: 5%;
-    .large_news_content_date {
-      @include text($text-super-light, 12px);
-      @include montserrat;
-      text-transform: uppercase;
-      @include flex(row, flex-start, null, null);
-      span {
-        margin-left: 10px;
+    &:hover .large_news_img img {
+      @include scale(1.1);
+      @include transition(all, 0.5s);
+    }
+    .large_news_img {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        @include transition(all, 0.5s);
       }
     }
-    .large_news_content_title {
-      margin: 10px 0;
-      a {
-        @include text($text-bold, 16px);
-        @include montserrat-semibold;
-        @include transition(all, 0.5s);
-        &:hover {
-          @include text($primary, 16px);
-          @include transition(all, 0.5s);
+    .large_news_content {
+      &:hover .large_news_content_title a {
+        @include text($primary, 20px);
+      }
+      text-align: left;
+      padding: 5%;
+      .large_news_content_date {
+        @include text($text-super-light, 14px);
+        @include montserrat;
+        text-transform: uppercase;
+        @include flex(row, flex-start, null, null);
+        span {
+          margin-left: 10px;
         }
       }
+      .large_news_content_title {
+        margin: 10px 0;
+        a {
+          @include text($text-bold, 20px);
+          @include montserrat-semibold;
+          @include transition(all, 0.5s);
+          &:hover {
+            @include text($primary, 20px);
+            @include transition(all, 0.5s);
+          }
+        }
+      }
+      .large_news_content_description {
+        @include text($text-light, 16px);
+        @include montserrat;
+        line-height: 150%;
+      }
     }
-    .large_news_content_description {
-      @include text($text-light, 12.8px);
-      @include montserrat;
-      line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .large_news {
+    overflow: hidden;
+    @include border-radius(7px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    @include transition(all, 0.5s);
+
+    &:hover {
+      box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+        0 10px 20px 0 rgba(90, 122, 190, 0.2);
+      @include transition(all, 0.5s);
+    }
+    &:hover .large_news_content .large_news_content_title a {
+      @include text($primary, 16px);
+    }
+    &:hover .large_news_img img {
+      @include scale(1.1);
+      @include transition(all, 0.5s);
+    }
+    .large_news_img {
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        @include transition(all, 0.5s);
+      }
+    }
+    .large_news_content {
+      &:hover .large_news_content_title a {
+        @include text($primary, 16px);
+      }
+      text-align: left;
+      padding: 5%;
+      .large_news_content_date {
+        @include text($text-super-light, 12px);
+        @include montserrat;
+        text-transform: uppercase;
+        @include flex(row, flex-start, null, null);
+        span {
+          margin-left: 10px;
+        }
+      }
+      .large_news_content_title {
+        margin: 10px 0;
+        a {
+          @include text($text-bold, 16px);
+          @include montserrat-semibold;
+          @include transition(all, 0.5s);
+          &:hover {
+            @include text($primary, 16px);
+            @include transition(all, 0.5s);
+          }
+        }
+      }
+      .large_news_content_description {
+        @include text($text-light, 12.8px);
+        @include montserrat;
+        line-height: 150%;
+      }
     }
   }
 }

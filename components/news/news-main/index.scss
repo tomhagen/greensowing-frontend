@@ -1,48 +1,99 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.main_agreso_news {
-  .main_agreso_news_container {
-    width: 75%;
-    margin: auto;
-    padding: 26px 0;
-    .main_agreso_news_title {
-      border-left: 4px solid $primary;
-      p {
-        @include text($text-bold, 19.2px);
-        @include montserrat-semibold;
-        margin-left: 15px;
+@media screen and (min-width: 1537px) {
+  .main_agreso_news {
+    .main_agreso_news_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .main_agreso_news_title {
+        border-left: 4px solid $primary;
+        p {
+          @include text($text-bold, 24px);
+          @include montserrat-semibold;
+          margin-left: 15px;
+        }
+      }
+      .main_agreso_news_box {
+        @include flex(row, space-between, null, wrap);
+        .main_agreso_news_box_item {
+          flex: 32%;
+          max-width: 32%;
+          margin-top: 20px;
+        }
       }
     }
-    .main_agreso_news_box {
-      @include flex(row, space-between, null, wrap);
-      .main_agreso_news_box_item {
-        flex: 32%;
-        max-width: 32%;
-        margin-top: 20px;
+  }
+  .main_agreso_tips {
+    .main_agreso_tips_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .main_agreso_tips_title {
+        border-left: 4px solid $primary;
+        p {
+          @include text($text-bold, 24px);
+          @include montserrat-semibold;
+          margin-left: 15px;
+        }
+      }
+      .main_agreso_tips_box {
+        @include flex(row, space-between, null, wrap);
+        .main_agreso_tips_box_item {
+          flex: 32%;
+          max-width: 32%;
+          margin-top: 20px;
+        }
       }
     }
   }
 }
-.main_agreso_tips {
-  .main_agreso_tips_container {
-    width: 75%;
-    margin: auto;
-    padding: 26px 0;
-    .main_agreso_tips_title {
-      border-left: 4px solid $primary;
-      p {
-        @include text($text-bold, 19.2px);
-        @include montserrat-semibold;
-        margin-left: 15px;
+
+@media screen and (max-width: 1536px) {
+  .main_agreso_news {
+    .main_agreso_news_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .main_agreso_news_title {
+        border-left: 4px solid $primary;
+        p {
+          @include text($text-bold, 19.2px);
+          @include montserrat-semibold;
+          margin-left: 15px;
+        }
+      }
+      .main_agreso_news_box {
+        @include flex(row, space-between, null, wrap);
+        .main_agreso_news_box_item {
+          flex: 32%;
+          max-width: 32%;
+          margin-top: 20px;
+        }
       }
     }
-    .main_agreso_tips_box {
-      @include flex(row, space-between, null, wrap);
-      .main_agreso_tips_box_item {
-        flex: 32%;
-        max-width: 32%;
-        margin-top: 20px;
+  }
+  .main_agreso_tips {
+    .main_agreso_tips_container {
+      width: 75%;
+      margin: auto;
+      padding: 26px 0;
+      .main_agreso_tips_title {
+        border-left: 4px solid $primary;
+        p {
+          @include text($text-bold, 19.2px);
+          @include montserrat-semibold;
+          margin-left: 15px;
+        }
+      }
+      .main_agreso_tips_box {
+        @include flex(row, space-between, null, wrap);
+        .main_agreso_tips_box_item {
+          flex: 32%;
+          max-width: 32%;
+          margin-top: 20px;
+        }
       }
     }
   }

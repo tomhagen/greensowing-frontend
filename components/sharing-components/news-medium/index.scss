@@ -1,48 +1,99 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.medium_news {
-  &:hover .medium_news_title a {
-    color: $primary;
-  }
-  &:hover .medium_news_img {
-    box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
-      0 10px 20px 0 rgba(90, 122, 190, 0.2);
-    @include transition(all, 0.5s);
-  }
-  &:hover .medium_news_img img {
-    @include scale(1.1);
-    @include transition(all, 0.5s);
-  }
-  .medium_news_img {
-    overflow: hidden;
-    @include border-radius(15px);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
-    width: 100%;
-    img {
-      max-width: 100%;
+@media screen and (min-width: 1537px) {
+  .medium_news {
+    &:hover .medium_news_title a {
+      color: $primary;
+    }
+    &:hover .medium_news_img {
+      box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+        0 10px 20px 0 rgba(90, 122, 190, 0.2);
       @include transition(all, 0.5s);
     }
-  }
-  .medium_news_date {
-    @include text($text-super-light, 11.2px);
-    @include montserrat;
-    text-transform: uppercase;
-    @include flex(row, flex-start, null, null);
-    margin-top: 10px;
-    span {
-      margin-left: 10px;
+    &:hover .medium_news_img img {
+      @include scale(1.1);
+      @include transition(all, 0.5s);
+    }
+    .medium_news_img {
+      overflow: hidden;
+      @include border-radius(15px);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+      width: 100%;
+      img {
+        max-width: 100%;
+        @include transition(all, 0.5s);
+      }
+    }
+    .medium_news_date {
+      @include text($text-super-light, 14px);
+      @include montserrat;
+      text-transform: uppercase;
+      @include flex(row, flex-start, null, null);
+      margin-top: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .medium_news_title {
+      margin: 8px 0 15px 0;
+      a {
+        @include text($text-bold, 16px);
+        @include montserrat-semibold;
+        @include transition(all, 0.3s);
+        &:hover {
+          @include text($primary, 16px);
+          @include transition(all, 0.3s);
+        }
+      }
     }
   }
-  .medium_news_title {
-    margin: 8px 0 15px 0;
-    a {
-      @include text($text-bold, 12.8px);
-      @include montserrat-semibold;
-      @include transition(all, 0.3s);
-      &:hover {
-        @include text($primary, 12.8px);
+}
+
+@media screen and (max-width: 1536px) {
+  .medium_news {
+    &:hover .medium_news_title a {
+      color: $primary;
+    }
+    &:hover .medium_news_img {
+      box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+        0 10px 20px 0 rgba(90, 122, 190, 0.2);
+      @include transition(all, 0.5s);
+    }
+    &:hover .medium_news_img img {
+      @include scale(1.1);
+      @include transition(all, 0.5s);
+    }
+    .medium_news_img {
+      overflow: hidden;
+      @include border-radius(15px);
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+      width: 100%;
+      img {
+        max-width: 100%;
+        @include transition(all, 0.5s);
+      }
+    }
+    .medium_news_date {
+      @include text($text-super-light, 11.2px);
+      @include montserrat;
+      text-transform: uppercase;
+      @include flex(row, flex-start, null, null);
+      margin-top: 10px;
+      span {
+        margin-left: 10px;
+      }
+    }
+    .medium_news_title {
+      margin: 8px 0 15px 0;
+      a {
+        @include text($text-bold, 12.8px);
+        @include montserrat-semibold;
         @include transition(all, 0.3s);
+        &:hover {
+          @include text($primary, 12.8px);
+          @include transition(all, 0.3s);
+        }
       }
     }
   }

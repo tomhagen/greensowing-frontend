@@ -1,42 +1,87 @@
 @import "../../../public/static/scss/reset.scss";
 @import "../../../public/static/scss/style.scss";
 
-.planting {
-  background-image: url("/static/images/crop_bg_04.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 768px;
-  position: relative;
-  .planting_container {
-    width: 100%;
-    @include flex(row, center, null, null);
-    position: absolute;
-    top: 25%;
-    left: -17%;
-    .planting_box {
-      width: 42%;
-      background-color: $primary-sub;
-      padding: 3% 5%;
+@media screen and (min-width: 1537px) {
+  .planting {
+    background-image: url("/static/images/crop_bg_04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 960px;
+    position: relative;
+    .planting_container {
+      width: 100%;
+      @include flex(row, center, null, null);
+      position: absolute;
+      top: 25%;
+      left: -17%;
+      .planting_box {
+        width: 42%;
+        background-color: $primary-sub;
+        padding: 3% 5%;
 
-      .planting_box_title {
-        @include text($text-white, 38.4px);
-        @include montserrat-bold;
-        padding: 0 0 20px 0;
-        line-height: 115%;
+        .planting_box_title {
+          @include text($text-white, 48px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .planting_box_subtitle {
+          @include text($text-white, 18px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+        }
+        .planting_box_subcontent {
+          @include text($text-white, 18px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
-      .planting_box_subtitle {
-        @include text($text-white, 14.4px);
-        @include montserrat-medium;
-        text-transform: uppercase;
-        margin: 20px 0 10px 0;
-      }
-      .planting_box_subcontent {
-        @include text($text-white, 14.4px);
-        @include montserrat;
-        line-height: 150%;
-        opacity: 0.8;
-        text-align: justify;
+    }
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .planting {
+    background-image: url("/static/images/crop_bg_04.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 768px;
+    position: relative;
+    .planting_container {
+      width: 100%;
+      @include flex(row, center, null, null);
+      position: absolute;
+      top: 25%;
+      left: -17%;
+      .planting_box {
+        width: 42%;
+        background-color: $primary-sub;
+        padding: 3% 5%;
+
+        .planting_box_title {
+          @include text($text-white, 38.4px);
+          @include montserrat-bold;
+          padding: 0 0 20px 0;
+          line-height: 115%;
+        }
+        .planting_box_subtitle {
+          @include text($text-white, 14.4px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          margin: 20px 0 10px 0;
+        }
+        .planting_box_subcontent {
+          @include text($text-white, 14.4px);
+          @include montserrat;
+          line-height: 150%;
+          opacity: 0.8;
+          text-align: justify;
+        }
       }
     }
   }
