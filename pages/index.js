@@ -10,6 +10,7 @@ import Footer from "../components/sharing-components/footer";
 import Copyright from "../components/sharing-components/copyright";
 import RegisterButton from "../components/sharing-components/register";
 import { useEffect } from "react";
+import Loading from "../components/sharing-components/loading";
 
 const Home = () => {
   const head = () => {
@@ -25,6 +26,7 @@ const Home = () => {
   return (
     <React.Fragment>
       {head()}
+      <Loading />
       <Header />
       <HomeCarousel />
       <About />
