@@ -226,7 +226,7 @@ const Header = () => {
               <Link href="/">
                 <a>
                   <img
-                    src="/static/images/logo_agreso.png"
+                    src="/static/images/logo_agreso2.png"
                     alt="Agreso_logo"
                     className={`${scroll ? "logo_change" : ""}`}
                   />

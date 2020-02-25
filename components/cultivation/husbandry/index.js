@@ -15,49 +15,51 @@ const Husbandry = () => {
             <div className="husbandry_subtitle">Fertilizers</div>
             <div className="husbandry_table">
               <table>
-                <tr>
-                  <th rowSpan={2} style={{ verticalAlign: "middle" }}>
-                    stage of growth
-                  </th>
-                  <th>nitroge N</th>
-                  <th>Total dissolved solids TDS</th>
-                  <th> Electroconductivity ED</th>
-                </tr>
-                <tr>
-                  <th>(ppm)</th>
-                  <th>(ppm)</th>
-                  <th>(mmhos)</th>
-                </tr>
-                <tr>
-                  <td>Germination to first true leaf fully expanded</td>
-                  <td>50</td>
-                  <td>450-550</td>
-                  <td>0.6-0.7</td>
-                </tr>
-                <tr>
-                  <td>First true leaf to third true leaf fully expanded</td>
-                  <td>50 - 75</td>
-                  <td>550-600</td>
-                  <td>0.6-0.7</td>
-                </tr>
-                <tr>
-                  <td>Third leaf to transplant</td>
-                  <td>75 - 100</td>
-                  <td>600-800</td>
-                  <td>0.7-0.9</td>
-                </tr>
-                <tr>
-                  <td>Transplant to second cluster set</td>
-                  <td>100 - 125</td>
-                  <td>800-1,100</td>
-                  <td>0.9-1.8</td>
-                </tr>
-                <tr>
-                  <td>Second cluster to topping</td>
-                  <td>125 - 200</td>
-                  <td>1,100-1,600</td>
-                  <td>1.8-2.2</td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th rowSpan={2} style={{ verticalAlign: "middle" }}>
+                      stage of growth
+                    </th>
+                    <th>nitroge N</th>
+                    <th>Total dissolved solids TDS</th>
+                    <th> Electroconductivity ED</th>
+                  </tr>
+                  <tr>
+                    <th>(ppm)</th>
+                    <th>(ppm)</th>
+                    <th>(mmhos)</th>
+                  </tr>
+                  <tr>
+                    <td>Germination to first true leaf fully expanded</td>
+                    <td>50</td>
+                    <td>450-550</td>
+                    <td>0.6-0.7</td>
+                  </tr>
+                  <tr>
+                    <td>First true leaf to third true leaf fully expanded</td>
+                    <td>50 - 75</td>
+                    <td>550-600</td>
+                    <td>0.6-0.7</td>
+                  </tr>
+                  <tr>
+                    <td>Third leaf to transplant</td>
+                    <td>75 - 100</td>
+                    <td>600-800</td>
+                    <td>0.7-0.9</td>
+                  </tr>
+                  <tr>
+                    <td>Transplant to second cluster set</td>
+                    <td>100 - 125</td>
+                    <td>800-1,100</td>
+                    <td>0.9-1.8</td>
+                  </tr>
+                  <tr>
+                    <td>Second cluster to topping</td>
+                    <td>125 - 200</td>
+                    <td>1,100-1,600</td>
+                    <td>1.8-2.2</td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </ReactWOW>

@@ -40,7 +40,7 @@ const GrowingMedia = () => {
               </div>
               <div className="growing_box_btn">
                 <div className="growing_box_btn_box">
-                  <Link href="#">
+                  <Link href="/material/glass">
                     <a>view materials</a>
                   </Link>
                 </div>

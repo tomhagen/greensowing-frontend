@@ -60,6 +60,109 @@
       }
     }
   }
+  .order_form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: white;
+    min-width: 400px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    @include border-radius(10px);
+    @include transition(all, 0.5s);
+    .order_form-header {
+      text-align: center;
+      padding: 20px 30px;
+      box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+      h2 {
+        text-transform: uppercase;
+        @include text($text-bold, 15px);
+      }
+    }
+    .order_form-body {
+      text-align: center;
+      padding: 20px 30px;
+      .form-error {
+        @include text(red, 13px);
+        @include montserrat;
+        margin-bottom: 20px;
+      }
+      .order_form-btn {
+        margin-top: 3%;
+        .order_form-btn_container {
+          background-color: $primary;
+          padding: 15px 50px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            border: 2px solid $primary;
+            padding: 15px 50px;
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+          &:hover a {
+            @include text($primary, 14.4px);
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+          a {
+            @include text($text-white, 14.4px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 14.4px);
+              @include transition(all, 0.5s);
+            }
+          }
+        }
+      }
+    }
+
+    .close-order_form-btn {
+      width: 30px;
+      height: 30px;
+      @include border-radius(50%);
+      line-height: 30px;
+      text-align: center;
+      background-color: $primary;
+      color: white;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .open-form {
+    visibility: visible !important;
+    opacity: 1 !important;
+    @include transition(all, 0.5s);
+  }
+
+  .bg_overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .swal2-header {
+    .title-class {
+      color: white;
+    }
+  }
 }
 
 @media screen and (max-width: 1536px) {
@@ -121,6 +224,110 @@
       }
     }
   }
+
+  .order_form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    background-color: white;
+    min-width: 350px;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    @include border-radius(10px);
+    @include transition(all, 0.5s);
+    .order_form-header {
+      text-align: center;
+      padding: 20px 30px;
+      box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.3);
+      h2 {
+        text-transform: uppercase;
+        @include text($text-bold, 15px);
+      }
+    }
+    .order_form-body {
+      text-align: center;
+      padding: 20px 30px;
+      .form-error {
+        @include text(red, 13px);
+        @include montserrat;
+        margin-bottom: 20px;
+      }
+      .order_form-btn {
+        margin-top: 3%;
+        .order_form-btn_container {
+          background-color: $primary;
+          padding: 15px 50px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            border: 2px solid $primary;
+            padding: 15px 50px;
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+          &:hover a {
+            @include text($primary, 14.4px);
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+          a {
+            @include text($text-white, 14.4px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 14.4px);
+              @include transition(all, 0.5s);
+            }
+          }
+        }
+      }
+    }
+
+    .close-order_form-btn {
+      width: 30px;
+      height: 30px;
+      @include border-radius(50%);
+      line-height: 30px;
+      text-align: center;
+      background-color: $primary;
+      color: white;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .open-form {
+    visibility: visible !important;
+    opacity: 1 !important;
+    @include transition(all, 0.5s);
+  }
+
+  .bg_overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  .swal2-header {
+    .title-class {
+      color: white;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -144,5 +351,8 @@
         width: 100%;
       }
     }
+  }
+  .order_form-container {
+    min-width: 320px;
   }
 }

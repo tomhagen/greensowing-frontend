@@ -1,32 +1,66 @@
 import React from "react";
 import Link from "next/link";
 import "./index.scss";
+import moment from "moment";
+import { API } from "../../../config";
+import renderHTML from "react-render-html";
 
-const LargeNews = () => {
+const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
   return (
     <React.Fragment>
       <div className="large_news">
         <div className="large_news_img">
-          <Link href="#">
-            <a>
-              <img src="/static/images/news_01.png" alt="" />
-            </a>
-          </Link>
+          {agresoNewsList && (
+            <Link href="news/[slug]" as={`news/${agresoNewsList.slug}`}>
+              <a>
+                <img
+                  src={`${API}/post/photo/${agresoNewsList.slug}`}
+                  alt={agresoNewsList.title}
+                />
+              </a>
+            </Link>
+          )}
+          {agresoTipsList && (
+            <Link href="news/[slug]" as={`news/${agresoTipsList.slug}`}>
+              <a>
+                <img
+                  src={`${API}/post/photo/${agresoTipsList.slug}`}
+                  alt={agresoTipsList.title}
+                />
+              </a>
+            </Link>
+          )}
         </div>
         <div className="large_news_content">
           <div className="large_news_content_date">
-            <i class="fa fa-calendar"></i>
-            <span>20 October, 2019</span>
+            <i className="fa fa-calendar"></i>
+            <span>
+              {agresoNewsList && moment(agresoNewsList.createdAt).format("LL")}
+              {agresoTipsList && moment(agresoTipsList.createdAt).format("LL")}
+            </span>
           </div>
           <h3 className="large_news_content_title">
-            <Link href="#">
-              <a>Spicey choose plush amazing</a>
-            </Link>
+            {agresoNewsList && (
+              <Link href="/news/[slug]" as={`news/${agresoNewsList.slug}`}>
+                <a>{agresoNewsList.title}</a>
+              </Link>
+            )}
+            {agresoTipsList && (
+              <Link href="/news/[slug]" as={`news/${agresoTipsList.slug}`}>
+                <a>{agresoTipsList.title}</a>
+              </Link>
+            )}
           </h3>
-          <p className="large_news_content_description">
-            Although there is no phone number to call for support, when you have
-            a critical issue with your website, they get working on it.
-          </p>
+          {agresoNewsList && (
+            <div className="large_news_content_description">
+              {renderHTML(agresoNewsList.excerpt)}
+            </div>
+          )}
+          {agresoTipsList && (
+            <div className="large_news_content_description">
+              {renderHTML(agresoTipsList.excerpt)}
+            </div>
+          )}
         </div>
       </div>
     </React.Fragment>

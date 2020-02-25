@@ -3,7 +3,7 @@ import "./index.scss";
 import Slider from "react-slick";
 import ReactWOW from "react-wow";
 
-const HomeCarousel = () => {
+const HomeCarousel = ({ homeData }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -22,17 +22,13 @@ const HomeCarousel = () => {
                 <div className="slick-list-item-container-center">
                   <ReactWOW animation="fadeInUp" duration="1s">
                     <div className="slick-list-item-title">
-                      MRS Agriculture Solutions
+                      {homeData.carousel_title1}
                     </div>
                   </ReactWOW>
                   <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-subtitle-container">
                       <div className="slick-list-item-subtitle">
-                        Many commercial glass greenhouses or hothouses are high
-                        tech production facilities for vegetables or flowers.
-                        The glass greenhouses are filled with equipment
-                        including screening installations, heating, cooling,
-                        lighting
+                        {homeData.carousel_subtitle1}
                       </div>
                     </div>
                   </ReactWOW>
@@ -47,18 +43,14 @@ const HomeCarousel = () => {
                 <div className="slick-list-item-container-center">
                   <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-title">
-                      MRS Agriculture Solutions
+                      {homeData.carousel_title2}
                     </div>
                   </ReactWOW>
 
                   <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
                     <div className="slick-list-item-subtitle-container">
                       <div className="slick-list-item-subtitle">
-                        Many commercial glass greenhouses or hothouses are high
-                        tech production facilities for vegetables or flowers.
-                        The glass greenhouses are filled with equipment
-                        including screening installations, heating, cooling,
-                        lighting
+                        {homeData.carousel_subtitle2}
                       </div>
                     </div>
                   </ReactWOW>
@@ -72,14 +64,11 @@ const HomeCarousel = () => {
               <div className="slick-list-item-container">
                 <div className="slick-list-item-container-center">
                   <div className="slick-list-item-title">
-                    MRS Agriculture Solutions
+                    {homeData.carousel_title3}
                   </div>
                   <div className="slick-list-item-subtitle-container">
                     <div className="slick-list-item-subtitle">
-                      Many commercial glass greenhouses or hothouses are high
-                      tech production facilities for vegetables or flowers. The
-                      glass greenhouses are filled with equipment including
-                      screening installations, heating, cooling, lighting
+                      {homeData.carousel_subtitle3}
                     </div>
                   </div>
                 </div>
@@ -92,14 +81,11 @@ const HomeCarousel = () => {
               <div className="slick-list-item-container">
                 <div className="slick-list-item-container-center">
                   <div className="slick-list-item-title">
-                    MRS Agriculture Solutions
+                    {homeData.carousel_title4}
                   </div>
                   <div className="slick-list-item-subtitle-container">
                     <div className="slick-list-item-subtitle">
-                      Many commercial glass greenhouses or hothouses are high
-                      tech production facilities for vegetables or flowers. The
-                      glass greenhouses are filled with equipment including
-                      screening installations, heating, cooling, lighting
+                      {homeData.carousel_subtitle4}
                     </div>
                   </div>
                 </div>

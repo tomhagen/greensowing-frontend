@@ -1,25 +1,30 @@
 import "./index.scss";
 import React from "react";
 import Link from "next/link";
+import moment from "moment";
+import { API } from "../../../config";
 
-const MediumNews = () => {
+const MediumNews = ({ mediumNews }) => {
   return (
     <React.Fragment>
       <div className="medium_news">
         <div className="medium_news_img">
-          <Link href="#">
+          <Link href="news/[slug]" as={`news/${mediumNews.slug}`}>
             <a>
-              <img src="/static/images/news.png" alt="" />
+              <img
+                src={`${API}/post/photo/${mediumNews.slug}`}
+                alt={mediumNews.title}
+              />
             </a>
           </Link>
         </div>
         <div className="medium_news_date">
-          <i class="fa fa-calendar"></i>
-          <span>20 October, 2019</span>
+          <i className="fa fa-calendar"></i>
+          <span>{moment(mediumNews.createdAt).format("LL")}</span>
         </div>
         <h3 className="medium_news_title">
-          <Link href="#">
-            <a>Velit scaevola persecuti nam ea. Saperet maiorum</a>
+          <Link href="/news/[slug]" as={`news/${mediumNews.slug}`}>
+            <a>{mediumNews.title}</a>
           </Link>
         </h3>
       </div>

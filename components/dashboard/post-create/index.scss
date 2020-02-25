@@ -1,0 +1,170 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.post_create {
+  background: #f1f1f1;
+  .post_create_container {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .post_create_left {
+      max-width: 70%;
+      form {
+        .post_create_box_header {
+          .post_create_title {
+            @include text($text-normal, 18px);
+            @include montserrat;
+            margin-bottom: 20px;
+          }
+        }
+        .ql-editor {
+          background-color: white;
+          min-height: 400px;
+        }
+        .post_create_box_img {
+          width: 100%;
+          .img-preview {
+            width: 740px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border: 1px dotted $primary;
+            padding-top: 10px;
+            img {
+              width: 100%;
+              margin-top: 10px;
+            }
+            .img-name {
+              color: black;
+              text-align: center;
+              margin-top: 10px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .post_create_right {
+      max-width: 28%;
+      margin-top: 30px;
+      .post_create_right_status {
+        background: #fff;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        padding: 20px 10px;
+
+        .post_create_right_status_preview {
+          width: 100%;
+          .title-class {
+            color: white;
+          }
+        }
+        .post_create_right_status_draft {
+          @include text($text-normal, 15px);
+          @include montserrat;
+          margin-top: 20px;
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .post_create_right_btn {
+        margin-top: 30px;
+        min-width: 300px;
+        text-align: center;
+        .post_create_right_btn_box {
+          background-color: $primary;
+          padding: 10px 20px;
+          @include border-radius(7px);
+          @include transition(all, 0.5s);
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+          &:hover a {
+            @include text($primary, 15px);
+            @include transition(all, 0.5s);
+          }
+          a {
+            @include text($text-white, 15px);
+            @include montserrat-medium;
+            text-transform: uppercase;
+            @include transition(all, 0.5s);
+            &:hover {
+              @include text($primary, 15px);
+              @include transition(all, 0.5s);
+            }
+          }
+        }
+      }
+      .post_create_right_categories {
+        margin-top: 30px;
+        background: #fff;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        padding: 20px 10px;
+        .post_create_right_categories_title {
+          @include text($text-normal, 18px);
+          @include montserrat;
+          margin-bottom: 20px;
+        }
+        .post_create_right_categories_box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          max-width: 280px;
+          margin-top: 10px;
+          border-bottom: 1px dotted green;
+          input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+          }
+          .checkbox_title {
+            @include text($text-normal, 12px);
+            @include montserrat;
+          }
+        }
+      }
+      .post_create_right_tags {
+        margin-top: 30px;
+        background: #fff;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.1);
+        padding: 20px 10px;
+        .post_create_right_tags_title {
+          @include text($text-normal, 18px);
+          @include montserrat;
+          margin-bottom: 20px;
+        }
+        .post_create_right_tags_box {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          max-width: 280px;
+          margin-top: 10px;
+          border-bottom: 1px dotted green;
+          input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+          }
+          .checkbox_title {
+            @include text($text-normal, 12px);
+            @include montserrat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.swal2-header {
+  .title-class {
+    color: white;
+  }
+  .title-error {
+    color: rgb(97, 26, 21);
+  }
+}

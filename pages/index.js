@@ -9,8 +9,9 @@ import Blog from "../components/home/blog";
 import Footer from "../components/sharing-components/footer";
 import Copyright from "../components/sharing-components/copyright";
 import RegisterButton from "../components/sharing-components/register";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import Loading from "../components/sharing-components/loading";
+import { getData } from "../controller/home";
 
 const Home = () => {
   const head = () => {
@@ -23,14 +24,31 @@ const Home = () => {
       </Head>
     );
   };
+
+  const [homeData, setHomeData] = useState([]);
+
+  useEffect(() => {
+    loadHomeData();
+  }, []);
+
+  const loadHomeData = () => {
+    return getData().then(data => {
+      if (data.error) {
+        console.log(data.error);
+      } else {
+        setHomeData(data);
+      }
+    });
+  };
+
   return (
     <React.Fragment>
       {head()}
       <Loading />
       <Header />
-      <HomeCarousel />
-      <About />
-      <Product />
+      <HomeCarousel homeData={homeData} />
+      <About homeData={homeData} />
+      <Product homeData={homeData} />
       <Blog />
       <Footer />
       <Copyright />

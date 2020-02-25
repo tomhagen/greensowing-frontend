@@ -3,7 +3,7 @@ import "./index.scss";
 import Link from "next/link";
 import ReactWOW from "react-wow";
 
-const Product = () => {
+const Product = ({ homeData }) => {
   return (
     <React.Fragment>
       <div className="product">
@@ -14,11 +14,10 @@ const Product = () => {
                 supportive product
               </div>
               <div className="product_container_top_title">
-                Special products for most farmer
+                {homeData.product_title}
               </div>
               <div className="product_container_top_content">
-                Morbi tristique senectus et netus et malesuada fames ac turpis
-                egestas. Vestibulum tortor quam, feugiat vitae,
+                {homeData.product_content}
               </div>
             </div>
           </ReactWOW>
@@ -34,13 +33,12 @@ const Product = () => {
                     />
                   </div>
                   <div className="product_container_bottom_box_item_title">
-                    <Link href="#">
+                    <Link href="/greenhouse/commercial">
                       <a>Greenhouse</a>
                     </Link>
                   </div>
                   <div className="product_container_bottom_box_item_content">
-                    Many desktop publishing packages and web page editors now
-                    use Lorem Ipsum
+                    {homeData.product_greenhouse}
                   </div>
                 </div>
               </ReactWOW>
@@ -54,13 +52,12 @@ const Product = () => {
                     />
                   </div>
                   <div className="product_container_bottom_box_item_title">
-                    <Link href="#">
+                    <Link href="/variety/tomato">
                       <a>Variety</a>
                     </Link>
                   </div>
                   <div className="product_container_bottom_box_item_content">
-                    Many desktop publishing packages and web page editors now
-                    use Lorem Ipsum
+                    {homeData.product_variety}
                   </div>
                 </div>
               </ReactWOW>
@@ -74,13 +71,12 @@ const Product = () => {
                     />
                   </div>
                   <div className="product_container_bottom_box_item_title">
-                    <Link href="#">
+                    <Link href="/cultivation/tomato">
                       <a>Crop Cultivation</a>
                     </Link>
                   </div>
                   <div className="product_container_bottom_box_item_content">
-                    Many desktop publishing packages and web page editors now
-                    use Lorem Ipsum
+                    {homeData.product_cultivation}
                   </div>
                 </div>
               </ReactWOW>
@@ -94,13 +90,12 @@ const Product = () => {
                     />
                   </div>
                   <div className="product_container_bottom_box_item_title">
-                    <Link href="#">
+                    <Link href="/material/glass">
                       <a>Materials</a>
                     </Link>
                   </div>
                   <div className="product_container_bottom_box_item_content">
-                    Many desktop publishing packages and web page editors now
-                    use Lorem Ipsum
+                    {homeData.product_material}
                   </div>
                 </div>
               </ReactWOW>

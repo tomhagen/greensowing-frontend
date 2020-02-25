@@ -1,0 +1,68 @@
+@import "../../../public/static/scss/reset.scss";
+@import "../../../public/static/scss/style.scss";
+
+.sidebar {
+  background-color: $primary;
+  height: 115vh;
+  overflow-y: scroll;
+  .sidebar_container {
+    width: 75%;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .sidebar_brand {
+      width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
+    .sidebar_divider {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      margin-left: -40px;
+      width: 130%;
+    }
+    .sidebar_item {
+      .sidebar_title {
+        @include text($text-white, 16px);
+        @include montserrat-bold;
+        a {
+          color: white;
+          text-decoration: none;
+          i {
+            font-size: 14px;
+            color: white;
+            margin-right: 10px;
+          }
+        }
+      }
+      .sidebar_link {
+        margin-top: 10px;
+        margin-left: 40px;
+        a {
+          @include text($text-white, 14px);
+          @include montserrat;
+        }
+      }
+      .sidebar_subtitle {
+        @include text($text-white, 14px);
+        @include montserrat-medium;
+        margin-left: 40px;
+        margin-top: 15px;
+        border-left: 1px dotted rgba(255, 255, 255, 0.4);
+        a {
+          @include text($text-white, 14px);
+          @include montserrat-medium;
+        }
+        .sidebar_sublink {
+          margin-top: 10px;
+          margin-left: 20px;
+          a {
+            @include text($text-white, 14px);
+            @include montserrat;
+          }
+        }
+      }
+    }
+  }
+}

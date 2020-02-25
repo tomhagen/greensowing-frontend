@@ -37,7 +37,7 @@ const Structure = () => {
             <ReactWOW animation="fadeIn" duration="2s" delay="0.5s">
               <div className="structure_box_btn">
                 <div className="structure_box_btn_box">
-                  <Link href="#">
+                  <Link href="/material/glass">
                     <a>view materials</a>
                   </Link>
                 </div>

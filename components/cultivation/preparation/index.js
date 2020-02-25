@@ -47,41 +47,43 @@ const Preparation = () => {
                 </div>
                 <div className="preparation_box_right_table">
                   <table>
-                    <tr>
-                      <td>V</td>
-                      <td>Verticillium Wilt</td>
-                      <td>A</td>
-                      <td>Alternaria</td>
-                    </tr>
-                    <tr>
-                      <td>F</td>
-                      <td>Fusarium Wilt</td>
-                      <td>T</td>
-                      <td>Tobacco Mosaic Virus</td>
-                    </tr>
-                    <tr>
-                      <td>FF</td>
-                      <td>Fusarium, races 1 and 2</td>
-                      <td>ST</td>
-                      <td>Stemphylium (Gray Leaf Spot)</td>
-                    </tr>
-                    <tr>
-                      <td>FFF</td>
-                      <td>Fusarium, races 1, 2, and 3</td>
-                      <td>TSW</td>
-                      <td>Tomato Spotted Wilt Virus</td>
-                    </tr>
-                    <tr>
-                      <td>N</td>
-                      <td>Nematodes</td>
-                      <td></td>
-                      <td></td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <td>V</td>
+                        <td>Verticillium Wilt</td>
+                        <td>A</td>
+                        <td>Alternaria</td>
+                      </tr>
+                      <tr>
+                        <td>F</td>
+                        <td>Fusarium Wilt</td>
+                        <td>T</td>
+                        <td>Tobacco Mosaic Virus</td>
+                      </tr>
+                      <tr>
+                        <td>FF</td>
+                        <td>Fusarium, races 1 and 2</td>
+                        <td>ST</td>
+                        <td>Stemphylium (Gray Leaf Spot)</td>
+                      </tr>
+                      <tr>
+                        <td>FFF</td>
+                        <td>Fusarium, races 1, 2, and 3</td>
+                        <td>TSW</td>
+                        <td>Tomato Spotted Wilt Virus</td>
+                      </tr>
+                      <tr>
+                        <td>N</td>
+                        <td>Nematodes</td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
                 <div className="preparation_box_right_btn">
                   <div className="preparation_box_right_btn_box">
-                    <Link href="#">
+                    <Link href="/variety/tomato">
                       <a>view varieties</a>
                     </Link>
                   </div>

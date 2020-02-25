@@ -1,8 +1,9 @@
 import React from "react";
 import "./index.scss";
 import ReactWOW from "react-wow";
+import renderHTML from "react-render-html";
 
-const About = () => {
+const About = ({ homeData }) => {
   return (
     <React.Fragment>
       <div className="about">
@@ -40,19 +41,12 @@ const About = () => {
               <div className="about_box_right_text_behind">green house</div>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="about_box_right_content">
-                  Smells racy free announcing than durable zesty smart exotic
-                  far feel. Screamin' affordable secret way absolutely.
+                  {homeData.about_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="about_box_right_sub_content">
-                  Stimulates vast a real proven works discount secure care.
-                  Market invigorate a awesome handcrafted bigger comes newer
-                  recommended lifetime. Lorem ipsum dolor sit, consectetur
-                  adipiscing elit eiusmod tempor incididunt ut labore et dol
-                  magna aliqua.mollit anim laborum.Duis aute iru dolor in re
-                  voluptate velit esse cillum dolore eu quifugi nulla pariatur.
-                  Excepteur uino sint occaecat cupidatat
+                  {homeData.about_subcontent}
                 </div>
               </ReactWOW>
             </div>
