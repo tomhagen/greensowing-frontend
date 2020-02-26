@@ -8,7 +8,7 @@ const DashSidebar = () => {
       <div className="sidebar">
         <div className="sidebar_container">
           <div className="sidebar_brand">
-            <Link href="/dashboard">
+            <Link href="/dashboard-next">
               <a>
                 <img src="/static/images/logo_agreso_2.png" alt="" />
               </a>
@@ -86,17 +86,17 @@ const DashSidebar = () => {
             <div className="sidebar_subtitle">
               Greenhouse
               <div className="sidebar_sublink">
-                <Link href="#">
+                <Link href="/dashboard-next/commercial/read">
                   <a className="">Commercial</a>
                 </Link>
               </div>
               <div className="sidebar_sublink">
-                <Link href="#">
+                <Link href="/dashboard-next/tourist/read">
                   <a className="">Tourist</a>
                 </Link>
               </div>
               <div className="sidebar_sublink">
-                <Link href="#">
+                <Link href="/dashboard-next/project/read">
                   <a className="">Project Management</a>
                 </Link>
               </div>

@@ -2,7 +2,7 @@ import "./index.scss";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const Step3 = () => {
+const Step3 = ({ projectData }) => {
   return (
     <React.Fragment>
       <div className="step3">
@@ -19,23 +19,17 @@ const Step3 = () => {
             <div className="step3_box_right">
               <ReactWOW animation="fadeInUp" duration="1.5s">
                 <div className="step3_box_right_title">
-                  Step 3: Contract signing
+                  {projectData.step3_title}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="step3_box_right_content">
-                  Contract will be signed by two sides to process the project
+                  {projectData.step3_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="step3_box_right_subcontent">
-                  All the Lorem Ipsum generators on the Internet tend to repeat
-                  predefined chunks as necessary, making this the first true
-                  generator on the Internet. It uses a dictionary of over 200
-                  Latin words, combined with a handful of model sentence
-                  structures, to generate Lorem Ipsum which looks reasonable.
-                  The generated Lorem Ipsum is therefore always free from
-                  repetition, injected humour, or non-characteristic words etc.
+                  {projectData.step3_subcontent}
                 </div>
               </ReactWOW>
             </div>

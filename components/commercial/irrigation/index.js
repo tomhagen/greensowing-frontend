@@ -2,21 +2,20 @@ import "./index.scss";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const IrrigationSystem = () => {
+const IrrigationSystem = ({ commercialData }) => {
   return (
     <React.Fragment>
       <div className="irrigation">
         <div className="irrigation_container">
           <div className="irrigation_top">
             <ReactWOW animation="fadeInUp" duration="1s">
-              <div className="irrigation_top_title">Irrigation systems</div>
+              <div className="irrigation_top_title">
+                {commercialData.irrigation_title}
+              </div>
             </ReactWOW>
             <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
               <div className="irrigation_top_subcontent">
-                Market invigorate a awesome handcrafted bigger comes newer
-                recommended lifetime. Odor to yummy high racy bonus soaking
-                mouthwatering. Evulates vast a real proven works discount secure
-                care bigger comes newer
+                {commercialData.irrigation_subcontent}
               </div>
             </ReactWOW>
           </div>
@@ -32,8 +31,7 @@ const IrrigationSystem = () => {
                       Labor restriction
                     </div>
                     <div className="irrigation_bottom_item_subcontent">
-                      Many desktop publishing packages and web page editors now
-                      use Lorem Ipsum
+                      {commercialData.irrigation_item_subcontent1}
                     </div>
                   </div>
                 </div>
@@ -50,8 +48,7 @@ const IrrigationSystem = () => {
                       High adaptability
                     </div>
                     <div className="irrigation_bottom_item_subcontent">
-                      Being suitable for many types of plant web page editors
-                      now use Lorem Ipsum
+                      {commercialData.irrigation_item_subcontent2}
                     </div>
                   </div>
                 </div>
@@ -68,8 +65,7 @@ const IrrigationSystem = () => {
                       Good regulation
                     </div>
                     <div className="irrigation_bottom_item_subcontent">
-                      It is a long established fact that a reader will be
-                      distracted by the readable content
+                      {commercialData.irrigation_item_subcontent3}
                     </div>
                   </div>
                 </div>
@@ -86,8 +82,7 @@ const IrrigationSystem = () => {
                       Flexible design
                     </div>
                     <div className="irrigation_bottom_item_subcontent">
-                      Warning when the figures do not meet MRS standards editors
-                      now use Lorem Ipsum
+                      {commercialData.irrigation_item_subcontent4}
                     </div>
                   </div>
                 </div>
@@ -104,8 +99,7 @@ const IrrigationSystem = () => {
                       Labor restriction
                     </div>
                     <div className="irrigation_bottom_item_subcontent">
-                      Designed upon customer’s request and web page editors now
-                      use Lorem Ipsum
+                      {commercialData.irrigation_item_subcontent5}
                     </div>
                   </div>
                 </div>

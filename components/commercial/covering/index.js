@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const CoveringMaterial = () => {
+const CoveringMaterial = ({ commercialData }) => {
   return (
     <React.Fragment>
       <div className="covering">
@@ -20,38 +20,36 @@ const CoveringMaterial = () => {
             <div className="covering_box_right">
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="covering_box_right_title">
-                  Covering materials
+                  {commercialData.covering_title}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="covering_box_right_content">
-                  Glass offers greater light transmission than any other of the
-                  most commonly used glazings. Insulated glass offers about the
-                  same insulating value as double-layer, air-inflated poly
-                  plastic.
+                  {commercialData.covering_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="1s">
                 <div className="covering_box_right_subcontent">
-                  And by any measure, glass offers a far longer service life
-                  than any other type of greenhouse glazing material. A glass
-                  greenhouse can potentially offer decades of service. No other
-                  glazing material can match glass in terms of potential service
-                  life.  
+                  {commercialData.covering_subcontent1}
                 </div>
                 <div className="covering_box_right_subtitle">
-                  Criterias to select glass
+                  {commercialData.covering_subtitle}
                 </div>
-                <div className="covering_box_right_subcontent">
-                  - Light-transmitting ability: definition, percentage,… <br />-
+                <div
+                  className="covering_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.covering_subcontent2
+                  }}
+                >
+                  {/* - Light-transmitting ability: definition, percentage,… <br />-
                   Haze: 50%, 70%, 80%,… subject to requirement <br />-
-                  Thickness: 4mm, 5mm,… <br />- Diffusion ability
+                  Thickness: 4mm, 5mm,… <br />- Diffusion ability */}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1.5s">
                 <div className="covering_box_right_btn">
                   <div className="covering_box_right_btn_box">
-                    <Link href="#">
+                    <Link href="/material/glass">
                       <a>view glasses</a>
                     </Link>
                   </div>

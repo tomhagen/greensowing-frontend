@@ -23,6 +23,30 @@
           margin-top: 20px;
         }
       }
+      .main_agreso_news_loadmorebtn {
+        @include flex(row, center, center, null);
+        margin-top: 3%;
+        .main_agreso_news_loadmorebtn_box {
+          background-color: $primary;
+          padding: 15px 47px;
+          @include border-radius(11px);
+          @include transition(all, 0.5s);
+          @include text($text-white, 18px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include text($primary, 18px);
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+        }
+      }
+      .hide {
+        display: none !important;
+      }
     }
   }
   .main_agreso_tips {
@@ -45,6 +69,30 @@
           max-width: 32%;
           margin-top: 20px;
         }
+      }
+      .main_agreso_tips_loadmorebtn {
+        @include flex(row, center, center, null);
+        margin-top: 3%;
+        .main_agreso_tips_loadmorebtn_box {
+          background-color: $primary;
+          padding: 15px 47px;
+          @include border-radius(11px);
+          @include transition(all, 0.5s);
+          @include text($text-white, 18px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include text($primary, 18px);
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+        }
+      }
+      .hide {
+        display: none !important;
       }
     }
   }
@@ -93,6 +141,9 @@
           }
         }
       }
+      .hide {
+        display: none !important;
+      }
     }
   }
   .main_agreso_tips {
@@ -115,6 +166,30 @@
           max-width: 32%;
           margin-top: 20px;
         }
+      }
+      .main_agreso_tips_loadmorebtn {
+        @include flex(row, center, center, null);
+        margin-top: 3%;
+        .main_agreso_tips_loadmorebtn_box {
+          background-color: $primary;
+          padding: 15px 47px;
+          @include border-radius(11px);
+          @include transition(all, 0.5s);
+          @include text($text-white, 15px);
+          @include montserrat-medium;
+          text-transform: uppercase;
+          &:hover {
+            box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
+              0 10px 20px 0 rgba(90, 122, 190, 0.2);
+            background-color: white;
+            @include text($primary, 15px);
+            @include transition(all, 0.5s);
+            cursor: pointer;
+          }
+        }
+      }
+      .hide {
+        display: none !important;
       }
     }
   }

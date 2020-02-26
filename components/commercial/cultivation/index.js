@@ -2,7 +2,7 @@ import "./index.scss";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const Cultivation = () => {
+const Cultivation = ({ commercialData }) => {
   return (
     <React.Fragment>
       <div className="cultivation">
@@ -25,45 +25,36 @@ const Cultivation = () => {
               <div className="cultivation_box_left_image_frame"></div>
             </div>
             <div className="cultivation_box_right">
-              <ReactWOW animation="fadeInUp" duration="1.5s" >
+              <ReactWOW animation="fadeInUp" duration="1.5s">
                 <div className="cultivation_box_right_title">
-                  Greenhouse Cultivation and Pollination
+                  {commercialData.cultivation_title}
                 </div>
               </ReactWOW>
 
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="cultivation_box_right_content">
-                  With a wide range of standard sizes, MRS is able to design to
-                  fit your needs. Due to our design effort, the CS3 is the most
-                  flexible greenhouse option on the market today.
+                  {commercialData.cultivation_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="cultivation_box_right_subcontent">
-                  This structure is designed for rigid coverings or corrugated
-                  metal coverings, and it accommodates single or double-roof
-                  motorized vents. The CS3 also comes with a standard 12-foot
-                  truss spacing, so it can easily accommodate walks, trolley
-                  systems, rolling benches, doors, fans and evaporative cooling
-                  installations.
+                  {commercialData.cultivation_subcontent1}
                 </div>
                 <div className="cultivation_box_right_subtitle">
-                  MRS Standard
+                  {commercialData.cultivation_subtitle1}
                 </div>
                 <div className="cultivation_box_right_subcontent">
-                  - Length, width, height
+                  {commercialData.cultivation_subcontent2}
                 </div>
                 <div className="cultivation_box_right_subtitle">
-                  MRS Standard
+                  {commercialData.cultivation_subtitle2}
                 </div>
-                <div className="cultivation_box_right_subcontent">
-                  - Main Girders: Square steel tube 120, coating …, thickness…,
-                  standard….
-                  <br />- Sub beams: Square steel tube 120, coating …,
-                  thickness…, standard….
-                  <br />- Aluminum profiles: designed according to MRS typical
-                  standard Learn more about aluminum profiles, click here
-                </div>
+                <div
+                  className="cultivation_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_subcontent3
+                  }}
+                ></div>
               </ReactWOW>
             </div>
           </div>

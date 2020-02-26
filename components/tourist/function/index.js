@@ -2,7 +2,7 @@ import "./index.scss";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const OptionalFunction = () => {
+const OptionalFunction = ({ touristData }) => {
   return (
     <React.Fragment>
       <div className="functions">
@@ -27,26 +27,18 @@ const OptionalFunction = () => {
             <div className="functions_box_right">
               <ReactWOW animation="fadeInUp" duration="1.5s">
                 <div className="functions_box_right_title">
-                  More optional functions
+                  {touristData.functions_title}
                 </div>
               </ReactWOW>
 
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="functions_box_right_content">
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque corrupti quos
-                  dolores et quas molestias
+                  {touristData.functions_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="functions_box_right_subcontent">
-                  Et harum quidem rerum facilis est et expedita distinctio. Nam
-                  libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit quo minus id quod maxime placeat facere
-                  possimus, omnis voluptas assumenda est, omnis dolor
-                  repellendus. Temporibus autem quibusdam et aut officiis
-                  debitis aut rerum necessitatibus saepe eveniet ut et
-                  voluptates repudiandae sint et molestiae
+                  {touristData.functions_subcontent}
                 </div>
 
                 <div className="functions_box_right_subcontent">

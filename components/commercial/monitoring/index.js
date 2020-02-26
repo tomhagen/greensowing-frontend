@@ -2,7 +2,7 @@ import "./index.scss";
 import React from "react";
 import ReactWOW from "react-wow";
 
-const MonitoringSystem = () => {
+const MonitoringSystem = ({ commercialData }) => {
   return (
     <React.Fragment>
       <div className="monitoring">
@@ -11,34 +11,32 @@ const MonitoringSystem = () => {
             <div className="monitoring_left_box">
               <ReactWOW animation="fadeInUp" duration="1.5s">
                 <div className="monitoring_left_box_title">
-                  Monitoring and controlling system
+                  {commercialData.monitoring_title}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="monitoring_left_box_content">
-                  Glass offers greater light transmission than any other of the
-                  most commonly used glazings. Insulated glass offers about the
-                  same insulating value as double-layer, air-inflated poly
-                  plastic.
+                  {commercialData.monitoring_content}
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="monitoring_left_box_subcontent">
-                  And by any measure, glass offers a far longer service life
-                  than any other type of greenhouse glazing material. A glass
-                  greenhouse can potentially offer decades of service. No other
-                  glazing material can match glass in terms of potential service
-                  life.  
+                  {commercialData.monitoring_subcontent1}
                 </div>
                 <div className="monitoring_left_box_subtitle">
-                  Criterias to select glass
+                  {commercialData.monitoring_subtitle}
                 </div>
-                <div className="monitoring_left_box_subcontent">
-                  - Light-transmitting ability: definition, percentage,…
+                <div
+                  className="monitoring_left_box_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.monitoring_subcontent2
+                  }}
+                >
+                  {/* - Light-transmitting ability: definition, percentage,…
                   <br />
                   -Haze: 50%, 70%, 80%,… subject to requirement
                   <br /> - Thickness: 4mm, 5mm,…
-                  <br /> - Diffusion ability
+                  <br /> - Diffusion ability */}
                 </div>
               </ReactWOW>
             </div>

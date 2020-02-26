@@ -5,7 +5,12 @@ import moment from "moment";
 import { API } from "../../../config";
 import renderHTML from "react-render-html";
 
-const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
+const LargeNews = ({
+  agresoNewsList,
+  agresoTipsList,
+  loadAgresoNews,
+  loadAgresoTips
+}) => {
   return (
     <React.Fragment>
       <div className="large_news">
@@ -30,6 +35,26 @@ const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
               </a>
             </Link>
           )}
+          {loadAgresoNews && (
+            <Link href="news/[slug]" as={`news/${loadAgresoNews.slug}`}>
+              <a>
+                <img
+                  src={`${API}/post/photo/${loadAgresoNews.slug}`}
+                  alt={loadAgresoNews.title}
+                />
+              </a>
+            </Link>
+          )}
+          {loadAgresoTips && (
+            <Link href="news/[slug]" as={`news/${loadAgresoTips.slug}`}>
+              <a>
+                <img
+                  src={`${API}/post/photo/${loadAgresoTips.slug}`}
+                  alt={loadAgresoTips.title}
+                />
+              </a>
+            </Link>
+          )}
         </div>
         <div className="large_news_content">
           <div className="large_news_content_date">
@@ -37,8 +62,11 @@ const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
             <span>
               {agresoNewsList && moment(agresoNewsList.createdAt).format("LL")}
               {agresoTipsList && moment(agresoTipsList.createdAt).format("LL")}
+              {loadAgresoNews && moment(loadAgresoNews.createdAt).format("LL")}
+              {loadAgresoTips && moment(loadAgresoTips.createdAt).format("LL")}
             </span>
           </div>
+          {/* Render title */}
           <h3 className="large_news_content_title">
             {agresoNewsList && (
               <Link href="/news/[slug]" as={`news/${agresoNewsList.slug}`}>
@@ -50,7 +78,19 @@ const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
                 <a>{agresoTipsList.title}</a>
               </Link>
             )}
+            {loadAgresoNews && (
+              <Link href="/news/[slug]" as={`news/${loadAgresoNews.slug}`}>
+                <a>{loadAgresoNews.title}</a>
+              </Link>
+            )}
+            {loadAgresoTips && (
+              <Link href="/news/[slug]" as={`news/${loadAgresoTips.slug}`}>
+                <a>{loadAgresoTips.title}</a>
+              </Link>
+            )}
           </h3>
+
+          {/* Render excerpt */}
           {agresoNewsList && (
             <div className="large_news_content_description">
               {renderHTML(agresoNewsList.excerpt)}
@@ -59,6 +99,16 @@ const LargeNews = ({ agresoNewsList, agresoTipsList }) => {
           {agresoTipsList && (
             <div className="large_news_content_description">
               {renderHTML(agresoTipsList.excerpt)}
+            </div>
+          )}
+          {loadAgresoNews && loadAgresoNews.length && (
+            <div className="large_news_content_description">
+              {renderHTML(loadAgresoNews.excerpt)}
+            </div>
+          )}
+          {loadAgresoTips && loadAgresoTips.length && (
+            <div className="large_news_content_description">
+              {renderHTML(loadAgresoTips.excerpt)}
             </div>
           )}
         </div>
