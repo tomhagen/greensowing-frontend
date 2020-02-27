@@ -22,29 +22,29 @@ const Footer = () => {
               <div className="item_service_menu">
                 <ul className="item_service_menu_left">
                   <li className="item_service_menu_left_item">
-                    <Link href="#">
+                    <Link href="/greenhouse/commercial">
                       <a>Greenhouse</a>
                     </Link>
                   </li>
                   <li className="item_service_menu_left_item">
-                    <Link href="#">
+                    <Link href="/variety/tomato">
                       <a>Variety</a>
                     </Link>
                   </li>
                   <li className="item_service_menu_left_item">
-                    <Link href="#">
+                    <Link href="/cultivation/tomato">
                       <a>Crop Cultivation</a>
                     </Link>
                   </li>
                 </ul>
                 <div className="item_service_menu_right">
                   <li className="item_service_menu_right_item">
-                    <Link href="#">
+                    <Link href="/material/glass">
                       <a>Materials</a>
                     </Link>
                   </li>
                   <li className="item_service_menu_right_item">
-                    <Link href="#">
+                    <Link href="/news">
                       <a>Research</a>
                     </Link>
                   </li>
@@ -57,7 +57,8 @@ const Footer = () => {
                 <div className="item_contact_item">
                   <i className="fa fa-map-marker"></i>
                   <span>
-                    523 Sylvan Ave, 5th Floor Mountain View, CA 94041USA
+                    25th Floor, Landmark 81, 208 Nguyen Huu Canh St, Binh Thanh
+                    Dist, HCMC.
                   </span>
                 </div>
                 <div className="item_contact_item">

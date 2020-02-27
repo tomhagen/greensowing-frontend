@@ -99,7 +99,7 @@ const GetInTouch = ({ props }) => {
   });
   return (
     <React.Fragment>
-      <div className="touch" style={styles}>
+      <div className="touch" style={styles} id="touch">
         <div className="touch_container">
           <ReactWOW animation="fadeInUp" duration="1.5s">
             <div className="touch_title">{props.title}</div>

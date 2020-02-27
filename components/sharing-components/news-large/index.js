@@ -101,15 +101,17 @@ const LargeNews = ({
               {renderHTML(agresoTipsList.excerpt)}
             </div>
           )}
-          {loadAgresoNews && loadAgresoNews.length && (
-            <div className="large_news_content_description">
-              {renderHTML(loadAgresoNews.excerpt)}
-            </div>
+          {loadAgresoNews && (
+            <div
+              className="large_news_content_description"
+              dangerouslySetInnerHTML={{ __html: loadAgresoNews.excerpt }}
+            ></div>
           )}
-          {loadAgresoTips && loadAgresoTips.length && (
-            <div className="large_news_content_description">
-              {renderHTML(loadAgresoTips.excerpt)}
-            </div>
+          {loadAgresoTips && (
+            <div
+              className="large_news_content_description"
+              dangerouslySetInnerHTML={{ __html: loadAgresoTips.excerpt }}
+            ></div>
           )}
         </div>
       </div>
