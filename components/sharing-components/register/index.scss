@@ -112,6 +112,9 @@
         padding: 15px 50px;
         @include border-radius(7px);
         @include transition(all, 0.5s);
+        @include text($text-white, 18px);
+        @include montserrat-medium;
+        text-transform: uppercase;
         &:hover {
           box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
             0 10px 20px 0 rgba(90, 122, 190, 0.2);
@@ -119,20 +122,7 @@
           border: 2px solid $primary;
           padding: 13px 48px;
           @include transition(all, 0.5s);
-        }
-        &:hover a {
-          @include text($primary, 14.4px);
-          @include transition(all, 0.5s);
-        }
-        a {
-          @include text($text-white, 14.4px);
-          @include montserrat-medium;
-          text-transform: uppercase;
-          @include transition(all, 0.5s);
-          &:hover {
-            @include text($primary, 14.4px);
-            @include transition(all, 0.5s);
-          }
+          @include text($primary, 18px);
         }
       }
     }
@@ -256,6 +246,9 @@
         padding: 15px 50px;
         @include border-radius(7px);
         @include transition(all, 0.5s);
+        @include text($text-white, 14.4px);
+        @include montserrat-medium;
+        text-transform: uppercase;
         &:hover {
           box-shadow: 0 1px 1px 0 rgba(90, 122, 190, 0.1),
             0 10px 20px 0 rgba(90, 122, 190, 0.2);
@@ -263,20 +256,8 @@
           border: 2px solid $primary;
           padding: 13px 48px;
           @include transition(all, 0.5s);
-        }
-        &:hover a {
           @include text($primary, 14.4px);
-          @include transition(all, 0.5s);
-        }
-        a {
-          @include text($text-white, 14.4px);
-          @include montserrat-medium;
-          text-transform: uppercase;
-          @include transition(all, 0.5s);
-          &:hover {
-            @include text($primary, 14.4px);
-            @include transition(all, 0.5s);
-          }
+          cursor: pointer;
         }
       }
     }

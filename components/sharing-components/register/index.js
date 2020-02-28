@@ -17,7 +17,7 @@ const RegisterButton = () => {
   };
   const handleClickOutside = e => {
     const { target } = e;
-    if (!wrapperRef.current.contains(target)) {
+    if (!wrapperRef.current.contains(target) && open) {
       setOpen(false);
     }
   };
@@ -161,11 +161,7 @@ const RegisterButton = () => {
       ></div>
       <div className="register" onClick={handleClickOpen}>
         <div className="register_container">
-          <div className="register_box">
-            <Link href="#">
-              <a>register to visit farm</a>
-            </Link>
-          </div>
+          <div className="register_box">register to visit farm</div>
         </div>
       </div>
     </React.Fragment>

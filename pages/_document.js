@@ -3,6 +3,20 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import React, { Component } from "react";
 
 class MyDocument extends Document {
+  setGoogleTags = () => {
+    if (publicRuntimeConfig.PRODUCTION) {
+      return {
+        __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124587346-4');
+        `
+      };
+    }
+  };
+
   render() {
     return (
       <Html lang="en">
@@ -50,6 +64,14 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
           />
+
+          {/* GOOGLE ANALYTICS */}
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-124587346-4"
+          ></script>
+
+          <script dangerouslySetInnerHTML={this.setGoogleTags()}></script>
         </Head>
 
         <body>

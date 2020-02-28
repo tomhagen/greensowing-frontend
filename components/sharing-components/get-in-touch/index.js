@@ -22,7 +22,7 @@ const GetInTouch = ({ props }) => {
     buttonText: "Submit"
   });
   const [isOpen, setIsOpen] = useState(false);
-  const orderRef = useRef(null);
+  const orderRef = useRef();
 
   const { name, email, phone, detail, error, message, buttonText } = values;
 
@@ -35,7 +35,7 @@ const GetInTouch = ({ props }) => {
 
   const handleClickOutSide = e => {
     const { target } = e;
-    if (!orderRef.current.contains(target)) {
+    if (!orderRef.current.contains(target) && isOpen) {
       setIsOpen(false);
     }
   };
@@ -70,6 +70,7 @@ const GetInTouch = ({ props }) => {
       }
     });
   };
+
   const showErrorMessage = () => (
     <div className="form-error" style={{ display: error ? "" : "none" }}>
       {error}
@@ -108,11 +109,9 @@ const GetInTouch = ({ props }) => {
             <div className="touch_content">{props.content}</div>
           </ReactWOW>
           <ReactWOW animation="fadeIn" duration="1.5s" delay="0.5s">
-            <div className="touch_btn" onClick={handleOpenOrderForm}>
-              <div className="touch_btn_box">
-                <Link href="#">
-                  <a>{props.btn}</a>
-                </Link>
+            <div className="touch_btn">
+              <div className="touch_btn_box" onClick={handleOpenOrderForm}>
+                {props.btn}
               </div>
             </div>
           </ReactWOW>
