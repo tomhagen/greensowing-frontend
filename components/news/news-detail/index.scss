@@ -196,12 +196,30 @@
       .news-detail_box {
         .news-detail_box_left {
           .news-detail_box_left_content {
+            .news-detail_box_left_content_date {
+              @include text($text-light, 13px);
+            }
             .news-detail_box_left_content_title {
-              @include text($text-bold, 20px);
+              @include text($text-bold, 22px);
             }
             .news-detail_box_left_content_description {
-              @include text($text-news, 16px);
+              @include text($text-news, 17px);
               text-align: left;
+            }
+          }
+        }
+        .news-detail_box_right {
+          margin-top: 40px;
+          .news-detail_box_right_title {
+            p {
+              @include text($text-bold, 22px);
+            }
+          }
+          .news-detail_box_right_tags {
+            .news-detail_box_right_tags_title {
+              p {
+                @include text($text-bold, 22px);
+              }
             }
           }
         }

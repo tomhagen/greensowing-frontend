@@ -1,6 +1,7 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
 import React, { Component } from "react";
+import getConfig from "next/config";
+const { publicRuntimeConfig } = getConfig();
 
 class MyDocument extends Document {
   setGoogleTags = () => {

@@ -3,7 +3,7 @@ export const intro = {
     commercial: {
       title: "MRS Commercial",
       span: "Greenhouse",
-      img: "/static/images/commercial_bg_01.png"
+      img: "/static/images/commercial_bg_01.jpg"
     },
     tourist: {
       title: "MRS Tourist",

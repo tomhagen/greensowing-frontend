@@ -127,7 +127,25 @@
 
 @media screen and (max-width: 500px) {
   .large_news {
+    &:hover .large_news_content .large_news_content_title a {
+      @include text($primary, 18px);
+    }
     .large_news_content {
+      &:hover .large_news_content_title a {
+        @include text($primary, 18px);
+      }
+      .large_news_content_title {
+        a {
+          @include text($text-bold, 18px);
+
+          &:hover {
+            @include text($primary, 18px);
+          }
+        }
+      }
+      .large_news_content_date {
+        @include text($text-light, 13px);
+      }
       .large_news_content_description {
         @include text($text-light, 16px);
       }

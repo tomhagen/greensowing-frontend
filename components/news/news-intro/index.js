@@ -79,14 +79,6 @@ const NewsIntro = ({ newsList }) => {
               </div>
               <div className="news-intro_box_right_container">
                 {renderSmallNews()}
-                {/* <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews /> */}
               </div>
             </div>
           </div>

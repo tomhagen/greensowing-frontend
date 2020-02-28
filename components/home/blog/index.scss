@@ -263,17 +263,20 @@
 @media screen and (max-width: 768px) {
   .blog {
     .blog_container {
+      width: 90%;
       .blog_container_top {
         .blog_container_top_title {
           @include text($text-bold, 35px);
         }
       }
       .blog_container_bottom {
-        @include flex(column, space-between, center, wrap);
-        .blog_container_bottom_item {
-          flex: 80%;
-          max-width: 80%;
-          margin: 20px 0;
+        .blog_container_bottom_box {
+          @include flex(column, space-between, center, wrap);
+          .blog_container_bottom_item {
+            flex: 100%;
+            max-width: 100%;
+            margin: 20px 0;
+          }
         }
       }
     }
@@ -283,7 +286,7 @@
 @media screen and (max-width: 500px) {
   .blog {
     .blog_container {
-      width: 85%;
+      width: 90%;
       .blog_container_top {
         .blog_container_top_introduction {
           font-weight: bold;

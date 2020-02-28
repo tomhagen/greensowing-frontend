@@ -70,14 +70,6 @@ const DetailNewsBox = ({ detailNews }) => {
               </div>
               <div className="news-detail_box_right_container">
                 {renderLatestNewsListToScreen()}
-                {/* <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews />
-                <SmallNews /> */}
               </div>
               <div className="news-detail_box_right_tags">
                 <div className="news-detail_box_right_tags_title">

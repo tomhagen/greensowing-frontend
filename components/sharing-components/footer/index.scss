@@ -159,6 +159,7 @@
 @media screen and (max-width: 768px) {
   .footer {
     .footer_container {
+      width: 85%;
       .footer_box {
         @include flex(column, null, null, null);
         .footer_box_item {

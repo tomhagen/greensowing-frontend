@@ -234,6 +234,11 @@
 @media screen and (max-width: 500px) {
   .main_agreso_news {
     .main_agreso_news_container {
+      .main_agreso_news_title {
+        p {
+          @include text($text-bold, 22px);
+        }
+      }
       .main_agreso_news_box {
         .main_agreso_news_box_item {
           flex: 100%;
@@ -244,6 +249,11 @@
   }
   .main_agreso_tips {
     .main_agreso_tips_container {
+      .main_agreso_tips_title {
+        p {
+          @include text($text-bold, 22px);
+        }
+      }
       .main_agreso_tips_box {
         .main_agreso_tips_box_item {
           flex: 100%;

@@ -242,16 +242,21 @@
               .news-intro_box_left_top_content_container
               .news-intro_box_left_top_content_title
               a {
-              @include text($primary, 16px);
+              @include text($primary, 17px);
             }
             .news-intro_box_left_top_content {
               bottom: 0;
+              padding: 0 8px;
               .news-intro_box_left_top_content_container {
+                width: 100%;
+                .news-intro_box_left_top_content_date {
+                  @include text($text-white, 11.2px);
+                }
                 .news-intro_box_left_top_content_title {
                   a {
-                    @include text($text-white, 16px);
+                    @include text($text-white, 17px);
                     &:hover {
-                      @include text($primary, 16px);
+                      @include text($primary, 17px);
                     }
                   }
                 }
@@ -268,6 +273,11 @@
           }
         }
         .news-intro_box_right {
+          .news-intro_box_right_title {
+            p {
+              @include text($text-bold, 22px);
+            }
+          }
         }
       }
     }
