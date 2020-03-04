@@ -202,11 +202,21 @@ const ProjectRead = () => {
             type="text"
             className="form-control"
             placeholder="Your message"
+            defaultValue={step2_title}
+            onChange={handleChange("step2_title")}
+          />
+        </div>
+        <div className="form-group">
+          <label htmlFor="">step2_content</label>
+          <textarea
+            rows={2}
+            type="text"
+            className="form-control"
+            placeholder="Your message"
             defaultValue={step2_content}
             onChange={handleChange("step2_content")}
           />
         </div>
-
         <div className="form-group">
           <label htmlFor="">step2_subcontent</label>
           <textarea

@@ -43,7 +43,7 @@ const Login = () => {
                 onChange={handleChange("username")}
               />
               <input
-                type="text"
+                type="password"
                 className="form-control"
                 placeholder="password"
                 onChange={handleChange("password")}

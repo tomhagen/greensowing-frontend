@@ -6,7 +6,13 @@ import Footer from "../../components/sharing-components/footer";
 import Copyright from "../../components/sharing-components/copyright";
 import RegisterButton from "../../components/sharing-components/register";
 import { singlePost } from "../../controller/post";
-import { APP_NAME, APP_DESCRIPTION, DOMAIN, API } from "../../config";
+import {
+  APP_NAME,
+  APP_DESCRIPTION,
+  DOMAIN,
+  API,
+  FACEBOOK_APP_ID
+} from "../../config";
 
 const Detail = ({ post, query }) => {
   const head = () => {
@@ -30,6 +36,7 @@ const Detail = ({ post, query }) => {
           content={`${API}/post/photo/${post.slug}`}
         />
         <meta property="og:image:type" content="image/jpg" />
+        <meta property="fb:app_id" content={`${FACEBOOK_APP_ID}`} />
         <meta property="article:section" content="Technology news" />
         <meta property="article:published_time" content={post.createdAt} />
         <meta property="article:updated_time" content={post.updatedAt} />

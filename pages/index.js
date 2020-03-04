@@ -12,7 +12,7 @@ import RegisterButton from "../components/sharing-components/register";
 import { useState, useEffect } from "react";
 import Loading from "../components/sharing-components/loading";
 import { getData } from "../controller/home";
-import { APP_DESCRIPTION, DOMAIN, APP_NAME } from "../config";
+import { APP_DESCRIPTION, DOMAIN, APP_NAME, FACEBOOK_APP_ID } from "../config";
 
 const Home = () => {
   const head = () => {
@@ -35,11 +35,14 @@ const Home = () => {
           property="og:image"
           content={` ${DOMAIN}/static/images/logo_agreso2.png`}
         />
+        <meta property="og:image:width" content="900" />
+        <meta property="og:image:height" content="600" />
         <meta
           property="og:image:secure_url"
           content={`${DOMAIN}/static/images/logo_agreso2.png`}
         />
         <meta property="og:image:type" content="image/png" />
+        <meta property="fb:app_id" content={`${FACEBOOK_APP_ID}`} />
         <meta name="twitter:card" content="MRS Agreso" />
         <meta name="twitter:description" content={`${APP_DESCRIPTION}`} />
         <meta

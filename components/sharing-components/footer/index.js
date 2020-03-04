@@ -11,10 +11,10 @@ const Footer = () => {
             <div className="footer_box_item item_about">
               <div className="item_about_title">about us</div>
               <div className="item_about_description">
-                It is based on grain farming. About half of the world’s land is
-                occupied by cereals. Grain along with potatoes Ius case noluisse
-                iracundia ne, mei no possim offendit explicari. Vel ea nulla
-                doming recteque.
+                MRS Agreso provides comprehensive solutions to develop
+                efficient, sustainable and quality agriculture through a
+                harmonious combination of technology, production and
+                agricultural practices.
               </div>
             </div>
             <div className="footer_box_item item_service">
@@ -63,11 +63,11 @@ const Footer = () => {
                 </div>
                 <div className="item_contact_item">
                   <i className="fa fa-phone"></i>
-                  <span>+1 (234) 56789, +1 987 654 3210</span>
+                  <span>+84 776 112 358</span>
                 </div>
                 <div className="item_contact_item">
                   <i className="fa fa-envelope"></i>
-                  <span>support@watchland.com</span>
+                  <span>pleimou@greensowing.com</span>
                 </div>
               </div>
             </div>

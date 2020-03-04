@@ -4,7 +4,12 @@ import Header from "../../components/sharing-components/header";
 import Footer from "../../components/sharing-components/footer";
 import Copyright from "../../components/sharing-components/copyright";
 import SubstrateComponent from "../../components/material/substrate";
-import { APP_NAME, APP_DESCRIPTION, DOMAIN } from "../../config";
+import {
+  APP_NAME,
+  APP_DESCRIPTION,
+  DOMAIN,
+  FACEBOOK_APP_ID
+} from "../../config";
 
 const Substrate = () => {
   const head = () => {
@@ -33,6 +38,7 @@ const Substrate = () => {
           content={`${DOMAIN}/static/images/logo_agreso2.png`}
         />
         <meta property="og:image:type" content="image/png" />
+        <meta property="fb:app_id" content={`${FACEBOOK_APP_ID}`} />
         <meta name="twitter:card" content="MRS Agreso" />
         <meta name="twitter:description" content={`${APP_DESCRIPTION}`} />
         <meta

@@ -10,7 +10,7 @@ const Tomato_02 = () => {
           <div className="monitoring_left">
             <div className="monitoring_left_box">
               <ReactWOW animation="fadeInUp" duration="1.5s">
-                <div className="monitoring_left_box_title">Tomato Hybrid</div>
+                <div className="monitoring_left_box_title">Tomato Complice</div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
                 <div className="monitoring_left_box_content">
@@ -39,7 +39,7 @@ const Tomato_02 = () => {
             </div>
           </div>
           <div className="monitoring_right">
-            <img src="/static/images/variety_bg_03.png" alt="" />
+            <img src="/static/images/variety_bg_03_v2.jpg" alt="" />
           </div>
         </div>
       </div>

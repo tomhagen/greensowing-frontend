@@ -11,7 +11,7 @@ const DiffuseGlass = () => {
             <div className="diffuse_box_left">
               <div className="diffuse_box_left_img">
                 <ReactWOW animation="fadeIn" duration="2s">
-                  <img src="/static/images/material_bg_03.png" alt="" />
+                  <img src="/static/images/material_bg_03_v2.jpg" alt="" />
                 </ReactWOW>
               </div>
               <div className="diffuse_box_left_frame"></div>

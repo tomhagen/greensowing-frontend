@@ -13,7 +13,7 @@ const About = ({ homeData }) => {
               <ReactWOW animation="slideInLeft" duration="1.5s">
                 <img
                   className="about_box_left_image_top"
-                  src="/static/images/home_page2_01.png"
+                  src="/static/images/home_page2_01_v2.jpg"
                 />
               </ReactWOW>
 

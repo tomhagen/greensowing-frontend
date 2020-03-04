@@ -15,7 +15,7 @@
           position: relative;
 
           .step5_box_left_img {
-            width: 100%;
+            width: 85%;
             position: absolute;
             z-index: 10;
             top: 0;
@@ -28,7 +28,7 @@
         .step5_box_right {
           flex: 44%;
           max-width: 44%;
-          padding: 2% 2% 0 0;
+          padding: 10% 2% 0 0;
 
           .step5_box_right_title {
             @include text($text-bold, 48px);
@@ -63,7 +63,7 @@
           position: relative;
 
           .step5_box_left_img {
-            width: 100%;
+            width: 85%;
             position: absolute;
             z-index: 10;
             top: 0;
@@ -76,7 +76,7 @@
         .step5_box_right {
           flex: 44%;
           max-width: 44%;
-          padding: 2% 2% 0 0;
+          padding: 10% 2% 0 0;
 
           .step5_box_right_title {
             @include text($text-bold, 38.4px);

@@ -9,7 +9,7 @@ const Tomato_03 = () => {
         <div className="tomato_03_container">
           <div className="tomato_03_box">
             <ReactWOW animation="fadeInUp" duration="1.5s">
-              <div className="tomato_03_box_title">Tomato Cocktail</div>
+              <div className="tomato_03_box_title">Tomato Komeett</div>
             </ReactWOW>
             <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
               <div className="tomato_03_box_content">

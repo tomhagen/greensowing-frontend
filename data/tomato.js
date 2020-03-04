@@ -1,7 +1,7 @@
 export const tomato = {
   heirloom: {
     img: "/static/images/variety_bg_02.jpg",
-    title: "Tomato Heirloom",
+    title: "Tomato Merlice",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species.",
     subcontent_1: ` The outcome is healthy, deliciously sweet fruits.?These
@@ -17,8 +17,8 @@ export const tomato = {
     Other varieties: Santorini,…`
   },
   salad: {
-    img: "/static/images/variety_bg_04.jpg",
-    title: "Tomato Salad",
+    img: "/static/images/variety_bg_04_v2.jpg",
+    title: "Tomato Amastera",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species. ",
     subcontent_1: ` The outcome is healthy, deliciously sweet fruits.?These extremely sweet fruits can be consumed fresh or dried.?Tomaccio TM plant is a robust grower and sets fruit early.`,
@@ -30,7 +30,7 @@ export const tomato = {
   },
   roma: {
     img: "/static/images/variety_bg_06.jpg",
-    title: "Tomato Roma",
+    title: "Tomato Rotera",
     content:
       "Tomaccio TM is a result of 12 years breeding work based on wild Peruvian tomato species. ",
     subcontent_1: `The outcome is healthy, deliciously sweet fruits.?These extremely sweet fruits can be consumed fresh or dried.?Tomaccio TM plant is a robust grower and sets fruit early.`,

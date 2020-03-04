@@ -31,7 +31,7 @@ const Blog = () => {
       return (
         <div className="blog_container_bottom_item" key={index}>
           <div className="blog_container_bottom_item_img_box">
-            <Link href="#">
+            <Link href={`/news/${item.slug}`}>
               <a>
                 <img src={`${API}/post/photo/${item.slug}`} alt={item.title} />
               </a>

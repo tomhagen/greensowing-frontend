@@ -11,7 +11,7 @@ const Step5 = ({ projectData }) => {
             <div className="step5_box_left">
               <div className="step5_box_left_img">
                 <ReactWOW animation="fadeIn" duration="1.5s">
-                  <img src="/static/images/project_bg_08.png" alt="" />
+                  <img src="/static/images/project_bg_08_v2.jpg" alt="" />
                 </ReactWOW>
               </div>
             </div>

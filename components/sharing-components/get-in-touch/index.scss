@@ -321,6 +321,7 @@
 
 @media screen and (max-width: 500px) {
   .touch {
+    background-attachment: unset;
     .touch_container {
       width: 90%;
       padding: 90% 0 0% 0;

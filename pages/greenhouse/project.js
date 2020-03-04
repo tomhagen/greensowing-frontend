@@ -16,7 +16,12 @@ import Copyright from "../../components/sharing-components/copyright";
 import RegisterButton from "../../components/sharing-components/register";
 import { useState, useEffect } from "react";
 import { getData } from "../../controller/project";
-import { APP_NAME, APP_DESCRIPTION, DOMAIN } from "../../config";
+import {
+  APP_NAME,
+  APP_DESCRIPTION,
+  DOMAIN,
+  FACEBOOK_APP_ID
+} from "../../config";
 
 const ProjectManagement = () => {
   const [projectData, setProjectData] = useState([]);
@@ -61,6 +66,7 @@ const ProjectManagement = () => {
           content={`${DOMAIN}/static/images/logo_agreso2.png`}
         />
         <meta property="og:image:type" content="image/png" />
+        <meta property="fb:app_id" content={`${FACEBOOK_APP_ID}`} />
         <meta name="twitter:card" content="MRS Agreso" />
         <meta name="twitter:description" content={`${APP_DESCRIPTION}`} />
         <meta
@@ -82,7 +88,6 @@ const ProjectManagement = () => {
       <Step3 projectData={projectData} />
       <Step4 projectData={projectData} />
       <Step5 projectData={projectData} />
-      <Step6 />
       <GetInTouch props={touch.greenhouse.project} />
       <Footer />
       <Copyright />

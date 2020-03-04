@@ -12,7 +12,12 @@ import GetInTouch from "../../components/sharing-components/get-in-touch";
 import Footer from "../../components/sharing-components/footer";
 import Copyright from "../../components/sharing-components/copyright";
 import RegisterButton from "../../components/sharing-components/register";
-import { APP_NAME, APP_DESCRIPTION, DOMAIN } from "../../config";
+import {
+  APP_NAME,
+  APP_DESCRIPTION,
+  DOMAIN,
+  FACEBOOK_APP_ID
+} from "../../config";
 
 const Tomato = () => {
   const head = () => {
@@ -40,6 +45,7 @@ const Tomato = () => {
           content={`${DOMAIN}/static/images/logo_agreso2.png`}
         />
         <meta property="og:image:type" content="image/png" />
+        <meta property="fb:app_id" content={`${FACEBOOK_APP_ID}`} />
         <meta name="twitter:card" content="MRS Agreso" />
         <meta name="twitter:description" content={`${APP_DESCRIPTION}`} />
         <meta

@@ -12,7 +12,7 @@ const CoveringMaterial = ({ commercialData }) => {
             <div className="covering_box_left">
               <div className="covering_box_left_img">
                 <ReactWOW animation="fadeInLeft" duration="1.5s">
-                  <img src="/static/images/commercial_page2_01.png" alt="" />
+                  <img src="/static/images/commercial_page2_01_v2.jpg" alt="" />
                 </ReactWOW>
               </div>
               <div className="covering_box_left_frame"></div>

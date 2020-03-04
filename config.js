@@ -12,3 +12,4 @@ export const APP_DESCRIPTION = publicRuntimeConfig.APP_DESCRIPTION;
 export const DOMAIN = publicRuntimeConfig.PRODUCTION
   ? publicRuntimeConfig.DOMAIN_PRODUCTION
   : publicRuntimeConfig.DOMAIN_DEVELOPMENT;
+export const FACEBOOK_APP_ID = publicRuntimeConfig.FACEBOOK_APP_ID;

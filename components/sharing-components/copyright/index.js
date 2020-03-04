@@ -8,7 +8,7 @@ const Copyright = () => {
       <div className="copyright">
         <div className="copyright_container">
           <p className="copyright_container_content">
-            Copyright © 2019 by <span>MRS Greenhouse</span> . All rights
+            Copyright © 2020 by <span>MRS Agreso</span> . All rights
             reserved.
           </p>
         </div>
