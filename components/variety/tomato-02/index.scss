@@ -31,7 +31,7 @@
             @include montserrat;
             margin-top: 10px;
             line-height: 150%;
-            opacity: 0.8;
+            opacity: 1;
             text-align: justify;
           }
         }
@@ -82,8 +82,26 @@
             @include montserrat;
             margin-top: 10px;
             line-height: 150%;
-            opacity: 0.8;
+            opacity: 1;
             text-align: justify;
+          }
+          .monitoring_left_box_profile {
+            margin-top: 30px;
+            a {
+              @include text(#000, 15px);
+              @include montserrat;
+              text-decoration: none;
+              &:hover {
+                @include text(#fff, 15px);
+              }
+            }
+            &::before {
+              font-family: "FontAwesome";
+              content: "\f0a4";
+              font-size: 15px;
+              color: #000;
+              margin-right: 10px;
+            }
           }
         }
       }

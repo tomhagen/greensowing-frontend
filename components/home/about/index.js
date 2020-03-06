@@ -28,7 +28,7 @@ const About = ({ homeData }) => {
             <div className="about_box_right">
               <ReactWOW animation="fadeInUp" duration="1s">
                 <div className="about_box_right_introduction">
-                  about mrs greenhouse
+                  about mrs agreso
                 </div>
               </ReactWOW>
 
@@ -46,7 +46,7 @@ const About = ({ homeData }) => {
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
                 <div className="about_box_right_sub_content">
-                  {homeData.about_subcontent}
+                  {homeData.about_subcontent && renderHTML(homeData.about_subcontent)}
                 </div>
               </ReactWOW>
             </div>

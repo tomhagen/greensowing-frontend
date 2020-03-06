@@ -9,10 +9,12 @@ import Preparation from "../../components/cultivation/preparation";
 import GrowingMedia from "../../components/cultivation/growing";
 import Planting from "../../components/cultivation/planting";
 import Husbandry from "../../components/cultivation/husbandry";
+import SubstrateComponent from "../../components/material/substrate";
 import Footer from "../../components/sharing-components/footer";
 import Copyright from "../../components/sharing-components/copyright";
 import RegisterButton from "../../components/sharing-components/register";
 import { APP_NAME, APP_DESCRIPTION, DOMAIN } from "../../config";
+
 
 const Tomato = () => {
   const head = () => {
@@ -56,11 +58,12 @@ const Tomato = () => {
     <React.Fragment>
       {head()}
       <Header />
-      <Intro props={intro.cultivation.tomato} />
+      {/* <Intro props={intro.cultivation.tomato} />
       <Preparation />
       <GrowingMedia />
       <Planting />
-      <Husbandry />
+      <Husbandry /> */}
+      <SubstrateComponent />
       <Footer />
       <Copyright />
       <RegisterButton />

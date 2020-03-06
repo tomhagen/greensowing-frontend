@@ -32,20 +32,20 @@ const OptionalFunction = ({ touristData }) => {
               </ReactWOW>
 
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="functions_box_right_content">
-                  {touristData.functions_content}
-                </div>
+                <div
+                  className="functions_box_right_content"
+                  dangerouslySetInnerHTML={{
+                    __html: touristData.functions_content
+                  }}
+                ></div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
-                <div className="functions_box_right_subcontent">
-                  {touristData.functions_subcontent}
-                </div>
-
-                <div className="functions_box_right_subcontent">
-                  Non recusandae. Itaque earum rerum hic tenetur a sapiente
-                  delectus, ut aut reiciendis voluptatibus maiores alias
-                  consequatur aut perferendis doloribus asperiores repellat
-                </div>
+                <div
+                  className="functions_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: touristData.functions_subcontent
+                  }}
+                ></div>
               </ReactWOW>
             </div>
           </div>

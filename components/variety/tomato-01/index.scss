@@ -43,6 +43,24 @@
             line-height: 150%;
             text-align: justify;
           }
+          .tomato_01_box_right_profile {
+            margin-top: 30px;
+            a {
+              @include text($primary, 18px);
+              @include montserrat;
+              text-decoration: none;
+              &:hover {
+                @include text(#000, 18px);
+              }
+            }
+            &::before {
+              font-family: "FontAwesome";
+              content: "\f0a4";
+              font-size: 18px;
+              color: $primary;
+              margin-right: 10px;
+            }
+          }
         }
       }
     }
@@ -90,6 +108,25 @@
             padding: 0 0 20px 0;
             line-height: 150%;
             text-align: justify;
+          }
+          .tomato_01_box_right_profile {
+            margin-top: 30px;
+
+            a {
+              @include text($primary, 15px);
+              @include montserrat;
+              text-decoration: none;
+              &:hover {
+                @include text(#000, 15px);
+              }
+            }
+            &::before {
+              font-family: "FontAwesome";
+              content: "\f0a4";
+              font-size: 15px;
+              color: $primary;
+              margin-right: 10px;
+            }
           }
         }
       }
@@ -143,6 +180,9 @@
           .tomato_01_box_right_subcontent {
             @include text($text-light, 16px);
             text-align: left;
+          }
+          .tomato_01_box_right_profile {
+            margin-bottom: 30px;
           }
         }
       }

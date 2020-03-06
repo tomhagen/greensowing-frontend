@@ -3,7 +3,7 @@
 
 @media screen and (min-width: 1537px) {
   .functions {
-    margin-bottom: 2%;
+    margin-bottom: 8%;
     .functions_container {
       width: 75%;
       margin: auto;
@@ -46,7 +46,7 @@
           max-width: 46%;
           position: relative;
           z-index: 10;
-          padding-top: 10%;
+          padding-top: 18%;
 
           .functions_box_right_title {
             @include text($text-bold, 48px);
@@ -74,7 +74,7 @@
 
 @media screen and (max-width: 1536px) {
   .functions {
-    margin-bottom: 2%;
+    margin-bottom: 8%;
     .functions_container {
       width: 75%;
       margin: auto;
@@ -117,7 +117,7 @@
           max-width: 46%;
           position: relative;
           z-index: 10;
-          padding-top: 10%;
+          padding-top: 18%;
 
           .functions_box_right_title {
             @include text($text-bold, 38.4px);

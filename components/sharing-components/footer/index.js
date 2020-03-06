@@ -16,6 +16,14 @@ const Footer = () => {
                 harmonious combination of technology, production and
                 agricultural practices.
               </div>
+              <div className="item_about_profile">
+                <a
+                  href="https://www.flipsnack.com/tomhagen/profile-mrs-agreso-english-version.html"
+                  target="_blank"
+                >
+                  MRS Agreso Profile
+                </a>
+              </div>
             </div>
             <div className="footer_box_item item_service">
               <div className="item_service_title">our service</div>

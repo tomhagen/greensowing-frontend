@@ -13,29 +13,45 @@ const Tomato_02 = () => {
                 <div className="monitoring_left_box_title">Tomato Complice</div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="monitoring_left_box_content">
-                  Tomaccio TM is a result of 12 years breeding work based on
-                  wild Peruvian tomato species.
-                </div>
+                <div className="monitoring_left_box_content"></div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
-                <div className="monitoring_left_box_subcontent">
-                  The outcome is healthy, deliciously sweet fruits.?These
-                  extremely sweet fruits can be consumed fresh or
-                  dried.?Tomaccio TM plant is a robust grower and sets fruit
-                  early.
-                </div>
+                <div className="monitoring_left_box_subcontent"></div>
 
                 <div className="monitoring_left_box_subcontent">
-                  Growing temperature: 14-17ºC (56-62F) at night, 23-30ºC
-                  (73-86F) at day.Watering: 3-4 times a week.Growth habit:
-                  Trellising <br />
-                  Plant height: 150cm <br />
-                  Planting time: all year Fertilization: Use a 6 months slow
-                  release fertilizer with NPK ratio of 3:2:2. <br />
-                  Other varieties: Santorini,…
+                  Weight: 140 - 150 grams
+                  <br />
+                  <div>
+                    <br />
+                  </div>
+                  Specification of bunches: 3 - 5 fruit / cluster.
+                  <br />
+                  <div>
+                    <br />
+                  </div>
+                  Brix degree: 4 - 5
+                  <br />
+                  <div>
+                    <br />
+                  </div>
+                  Planting time : All seasons, in a high-tech greenhouse
+                  environment.
+                  <br />
+                  <div>
+                    <br />
+                  </div>
+                  Color : Bright red when ripe
+                  <br />
                 </div>
               </ReactWOW>
+              {/* <div className="monitoring_left_box_profile">
+                <a
+                  href="https://www.flipsnack.com/tomhagen/profile-tomatoes-english-ver.html"
+                  target="_blank"
+                >
+                  MRS Agreso Tomato Profile
+                </a>
+              </div> */}
             </div>
           </div>
           <div className="monitoring_right">

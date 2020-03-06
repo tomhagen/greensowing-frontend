@@ -144,6 +144,7 @@
               position: absolute;
               top: 69.8%;
               z-index: 10;
+              width: 100%;
               .slick-list-item-container-center {
                 margin: auto;
                 width: 65.6%;
@@ -337,6 +338,9 @@
       .slick-slider {
         .slick-list {
           .slick-list-item {
+            img {
+              max-width: 155%;
+            }
             .slick-list-item-container {
               top: 60%;
 
@@ -383,7 +387,7 @@
         .slick-list {
           .slick-list-item {
             img {
-              max-width: 155%;
+              max-width: 160%;
             }
 
             .overlay2 {
@@ -391,7 +395,7 @@
             }
 
             .slick-list-item-container {
-              top: 65%;
+              top: 60%;
               .slick-list-item-container-center {
                 width: 100%;
                 .slick-list-item-title {
@@ -401,7 +405,7 @@
                   // visibility: hidden;
                   // opacity: 0;
                   .slick-list-item-subtitle {
-                    @include text($text-white, 14px);
+                    @include text($text-white, 13px);
                   }
                 }
               }
@@ -423,7 +427,7 @@
               max-width: 170%;
             }
             .slick-list-item-container {
-              top: 60%;
+              top: 50%;
               .slick-list-item-container-center {
                 .slick-list-item-title {
                   @include text($text-white, 22px);

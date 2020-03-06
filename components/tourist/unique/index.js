@@ -23,19 +23,20 @@ const Unique = ({ touristData }) => {
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="unique_box_right_content">
-                  {touristData.unique_content}
-                </div>
+                <div
+                  className="unique_box_right_content"
+                  dangerouslySetInnerHTML={{
+                    __html: touristData.unique_content
+                  }}
+                ></div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
-                <div className="unique_box_right_subcontent">
-                  {touristData.unique_subcontent}
-                </div>
-                <div className="unique_box_right_subcontent">
-                  To take a trivial example, which of us ever undertakes
-                  laborious physical exercise, except to obtain some advantage
-                  from it?
-                </div>
+                <div
+                  className="unique_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: touristData.unique_subcontent
+                  }}
+                ></div>
               </ReactWOW>
             </div>
           </div>

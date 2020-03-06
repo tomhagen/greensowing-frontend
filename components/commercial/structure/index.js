@@ -15,24 +15,42 @@ const Structure = ({ commercialData }) => {
               </div>
             </ReactWOW>
             <ReactWOW animation="fadeIn" duration="2s" delay="0.5s">
-              <div className="structure_box_content">
-                {commercialData.structure_content}
-              </div>
-              <div className="structure_box_subcontent">
-                {commercialData.structure_subcontent1}
-              </div>
-              <div className="structure_box_subtitle">
-                {commercialData.structure_subtitle1}
-              </div>
-              <div className="structure_box_subcontent">
-                {commercialData.structure_subcontent2}
-              </div>
-              <div className="structure_box_subtitle">
-                {commercialData.structure_subtitle2}
-              </div>
-              <div className="structure_box_subcontent">
-                {commercialData.structure_subcontent3}
-              </div>
+              <div
+                className="structure_box_content"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_content
+                }}
+              ></div>
+              <div
+                className="structure_box_subcontent"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_subcontent1
+                }}
+              ></div>
+              <div
+                className="structure_box_subtitle"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_subtitle1
+                }}
+              ></div>
+              <div
+                className="structure_box_subcontent"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_subcontent2
+                }}
+              ></div>
+              <div
+                className="structure_box_subtitle"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_subtitle2
+                }}
+              ></div>
+              <div
+                className="structure_box_subcontent"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.structure_subcontent3
+                }}
+              ></div>
             </ReactWOW>
             <ReactWOW animation="fadeIn" duration="2s" delay="0.5s">
               <div className="structure_box_btn">

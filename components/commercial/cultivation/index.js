@@ -32,23 +32,38 @@ const Cultivation = ({ commercialData }) => {
               </ReactWOW>
 
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="cultivation_box_right_content">
-                  {commercialData.cultivation_content}
-                </div>
+                <div
+                  className="cultivation_box_right_content"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_content
+                  }}
+                ></div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
-                <div className="cultivation_box_right_subcontent">
-                  {commercialData.cultivation_subcontent1}
-                </div>
-                <div className="cultivation_box_right_subtitle">
-                  {commercialData.cultivation_subtitle1}
-                </div>
-                <div className="cultivation_box_right_subcontent">
-                  {commercialData.cultivation_subcontent2}
-                </div>
-                <div className="cultivation_box_right_subtitle">
-                  {commercialData.cultivation_subtitle2}
-                </div>
+                <div
+                  className="cultivation_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_subcontent1
+                  }}
+                ></div>
+                <div
+                  className="cultivation_box_right_subtitle"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_subtitle1
+                  }}
+                ></div>
+                <div
+                  className="cultivation_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_subcontent2
+                  }}
+                ></div>
+                <div
+                  className="cultivation_box_right_subtitle"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.cultivation_subtitle2
+                  }}
+                ></div>
                 <div
                   className="cultivation_box_right_subcontent"
                   dangerouslySetInnerHTML={{

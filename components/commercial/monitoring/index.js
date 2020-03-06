@@ -15,17 +15,26 @@ const MonitoringSystem = ({ commercialData }) => {
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="monitoring_left_box_content">
-                  {commercialData.monitoring_content}
-                </div>
+                <div
+                  className="monitoring_left_box_content"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.monitoring_content
+                  }}
+                ></div>
               </ReactWOW>
               <ReactWOW animation="fadeIn" duration="1.5s" delay="1s">
-                <div className="monitoring_left_box_subcontent">
-                  {commercialData.monitoring_subcontent1}
-                </div>
-                <div className="monitoring_left_box_subtitle">
-                  {commercialData.monitoring_subtitle}
-                </div>
+                <div
+                  className="monitoring_left_box_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.monitoring_subcontent1
+                  }}
+                ></div>
+                <div
+                  className="monitoring_left_box_subtitle"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.monitoring_subtitle
+                  }}
+                ></div>
                 <div
                   className="monitoring_left_box_subcontent"
                   dangerouslySetInnerHTML={{

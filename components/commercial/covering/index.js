@@ -2,6 +2,7 @@ import "./index.scss";
 import Link from "next/link";
 import React from "react";
 import ReactWOW from "react-wow";
+import renderHTML from "react-render-html";
 
 const CoveringMaterial = ({ commercialData }) => {
   return (
@@ -24,14 +25,20 @@ const CoveringMaterial = ({ commercialData }) => {
                 </div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="0.5s">
-                <div className="covering_box_right_content">
-                  {commercialData.covering_content}
-                </div>
+                <div
+                  className="covering_box_right_content"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.covering_content
+                  }}
+                ></div>
               </ReactWOW>
               <ReactWOW animation="fadeInUp" duration="1.5s" delay="1s">
-                <div className="covering_box_right_subcontent">
-                  {commercialData.covering_subcontent1}
-                </div>
+                <div
+                  className="covering_box_right_subcontent"
+                  dangerouslySetInnerHTML={{
+                    __html: commercialData.covering_subcontent1
+                  }}
+                ></div>
                 <div className="covering_box_right_subtitle">
                   {commercialData.covering_subtitle}
                 </div>

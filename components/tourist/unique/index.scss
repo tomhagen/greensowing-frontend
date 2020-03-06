@@ -36,8 +36,7 @@
         .unique_box_right {
           flex: 48%;
           max-width: 48%;
-          padding: 2% 0;
-
+          padding: 10% 0;
           .unique_box_right_title {
             @include text($text-bold, 48px);
             @include montserrat-bold;
@@ -98,8 +97,7 @@
         .unique_box_right {
           flex: 48%;
           max-width: 48%;
-          padding: 2% 0;
-
+          padding: 10% 0;
           .unique_box_right_title {
             @include text($text-bold, 38.4px);
             @include montserrat-bold;

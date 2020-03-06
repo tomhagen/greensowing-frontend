@@ -7,6 +7,7 @@ import Intro from "../../components/sharing-components/intro";
 import ClearGlass from "../../components/material/clear";
 import DiffuseGlass from "../../components/material/diffuse";
 import GetInTouch from "../../components/sharing-components/get-in-touch";
+import SubstrateComponent from "../../components/material/substrate";
 import Footer from "../../components/sharing-components/footer";
 import Copyright from "../../components/sharing-components/copyright";
 import RegisterButton from "../../components/sharing-components/register";
@@ -16,6 +17,7 @@ import {
   DOMAIN,
   FACEBOOK_APP_ID
 } from "../../config";
+
 
 const Glass = () => {
   const head = () => {
@@ -59,10 +61,11 @@ const Glass = () => {
     <React.Fragment>
       {head()}
       <Header />
-      <Intro props={intro.material.glass} />
+      {/* <Intro props={intro.material.glass} />
       <ClearGlass />
       <DiffuseGlass />
-      <GetInTouch props={touch.material.glass} />
+      <GetInTouch props={touch.material.glass} /> */}
+      <SubstrateComponent />
       <Footer />
       <Copyright />
       <RegisterButton />

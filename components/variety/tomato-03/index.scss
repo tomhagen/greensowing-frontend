@@ -37,7 +37,7 @@
           @include text($text-white, 18px);
           @include montserrat;
           line-height: 150%;
-          opacity: 0.8;
+          opacity: 1;
           text-align: justify;
         }
       }
@@ -81,7 +81,7 @@
           @include text($text-white, 14.4px);
           @include montserrat;
           line-height: 150%;
-          opacity: 0.8;
+          opacity: 1;
           text-align: justify;
         }
       }

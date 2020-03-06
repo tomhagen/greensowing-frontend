@@ -14,9 +14,12 @@ const IrrigationSystem = ({ commercialData }) => {
               </div>
             </ReactWOW>
             <ReactWOW animation="fadeInUp" duration="1s" delay="0.5s">
-              <div className="irrigation_top_subcontent">
-                {commercialData.irrigation_subcontent}
-              </div>
+              <div
+                className="irrigation_top_subcontent"
+                dangerouslySetInnerHTML={{
+                  __html: commercialData.irrigation_subcontent
+                }}
+              ></div>
             </ReactWOW>
           </div>
           <div className="irrigation_bottom">
@@ -28,11 +31,14 @@ const IrrigationSystem = ({ commercialData }) => {
                       <img src="/static/images/commercial_icon1.png" alt="" />
                     </div>
                     <div className="irrigation_bottom_item_title">
-                      Labor restriction
+                      High Accuracy
                     </div>
-                    <div className="irrigation_bottom_item_subcontent">
-                      {commercialData.irrigation_item_subcontent1}
-                    </div>
+                    <div
+                      className="irrigation_bottom_item_subcontent"
+                      dangerouslySetInnerHTML={{
+                        __html: commercialData.irrigation_item_subcontent1
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -45,11 +51,14 @@ const IrrigationSystem = ({ commercialData }) => {
                       <img src="/static/images/commercial_icon2.png" alt="" />
                     </div>
                     <div className="irrigation_bottom_item_title">
-                      High adaptability
+                      Flexible Design
                     </div>
-                    <div className="irrigation_bottom_item_subcontent">
-                      {commercialData.irrigation_item_subcontent2}
-                    </div>
+                    <div
+                      className="irrigation_bottom_item_subcontent"
+                      dangerouslySetInnerHTML={{
+                        __html: commercialData.irrigation_item_subcontent2
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -62,11 +71,14 @@ const IrrigationSystem = ({ commercialData }) => {
                       <img src="/static/images/commercial_icon3.png" alt="" />
                     </div>
                     <div className="irrigation_bottom_item_title">
-                      Good regulation
+                      Completely Automatic
                     </div>
-                    <div className="irrigation_bottom_item_subcontent">
-                      {commercialData.irrigation_item_subcontent3}
-                    </div>
+                    <div
+                      className="irrigation_bottom_item_subcontent"
+                      dangerouslySetInnerHTML={{
+                        __html: commercialData.irrigation_item_subcontent3
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -79,11 +91,14 @@ const IrrigationSystem = ({ commercialData }) => {
                       <img src="/static/images/commercial_icon4.png" alt="" />
                     </div>
                     <div className="irrigation_bottom_item_title">
-                      Flexible design
+                      High Adaptability
                     </div>
-                    <div className="irrigation_bottom_item_subcontent">
-                      {commercialData.irrigation_item_subcontent4}
-                    </div>
+                    <div
+                      className="irrigation_bottom_item_subcontent"
+                      dangerouslySetInnerHTML={{
+                        __html: commercialData.irrigation_item_subcontent4
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>
@@ -96,11 +111,14 @@ const IrrigationSystem = ({ commercialData }) => {
                       <img src="/static/images/commercial_icon5.png" alt="" />
                     </div>
                     <div className="irrigation_bottom_item_title">
-                      Labor restriction
+                      Flexible Operation
                     </div>
-                    <div className="irrigation_bottom_item_subcontent">
-                      {commercialData.irrigation_item_subcontent5}
-                    </div>
+                    <div
+                      className="irrigation_bottom_item_subcontent"
+                      dangerouslySetInnerHTML={{
+                        __html: commercialData.irrigation_item_subcontent5
+                      }}
+                    ></div>
                   </div>
                 </div>
               </div>

@@ -103,6 +103,24 @@
             line-height: 150%;
             margin-top: 30px;
           }
+          .item_about_profile {
+            margin-top: 30px;
+            a {
+              @include text($primary, 14px);
+              @include montserrat;
+              text-decoration: none;
+              &:hover {
+                @include text(#fff, 14px);
+              }
+            }
+            &::before {
+              font-family: "FontAwesome";
+              content: "\f0a4";
+              font-size: 13px;
+              color: $primary;
+              margin-right: 10px;
+            }
+          }
         }
         .item_service {
           .item_service_title {
